@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_G_YYAdRbEe-tlqZm-l6GJQ" label="DZ_TAC" description="" language="java" technicalLabel="DZ_TAC" author="_G_YYAtRbEe-tlqZm-l6GJQ" productVersion="Talend Real-time Big Data Platform-8.0.1.20241219_0901-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/dzisserman/dz_tac&quot;,&quot;settings&quot;:&quot;100&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI">
+    <migrationTask xmi:id="_HAkq0NRbEe-tlqZm-l6GJQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_G_YYAtRbEe-tlqZm-l6GJQ" login="admin@qlik.co.il" firstName="Admin" lastName="Admin" type="DQ" additionnalData="{}"/>
+</xmi:XMI>
