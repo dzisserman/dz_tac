@@ -300,7 +300,16 @@
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
     <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value="" show="false"/>
-    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="TABLE" name="THRESHLODS">
+      <elementValue elementRef="LABEL" value="newline" id="0"/>
+      <elementValue elementRef="BOTTOM" value="5" id="1"/>
+      <elementValue elementRef="TOP" value="80" id="2"/>
+      <elementValue elementRef="COLOR" value="255;255;255" id="3"/>
+      <elementValue elementRef="LABEL" value="newline" id="4"/>
+      <elementValue elementRef="BOTTOM" value="1" id="5"/>
+      <elementValue elementRef="TOP" value="4" id="6"/>
+      <elementValue elementRef="COLOR" value="0;255;0" id="7"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowMeter_3">
       <column comment="" key="false" length="-1" name="Time" nullable="true" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
