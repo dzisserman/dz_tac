@@ -114,7 +114,7 @@
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;\t&quot;"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="iteration*10000000"/>
+    <elementParameter field="TEXT" name="HEADER" value="context.iteration*10000000"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value="10000000"/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
