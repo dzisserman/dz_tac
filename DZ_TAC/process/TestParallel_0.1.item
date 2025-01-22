@@ -204,6 +204,9 @@
     <elementParameter field="TEXT" name="NUM_PARTITIONS" value="10"/>
     <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000000"/>
     <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
+      <elementValue elementRef="KEY_COLUMN" value="newColumn" id="0"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tBufferInput_1">
