@@ -8,6 +8,10 @@
     "id" : "_qbir0NmDEe-N-IaiGNKrCA",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_qbir0NmDEe-N-IaiGNKrCA - configuration",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
