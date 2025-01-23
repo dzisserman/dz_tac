@@ -228,10 +228,10 @@
       <elementValue elementRef="SORT" value="num" id="1"/>
       <elementValue elementRef="ORDER" value="asc" id="2"/>
     </elementParameter>
-    <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
-    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Talend/TedtFiles/temp/" show="false"/>
-    <elementParameter field="CHECK" name="CREATEDIR" value="true" show="false"/>
-    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="100000" show="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL" value="true"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Talend/TedtFiles/temp/&quot;+((Integer)globalMap.get(&quot;tCollector_1_THREAD_ID&quot;))"/>
+    <elementParameter field="CHECK" name="CREATEDIR" value="true"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="100000"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSortRow_1">
       <column comment="" key="false" length="-1" name="num" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
