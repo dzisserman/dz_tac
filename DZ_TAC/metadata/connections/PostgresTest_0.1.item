@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_wYqxkNmDEe-N-IaiGNKrCA" name="PostgresTest" id="_qbir0NmDEe-N-IaiGNKrCA" label="PostgresTest" dataPackage="_wc_38NmDEe-N-IaiGNKrCA" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://127.0.0.1:5432/postgres?" dbVersionString="V9_X" Port="5432" Username="postgres" Password="enc:system.encryption.key.v1:TiWB46GR3mxn0FBMSESxZsdOYGzzyzMaPk+6F+aU93M=" ServerName="127.0.0.1" DatasourceName="" FileFieldName="" SID="postgres" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_wYtN0NmDEe-N-IaiGNKrCA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_wZKg0NmDEe-N-IaiGNKrCA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_wZKg0dmDEe-N-IaiGNKrCA" tag="Status" value=""/>
+    <taggedValue xmi:id="_wZKg0tmDEe-N-IaiGNKrCA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_wZKg09mDEe-N-IaiGNKrCA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_wZKg1NmDEe-N-IaiGNKrCA" tag="Description" value=""/>
+    <taggedValue xmi:id="_wZKg1dmDEe-N-IaiGNKrCA" tag="Author" value=""/>
+    <taggedValue xmi:id="_wZKg1tmDEe-N-IaiGNKrCA" tag="otherParameter"/>
+    <taggedValue xmi:id="_wbDXMNmDEe-N-IaiGNKrCA" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_wbDXMdmDEe-N-IaiGNKrCA" tag="DB ProductVersion" value="16.6"/>
+    <taggedValue xmi:id="_wbDXMtmDEe-N-IaiGNKrCA" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_wYtN0dmDEe-N-IaiGNKrCA" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_wc_38NmDEe-N-IaiGNKrCA" name="postgres" dataManager="_wYqxkNmDEe-N-IaiGNKrCA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wc_38dmDEe-N-IaiGNKrCA" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wc_38tmDEe-N-IaiGNKrCA" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_wc_389mDEe-N-IaiGNKrCA" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
