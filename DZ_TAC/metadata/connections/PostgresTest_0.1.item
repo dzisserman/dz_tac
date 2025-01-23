@@ -19,6 +19,38 @@
           <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u_5yY9mEEe-N-IaiGNKrCA" name="TALEND_CDC_SUBSCRIBER_NAME" label="TALEND_CDC_SUBSCRIBER_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
           <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_u_5yZNmEEe-N-IaiGNKrCA" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date" nullable="false"/>
         </subscribers>
+        <subscribers xmi:id="_8upaUdmEEe-N-IaiGNKrCA" name="TCDC_configuration" id="_8uozQNmEEe-N-IaiGNKrCA" label="TCDC_configuration">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaUtmEEe-N-IaiGNKrCA" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaU9mEEe-N-IaiGNKrCA" name="TALEND_CDC_STATE" label="TALEND_CDC_STATE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaVNmEEe-N-IaiGNKrCA" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaVdmEEe-N-IaiGNKrCA" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaVtmEEe-N-IaiGNKrCA" name="key" label="key" length="255" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+            <initialValue xmi:id="_8upaV9mEEe-N-IaiGNKrCA"/>
+          </feature>
+        </subscribers>
+        <subscribers xmi:id="_8upaWNmEEe-N-IaiGNKrCA" name="TCDC_VIEW_configuration" id="_8upaUNmEEe-N-IaiGNKrCA" label="TCDC_VIEW_configuration">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaWdmEEe-N-IaiGNKrCA" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaWtmEEe-N-IaiGNKrCA" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaW9mEEe-N-IaiGNKrCA" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaXNmEEe-N-IaiGNKrCA" name="key" label="key" length="255" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+            <initialValue xmi:id="_8upaXdmEEe-N-IaiGNKrCA"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaXtmEEe-N-IaiGNKrCA" name="description" label="description" length="2147483647" sourceType="TEXT" talendType="id_String">
+            <initialValue xmi:id="_8upaX9mEEe-N-IaiGNKrCA"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaYNmEEe-N-IaiGNKrCA" name="enabled" label="enabled" length="1" sourceType="BOOL" talendType="id_Boolean" nullable="false">
+            <initialValue xmi:id="_8upaYdmEEe-N-IaiGNKrCA"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaYtmEEe-N-IaiGNKrCA" name="lastmodifieddate" label="lastmodifieddate" length="29" precision="6" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+            <initialValue xmi:id="_8upaY9mEEe-N-IaiGNKrCA"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaZNmEEe-N-IaiGNKrCA" name="value" label="value" length="2147483647" sourceType="TEXT" talendType="id_String">
+            <initialValue xmi:id="_8upaZdmEEe-N-IaiGNKrCA"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_8upaZtmEEe-N-IaiGNKrCA" name="e_version" label="e_version" length="10" sourceType="INT4" talendType="id_Integer">
+            <initialValue xmi:id="_8upaZ9mEEe-N-IaiGNKrCA"/>
+          </feature>
+        </subscribers>
       </cdcTypes>
     </cdcConns>
     <parameters xmi:id="_wYtN0dmDEe-N-IaiGNKrCA" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
@@ -26,7 +58,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_zeM_INmDEe-N-IaiGNKrCA" name="postgres" dataManager="_wYqxkNmDEe-N-IaiGNKrCA">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_zeM_IdmDEe-N-IaiGNKrCA" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_aPF14NmEEe-N-IaiGNKrCA" name="configuration" id="_aPDZoNmEEe-N-IaiGNKrCA" label="configuration" tableType="TABLE">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_aPF14NmEEe-N-IaiGNKrCA" name="configuration" id="_aPDZoNmEEe-N-IaiGNKrCA" label="configuration" tableType="TABLE" attachedCDC="true" activatedCDC="true">
         <feature xsi:type="relational:TdColumn" xmi:id="_aPF14dmEEe-N-IaiGNKrCA" name="key" label="key" length="255" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
           <taggedValue xmi:id="_aPF14tmEEe-N-IaiGNKrCA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_aPF149mEEe-N-IaiGNKrCA" language="COLUMN_DEF"/>
