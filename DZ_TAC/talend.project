@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
   <TalendProperties:Project xmi:id="_G_YYAdRbEe-tlqZm-l6GJQ" label="DZ_TAC" description="" language="java" technicalLabel="DZ_TAC" author="_G_YYAtRbEe-tlqZm-l6GJQ" productVersion="Talend Real-time Big Data Platform-8.0.1.20241219_0901-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/dzisserman/dz_tac&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+    <componentsSettings xmi:id="_OW2EcNmjEe-N-IaiGNKrCA" name="DI|tSAPInfoObjectInput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2EcdmjEe-N-IaiGNKrCA" name="DI|tSalesforceMarketingInput" hidden="true" family="Business/SalesforceMarketing"/>
+    <componentsSettings xmi:id="_OW2EctmjEe-N-IaiGNKrCA" name="DI|tSalesforceGetServerTimestamp" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2Ec9mjEe-N-IaiGNKrCA" name="DI|tNetSuiteV2019Connection" hidden="true" family="Business/NetSuite"/>
+    <componentsSettings xmi:id="_OW2EdNmjEe-N-IaiGNKrCA" name="DI|tSalesforceMarketingOutput" hidden="true" family="Business/SalesforceMarketing"/>
+    <componentsSettings xmi:id="_OW2EddmjEe-N-IaiGNKrCA" name="DI|tWorkdayInput" hidden="true" family="Business/Workday"/>
+    <componentsSettings xmi:id="_OW2EdtmjEe-N-IaiGNKrCA" name="DI|tMarketoInput" hidden="true" family="Business/Marketo"/>
+    <componentsSettings xmi:id="_OW2Ed9mjEe-N-IaiGNKrCA" name="DI|tSAPBapi" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2EeNmjEe-N-IaiGNKrCA" name="DI|tMarketoConnection" hidden="true" family="Business/Marketo"/>
+    <componentsSettings xmi:id="_OW2EedmjEe-N-IaiGNKrCA" name="DI|tSAPInfoObjectOutput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2EetmjEe-N-IaiGNKrCA" name="DI|tSalesforceGetUpdated" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2Ee9mjEe-N-IaiGNKrCA" name="DI|tLDAPRenameEntry" hidden="true" family="Business/LDAP"/>
+    <componentsSettings xmi:id="_OW2EfNmjEe-N-IaiGNKrCA" name="DI|tSAPODPInput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2EfdmjEe-N-IaiGNKrCA" name="DI|tServiceNowOutput" hidden="true" family="Business/ServiceNow"/>
+    <componentsSettings xmi:id="_OW2EftmjEe-N-IaiGNKrCA" name="DI|tLDAPOutput" hidden="true" family="Business/LDAP"/>
+    <componentsSettings xmi:id="_OW2Ef9mjEe-N-IaiGNKrCA" name="DI|tSAPCommit" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2EgNmjEe-N-IaiGNKrCA" name="DI|tGoogleAnalytics4Report" hidden="true" family="Business/GoogleAnalytics4"/>
+    <componentsSettings xmi:id="_OW2EgdmjEe-N-IaiGNKrCA" name="DI|tSAPTableInput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2EgtmjEe-N-IaiGNKrCA" name="DI|tSalesforceOutput" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2Eg9mjEe-N-IaiGNKrCA" name="DI|tSalesforceEinsteinOutputBulkExec" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2EhNmjEe-N-IaiGNKrCA" name="DI|tNetSuiteV2019Input" hidden="true" family="Business/NetSuite"/>
+    <componentsSettings xmi:id="_OW2EhdmjEe-N-IaiGNKrCA" name="DI|tSalesforceBulkExec" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2EhtmjEe-N-IaiGNKrCA" name="DI|tMicrosoftCrmInput" hidden="true" family="Business/Microsoft_CRM"/>
+    <componentsSettings xmi:id="_OW2Eh9mjEe-N-IaiGNKrCA" name="DI|tLDAPInput" hidden="true" family="Business/LDAP"/>
+    <componentsSettings xmi:id="_OW2EiNmjEe-N-IaiGNKrCA" name="DI|tSalesforceGetDeleted" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2EidmjEe-N-IaiGNKrCA" name="DI|tSAPADSOInput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2EitmjEe-N-IaiGNKrCA" name="DI|tSAPDataSourceOutput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rgNmjEe-N-IaiGNKrCA" name="DI|tSalesforceOutputBulkExec" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2rgdmjEe-N-IaiGNKrCA" name="DI|tSalesforceInput" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2rgtmjEe-N-IaiGNKrCA" name="DI|tSalesforceConnection" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2rg9mjEe-N-IaiGNKrCA" name="DI|tNetSuiteV2019Output" hidden="true" family="Business/NetSuite"/>
+    <componentsSettings xmi:id="_OW2rhNmjEe-N-IaiGNKrCA" name="DI|tServiceNowInput" hidden="true" family="Business/ServiceNow"/>
+    <componentsSettings xmi:id="_OW2rhdmjEe-N-IaiGNKrCA" name="DI|tMicrosoftCrmOutput" hidden="true" family="Business/Microsoft_CRM"/>
+    <componentsSettings xmi:id="_OW2rhtmjEe-N-IaiGNKrCA" name="DI|tSAPInfoCubeInput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rh9mjEe-N-IaiGNKrCA" name="DI|tMarketoBulkExec" hidden="true" family="Business/Marketo"/>
+    <componentsSettings xmi:id="_OW2riNmjEe-N-IaiGNKrCA" name="DI|tSalesforceMarketingConnection" hidden="true" family="Business/SalesforceMarketing"/>
+    <componentsSettings xmi:id="_OW2ridmjEe-N-IaiGNKrCA" name="DI|tServiceNowConnection" hidden="true" family="Business/ServiceNow"/>
+    <componentsSettings xmi:id="_OW2ritmjEe-N-IaiGNKrCA" name="DI|tSAPConnection" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2ri9mjEe-N-IaiGNKrCA" name="DI|tMarketoCampaign" hidden="true" family="Business/Marketo"/>
+    <componentsSettings xmi:id="_OW2rjNmjEe-N-IaiGNKrCA" name="DI|tSAPDSOOutput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rjdmjEe-N-IaiGNKrCA" name="DI|tLDAPClose" hidden="true" family="Business/LDAP"/>
+    <componentsSettings xmi:id="_OW2rjtmjEe-N-IaiGNKrCA" name="DI|tMarketoListOperation" hidden="true" family="Business/Marketo"/>
+    <componentsSettings xmi:id="_OW2rj9mjEe-N-IaiGNKrCA" name="DI|tSalesforceOutputBulk" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2rkNmjEe-N-IaiGNKrCA" name="DI|tMarketoOutput" hidden="true" family="Business/Marketo"/>
+    <componentsSettings xmi:id="_OW2rkdmjEe-N-IaiGNKrCA" name="DI|tSAPDataSourceReceiver" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rktmjEe-N-IaiGNKrCA" name="DI|tSalesforceEinsteinBulkExec" hidden="true" family="Business/Salesforce"/>
+    <componentsSettings xmi:id="_OW2rk9mjEe-N-IaiGNKrCA" name="DI|tLDAPConnection" hidden="true" family="Business/LDAP"/>
+    <componentsSettings xmi:id="_OW2rlNmjEe-N-IaiGNKrCA" name="DI|tSAPIDocOutput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rldmjEe-N-IaiGNKrCA" name="DI|tSAPDSOInput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rltmjEe-N-IaiGNKrCA" name="DI|tSAPIDocReceiver" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rl9mjEe-N-IaiGNKrCA" name="DI|tSAPADSOOutput" hidden="true" family="Business/SAP"/>
+    <componentsSettings xmi:id="_OW2rmNmjEe-N-IaiGNKrCA" name="DI|tLDAPAttributesInput" hidden="true" family="Business/LDAP"/>
+    <componentsSettings xmi:id="_OW2rmdmjEe-N-IaiGNKrCA" name="DI|tWorkdayOutput" hidden="true" family="Business/Workday"/>
+    <componentsSettings xmi:id="_OW2rmtmjEe-N-IaiGNKrCA" name="DI|tSAPRollback" hidden="true" family="Business/SAP"/>
     <migrationTask xmi:id="_HAkq0NRbEe-tlqZm-l6GJQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_G_YYAtRbEe-tlqZm-l6GJQ" login="admin@qlik.co.il" firstName="Admin" lastName="Admin" type="DQ" additionnalData="{}"/>
