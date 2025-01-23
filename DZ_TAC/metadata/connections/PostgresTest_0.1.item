@@ -58,7 +58,7 @@
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_zeM_INmDEe-N-IaiGNKrCA" name="postgres" dataManager="_wYqxkNmDEe-N-IaiGNKrCA">
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_zeM_IdmDEe-N-IaiGNKrCA" name="public">
-      <ownedElement xsi:type="relational:TdTable" xmi:id="_aPF14NmEEe-N-IaiGNKrCA" name="configuration" id="_aPDZoNmEEe-N-IaiGNKrCA" label="configuration" tableType="TABLE" attachedCDC="true">
+      <ownedElement xsi:type="relational:TdTable" xmi:id="_aPF14NmEEe-N-IaiGNKrCA" name="configuration" id="_aPDZoNmEEe-N-IaiGNKrCA" label="configuration" tableType="TABLE" attachedCDC="true" activatedCDC="true">
         <feature xsi:type="relational:TdColumn" xmi:id="_aPF14dmEEe-N-IaiGNKrCA" name="key" label="key" length="255" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
           <taggedValue xmi:id="_aPF14tmEEe-N-IaiGNKrCA" tag="Comment" value=""/>
           <initialValue xsi:type="relational:TdExpression" xmi:id="_aPF149mEEe-N-IaiGNKrCA" language="COLUMN_DEF"/>
