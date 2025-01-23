@@ -229,9 +229,9 @@
       <elementValue elementRef="ORDER" value="asc" id="2"/>
     </elementParameter>
     <elementParameter field="CHECK" name="EXTERNAL" value="false"/>
-    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Talend/Talend-Studio-20231027_1100-V8.0.1/workspaceTAC/temp&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMPFILE" value="&quot;C:/Talend/TedtFiles/temp/" show="false"/>
     <elementParameter field="CHECK" name="CREATEDIR" value="true" show="false"/>
-    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="1000000" show="false"/>
+    <elementParameter field="TEXT" name="EXTERNAL_SORT_BUFFERSIZE" value="100000" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSortRow_1">
       <column comment="" key="false" length="-1" name="num" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
@@ -340,10 +340,8 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
     <elementParameter field="RADIO" name="NONE" value="false"/>
-    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="10"/>
-    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000000"/>
-    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
-    <elementParameter field="TABLE" name="HASH_KEYS">
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="100000"/>
+    <elementParameter field="TABLE" name="HASH_KEYS" show="false">
       <elementValue elementRef="KEY_COLUMN" value="num" id="0"/>
     </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
