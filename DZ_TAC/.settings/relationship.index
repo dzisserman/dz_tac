@@ -50,15 +50,4 @@
     "version" : "Latest",
     "type" : "context"
   } ]
-}, {
-  "baseItem" : {
-    "id" : "__siQINl2Ee-N-IaiGNKrCA",
-    "version" : "0.1",
-    "type" : "test_case"
-  },
-  "relatedItems" : [ {
-    "id" : "_PytSQNiiEe-Cfcrw28zvHw",
-    "version" : "0.1",
-    "type" : "test_case"
-  } ]
 } ]
