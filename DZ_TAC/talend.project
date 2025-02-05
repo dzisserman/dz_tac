@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_G_YYAdRbEe-tlqZm-l6GJQ" label="DZ_TAC" description="" language="java" technicalLabel="DZ_TAC" author="_G_YYAtRbEe-tlqZm-l6GJQ" productVersion="Talend Real-time Big Data Platform-8.0.1.20241219_0901-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/dzisserman/dz_tac&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_G_YYAdRbEe-tlqZm-l6GJQ" label="DZ_TAC" description="" language="java" technicalLabel="DZ_TAC" author="_G_YYAtRbEe-tlqZm-l6GJQ" productVersion="Talend Real-time Big Data Platform-8.0.1.20250126_0750-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/dzisserman/dz_tac&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <componentsSettings xmi:id="_OW2EcNmjEe-N-IaiGNKrCA" name="DI|tSAPInfoObjectInput" hidden="true" family="Business/SAP"/>
     <componentsSettings xmi:id="_OW2EcdmjEe-N-IaiGNKrCA" name="DI|tSalesforceMarketingInput" hidden="true" family="Business/SalesforceMarketing"/>
     <componentsSettings xmi:id="_OW2EctmjEe-N-IaiGNKrCA" name="DI|tSalesforceGetServerTimestamp" hidden="true" family="Business/Salesforce"/>
