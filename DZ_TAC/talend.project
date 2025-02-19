@@ -58,4 +58,5 @@
     <migrationTask xmi:id="_HAkq0NRbEe-tlqZm-l6GJQ" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_G_YYAtRbEe-tlqZm-l6GJQ" login="admin@qlik.co.il" firstName="Admin" lastName="Admin" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_WppLgO60Ee-aZIm1PhFaNQ" login="admin1@qlik.co.il" firstName="admin" lastName="admin" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
