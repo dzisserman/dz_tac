@@ -1,0 +1,111 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class ValidIsraeliIdCheck {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+	public static boolean isNumeric(String str) { 
+		  try {  
+			  Double.parseDouble(str);  
+			  return true;
+		  } catch(NumberFormatException e){  
+			  return false;  
+		  }  
+	}
+	
+    public static Boolean IdCheck(String IDNum) {
+    	IDNum = StringHandling.LPAD(IDNum,9,"0");
+		int checkSum = 0;
+		for (int i = 0; i < 8; i += 2)
+		{
+ 		   	checkSum += IDNum.charAt(i) - '0';
+			if (((IDNum.charAt(i + 1) - '0') * 2) > 9) {
+				checkSum += ((IDNum.charAt(i + 1) - '0') * 2) / 10;
+				checkSum += ((IDNum.charAt(i + 1) - '0') * 2) % 10;
+			} else {
+				checkSum += (IDNum.charAt(i + 1) - '0') * 2;
+			}
+		}
+		int checkDigit = (10 - (checkSum % 10)) % 10;
+		return ((IDNum.substring(8, 9)).equals(String.valueOf(checkDigit)));
+    }
+    
+    
+    public static boolean IDNumColumnCheck(String IDNum, int idType) {
+    	if (idType == 1 || idType == 0) {
+    		return IdCheck(IDNum);
+    	}
+    	return true;
+    }
+    
+    public static String RegQueryStatus(String idNum, String firstName, String lastName) {
+		String returnValue = (IdCheck(idNum) && isNumeric(idNum)) ? null : "InvalidId";
+	
+		if (returnValue == null) {
+			if (firstName != null && lastName != null) {
+				if (firstName.length() >= 1 && lastName.length() >= 1) {
+					char firstNameChar = firstName.charAt(0);
+					int asciiFirstNameChar = (int)firstNameChar;
+					char lastNameChar = lastName.charAt(0);
+					int asciiLastNameChar = (int)lastNameChar;
+					if (!((asciiFirstNameChar >= 1488 && asciiFirstNameChar <= 1514) && (asciiLastNameChar >= 1488 && asciiLastNameChar <= 1514))) {
+						returnValue = "NonHebrewName";
+					}
+				} else {
+					returnValue = "InvalidName";
+				}
+			} else {
+				returnValue = "NullName";
+			}
+		}
+		return returnValue;
+    }
+    
+    public static String RegQueryStatusPersonData(String idNum, String firstName, String lastName, int idType) {
+    	if (idType == 1 || idType == 3) {
+	    	if (idNum.length() == 9) {
+	    		return ValidIsraeliIdCheck.RegQueryStatus(idNum, firstName, lastName); 
+	    	} else {
+	    		return "InvalidLength";    		
+	    	}
+    	} else {
+    		return "NonIsraeliCitizenship";
+    	}
+    }
+    
+    public static String RegQueryStatusHmo(String idNum, String firstName, String lastName, int idType) {
+    	if (idType == 1 || idType == 3) {
+    		return ValidIsraeliIdCheck.RegQueryStatusPersonData(idNum, firstName, lastName, idType);
+    	} else {
+    		return "NonIsraeliCitizenship";
+    	}
+    }
+}

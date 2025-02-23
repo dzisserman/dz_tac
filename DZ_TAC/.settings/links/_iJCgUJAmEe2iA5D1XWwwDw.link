@@ -1,0 +1,142 @@
+{
+  "itemId" : "_iJCgUJAmEe2iA5D1XWwwDw",
+  "contextList" : [ {
+    "contextName" : "internalServer",
+    "repoId" : "_7wZxwPKUEeqKdqV-yxpgYQ",
+    "parameterList" : [ {
+      "id" : "_7wtTyvKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_AdditionalParams"
+    }, {
+      "id" : "_7wtTzfKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Database"
+    }, {
+      "id" : "_7wtTzPKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Login"
+    }, {
+      "id" : "_7wtTyfKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Password"
+    }, {
+      "id" : "_7wtTyPKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Port"
+    }, {
+      "id" : "_7wtTy_KUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Server"
+    } ]
+  }, {
+    "contextName" : "internalServer",
+    "repoId" : "_UdojYC3iEemax5DxajN3Kg",
+    "parameterList" : [ {
+      "id" : "_ki7vDW3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_AdditionalParams"
+    }, {
+      "id" : "_ki7vCm3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Database"
+    }, {
+      "id" : "_ki7vC23hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Login"
+    }, {
+      "id" : "_ki7vCW3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Password"
+    }, {
+      "id" : "_ki7vCG3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Port"
+    }, {
+      "id" : "_ki7vDG3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Server"
+    } ]
+  }, {
+    "contextName" : "internalServer",
+    "repoId" : "_-vlxECy7EeuWPrlWCJjGig",
+    "parameterList" : [ {
+      "id" : "_-v3d7iy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Database"
+    }, {
+      "id" : "_-v3d7Cy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_AdditionalParams"
+    }, {
+      "id" : "_-v3d6Cy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Login"
+    }, {
+      "id" : "_-v3d6iy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Server"
+    }, {
+      "id" : "_-v3d7Sy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Password"
+    }, {
+      "id" : "_-v3d6yy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Port"
+    }, {
+      "id" : "_-v3d6Sy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Schema"
+    } ]
+  }, {
+    "contextName" : "externalServer",
+    "repoId" : "_7wZxwPKUEeqKdqV-yxpgYQ",
+    "parameterList" : [ {
+      "id" : "_7wtTw_KUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_AdditionalParams"
+    }, {
+      "id" : "_7wtTxvKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Database"
+    }, {
+      "id" : "_7wtTxfKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Login"
+    }, {
+      "id" : "_7wtTwvKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Password"
+    }, {
+      "id" : "_7wtTwfKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Port"
+    }, {
+      "id" : "_7wtTxPKUEeqKdqV-yxpgYQ",
+      "name" : "connection_mysql_amc_Server"
+    } ]
+  }, {
+    "contextName" : "externalServer",
+    "repoId" : "_UdojYC3iEemax5DxajN3Kg",
+    "parameterList" : [ {
+      "id" : "_ki7vBm3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_AdditionalParams"
+    }, {
+      "id" : "_ki7vA23hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Database"
+    }, {
+      "id" : "_ki7vBG3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Login"
+    }, {
+      "id" : "_ki7vAm3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Password"
+    }, {
+      "id" : "_ki7vAW3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Port"
+    }, {
+      "id" : "_ki7vBW3hEeqolMKugdf3NA",
+      "name" : "connection_mysql_training_Server"
+    } ]
+  }, {
+    "contextName" : "externalServer",
+    "repoId" : "_-vlxECy7EeuWPrlWCJjGig",
+    "parameterList" : [ {
+      "id" : "_-v3d7iy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Database"
+    }, {
+      "id" : "_-v3d7Cy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_AdditionalParams"
+    }, {
+      "id" : "_-v3d6Cy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Login"
+    }, {
+      "id" : "_-v3d6iy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Server"
+    }, {
+      "id" : "_-v3d7Sy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Password"
+    }, {
+      "id" : "_-v3d6yy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Port"
+    }, {
+      "id" : "_-v3d6Sy7EeuWPrlWCJjGig",
+      "name" : "aQurate_SqlServer_Schema"
+    } ]
+  } ]
+}

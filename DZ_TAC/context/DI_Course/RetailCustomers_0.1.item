@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_kfh1sG3hEeqolMKugdf3NA" confirmationNeeded="false" name="internalServer">
+  <contextParameter xmi:id="_kfh1sW3hEeqolMKugdf3NA" comment="" name="RetailCustomers_RowSeparator" prompt="RetailCustomers_RowSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\n&quot;"/>
+  <contextParameter xmi:id="_kfh1sm3hEeqolMKugdf3NA" comment="" name="RetailCustomers_File" prompt="RetailCustomers_File?" promptNeeded="false" repositoryContextId="built-in" type="id_File" value="/StudentFiles/RetailCustomers.csv"/>
+  <contextParameter xmi:id="_kfh1s23hEeqolMKugdf3NA" comment="" name="RetailCustomers_Encoding" prompt="RetailCustomers_Encoding?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="US-ASCII"/>
+  <contextParameter xmi:id="_kfh1tG3hEeqolMKugdf3NA" comment="" name="RetailCustomers_FieldSeparator" prompt="RetailCustomers_FieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;;&quot;"/>
+  <contextParameter xmi:id="_kfh1tW3hEeqolMKugdf3NA" comment="" name="RetailCustomers_Header" prompt="RetailCustomers_Header?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="6"/>
+</talendfile:ContextType>

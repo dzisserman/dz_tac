@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_CpWRwHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_CpWRwXHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Password" prompt="EDW_EXADATA_LOAD_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:HmdmSuWBwBERyrtIOVDnH+iKsS+i+C6QfAJYXDEWJSz4K33Z6lk="/>
+    <contextParameter xmi:id="_CpWRwnHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Server" prompt="EDW_EXADATA_LOAD_Server?" promptNeeded="false" type="id_String" value="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=172.22.4.209)(port=1522))(connect_data=(SID=edwdvx1)))"/>
+    <contextParameter xmi:id="_CpWRw3HjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Schema" prompt="EDW_EXADATA_LOAD_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CpWRxHHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Login" prompt="EDW_EXADATA_LOAD_Login?" promptNeeded="false" type="id_String" value="ETL_UPDATE"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CpWRxXHjEem3OLgmIc9NAg" confirmationNeeded="false" name="NEW_PREPROD">
+    <contextParameter xmi:id="_CpWRxnHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Password" prompt="EDW_EXADATA_LOAD_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:R8A59y5Z7ITyeNqpMQj77JI9Gr1oeKiXOGcvL6mC2or+NQ3/Qls="/>
+    <contextParameter xmi:id="_CpWRx3HjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Server" prompt="EDW_EXADATA_LOAD_Server?" promptNeeded="false" type="id_String" value="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=dmprd01-scan)(port=1521))(connect_data=(service_name=DWHPPRX)))"/>
+    <contextParameter xmi:id="_CpWRyHHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Schema" prompt="EDW_EXADATA_LOAD_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CpWRyXHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Login" prompt="EDW_EXADATA_LOAD_Login?" promptNeeded="false" type="id_String" value="ETL_UPDATE"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CpWRynHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PRE_PROD">
+    <contextParameter xmi:id="_CpWRy3HjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Password" prompt="EDW_EXADATA_LOAD_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:NVZ0Q88S/1T+tRzypNE79hr8gDnjU2zFsh4VLLo+5Zfh5OdPAtA="/>
+    <contextParameter xmi:id="_CpWRzHHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Server" prompt="EDW_EXADATA_LOAD_Server?" promptNeeded="false" type="id_String" value="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=dmprd01-scan)(port=1521))(connect_data=(service_name=DWHPPRX)))"/>
+    <contextParameter xmi:id="_CpWRzXHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Schema" prompt="EDW_EXADATA_LOAD_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CpWRznHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Login" prompt="EDW_EXADATA_LOAD_Login?" promptNeeded="false" type="id_String" value="ETL_UPDATE"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CpWRz3HjEem3OLgmIc9NAg" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_CpWR0HHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Password" prompt="EDW_EXADATA_LOAD_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:GO7PFIB9zRloTPznN9eGqIR/W8P9wkLBMpiSffYZ+Bi6qlRVw0I="/>
+    <contextParameter xmi:id="_CpWR0XHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Server" prompt="EDW_EXADATA_LOAD_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CpWR0nHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Schema" prompt="EDW_EXADATA_LOAD_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CpWR03HjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Login" prompt="EDW_EXADATA_LOAD_Login?" promptNeeded="false" type="id_String" value="ETL_UPDATE"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CpWR1HHjEem3OLgmIc9NAg" confirmationNeeded="false" name="QA">
+    <contextParameter xmi:id="_CpWR1XHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Password" prompt="EDW_EXADATA_LOAD_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:uQOuAafHGpbSOv1x7CFAuq8JYS0T1kx8nVpKYC62d/AVIX4pHPg="/>
+    <contextParameter xmi:id="_CpWR1nHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Server" prompt="EDW_EXADATA_LOAD_Server?" promptNeeded="false" type="id_String" value="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=172.22.4.209)(port=1522))(connect_data=(SID=edwqax1)))"/>
+    <contextParameter xmi:id="_CpWR13HjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Schema" prompt="EDW_EXADATA_LOAD_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CpWR2HHjEem3OLgmIc9NAg" comment="" name="EDW_EXADATA_LOAD_Login" prompt="EDW_EXADATA_LOAD_Login?" promptNeeded="false" type="id_String" value="ETL_UPDATE"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_IQNU8C4rEeu47N1OrWMIoA" confirmationNeeded="false" hide="false" name="internalServer">
+    <contextParameter xmi:id="_IQNU8S4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Server" prompt="mysql_cif_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="172.31.12.250"/>
+    <contextParameter xmi:id="_IQNU8i4rEeu47N1OrWMIoA" comment="" name="mysql_cif_AdditionalParams" prompt="mysql_cif_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_IQNU8y4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Login" prompt="mysql_cif_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_IQNU9C4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Database" prompt="mysql_cif_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="cif"/>
+    <contextParameter xmi:id="_IQNU9S4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Password" prompt="mysql_cif_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:IKg+B/WrH+EEi6TODeBvbQ4RYWEgyQvLepAE1A9HLlAK+inqyG61"/>
+    <contextParameter xmi:id="_IQNU9i4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Port" prompt="mysql_cif_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_IQNU9y4rEeu47N1OrWMIoA" confirmationNeeded="false" hide="false" name="externalServer">
+    <contextParameter xmi:id="_IQNU-C4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Server" prompt="mysql_cif_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51.16.221.35"/>
+    <contextParameter xmi:id="_IQNU-S4rEeu47N1OrWMIoA" comment="" name="mysql_cif_AdditionalParams" prompt="mysql_cif_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_IQNU-i4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Login" prompt="mysql_cif_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_IQNU-y4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Database" prompt="mysql_cif_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="cif"/>
+    <contextParameter xmi:id="_IQNU_C4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Password" prompt="mysql_cif_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:SsFLffaNbo8pMVCONgGJ3kPIa2kk+xnT1BPfxZUCqUd4p7mOvhNO"/>
+    <contextParameter xmi:id="_IQNU_S4rEeu47N1OrWMIoA" comment="" name="mysql_cif_Port" prompt="mysql_cif_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+  </talendfile:ContextType>
+</xmi:XMI>

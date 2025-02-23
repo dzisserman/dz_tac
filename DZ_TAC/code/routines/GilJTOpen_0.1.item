@@ -1,0 +1,7 @@
+package routines;
+
+public class GilJTOpen {
+
+	public static void assureInclusion() {
+	}
+}

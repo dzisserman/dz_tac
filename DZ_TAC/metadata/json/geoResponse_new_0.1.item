@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_Q8TbYS3GEemax5DxajN3Kg" name="geoResponse_new" id="_na6joMjoEe6TDMJpfL3J0w" label="geoResponse_new" dataPackage="_Q8Tbgi3GEemax5DxajN3Kg" JSONFilePath="C:/StudentFiles/geoResponse.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_Q8TbYi3GEemax5DxajN3Kg" LimitBoucle="50" AbsoluteXPathQuery="$.items[*]">
+      <schemaTargets xmi:id="_xvqJ4MjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.countryCode" TagName="countryCode"/>
+      <schemaTargets xmi:id="_xvqJ4cjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.countryName" TagName="countryName"/>
+      <schemaTargets xmi:id="_xvqJ4sjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.stateCode" TagName="stateCode"/>
+      <schemaTargets xmi:id="_xvqJ48joEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.state" TagName="state"/>
+      <schemaTargets xmi:id="_xvqJ5MjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.county" TagName="county"/>
+      <schemaTargets xmi:id="_xvqJ5cjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.city" TagName="city"/>
+      <schemaTargets xmi:id="_xvqJ5sjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.district" TagName="district"/>
+      <schemaTargets xmi:id="_xvqJ58joEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.street" TagName="street"/>
+      <schemaTargets xmi:id="_xvqJ6MjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.postalCode" TagName="postalCode"/>
+      <schemaTargets xmi:id="_xvqJ6cjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].address.houseNumber" TagName="houseNumber"/>
+      <schemaTargets xmi:id="_ztVXgMjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].position.lat" TagName="lat"/>
+      <schemaTargets xmi:id="_ztVXgcjoEe6TDMJpfL3J0w" RelativeXPathQuery="$.items[*].position.lng" TagName="lng"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Q8Tbgi3GEemax5DxajN3Kg" name="default" dataManager="_Q8TbYS3GEemax5DxajN3Kg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Q8Tbgy3GEemax5DxajN3Kg" id="_ADOa4C3FEemax5DxajN3Kg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py8MjpEe6TDMJpfL3J0w" label="countryCode" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py8cjpEe6TDMJpfL3J0w" label="countryName" length="33" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py8sjpEe6TDMJpfL3J0w" label="stateCode" length="11" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py88jpEe6TDMJpfL3J0w" label="state" length="33" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py9MjpEe6TDMJpfL3J0w" label="county" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py9cjpEe6TDMJpfL3J0w" label="city" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py9sjpEe6TDMJpfL3J0w" label="district" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py98jpEe6TDMJpfL3J0w" label="street" length="33" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py-MjpEe6TDMJpfL3J0w" label="postalCode" length="27" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py-cjpEe6TDMJpfL3J0w" label="houseNumber" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py-sjpEe6TDMJpfL3J0w" label="lat" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A7py-8jpEe6TDMJpfL3J0w" label="lng" length="21" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

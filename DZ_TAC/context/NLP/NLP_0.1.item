@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CtX2IXHjEem3OLgmIc9NAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_CtX2InHjEem3OLgmIc9NAg" comment="Local" name="LOCAL_training_data_set" prompt="LOCAL_training_data_set?" promptNeeded="false" type="id_String" value="C:/data/NLP/training_data_set.conll"/>
+  <contextParameter xmi:id="_CtX2I3HjEem3OLgmIc9NAg" comment="Local" name="LOCAL_model_dir" prompt="LOCAL_model_dir?" promptNeeded="false" type="id_String" value="C:/data/NLP/model"/>
+  <contextParameter xmi:id="_CtX2JHHjEem3OLgmIc9NAg" comment="Local" name="LOCAL_labeled_text_output" prompt="LOCAL_labeled_text_output?" promptNeeded="false" type="id_String" value="C:/data/NLP/results"/>
+  <contextParameter xmi:id="_CtX2JXHjEem3OLgmIc9NAg" comment="Local" name="LOCAL_tweets_file" prompt="LOCAL_tweets_file?" promptNeeded="false" type="id_String" value="C:/data/NLP/twitter/tweets.txt"/>
+</talendfile:ContextType>

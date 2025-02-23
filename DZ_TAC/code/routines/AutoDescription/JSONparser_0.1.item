@@ -1,0 +1,76 @@
+package routines;
+import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import org.codehaus.jettison.json.JSONObject;
+import routines.system.JSONArray ;
+
+import com.ebay.marketplace.services.Product;
+
+
+
+
+public class JSONparser {
+    //            Parse JSON:
+
+    public List<Product> extractProductsFromJSON(String inputJson)
+    {
+    	List<Product> products = new ArrayList<Product>();
+    	String epid="";
+    	String catalogId="";
+        	try 
+        	{
+        		
+        		//get the whole result json
+        		JSONObject jsonObject = new JSONObject(inputJson);
+        		
+        		//get to the results part(products)
+        		JSONArray results = (JSONArray) jsonObject.get("results");
+        		
+        		//iterate over products - CURRENTLY ONLY ONE PRODUCT!!
+        		for (int i = 0 ; i<results.length();i++)
+        		{
+        			String properties = "";
+        			String id="";
+        			//get the product
+        			
+        			JSONObject prod = (JSONObject)results.get(i);
+        			//get the fields
+        			id  =  prod.get("id").toString();
+        			JSONObject fields =(JSONObject) prod.get("documentFields");
+        			JSONArray names = (JSONArray) fields.names();
+        			Iterator<?> keys = fields.keys();
+        			Product product = new Product();
+        			while (keys.hasNext())
+        			{
+        				String key = (String)keys.next();
+        				String value  = fields.optString(key);
+        				value = value.replace("[", "");
+        				value = value.replace("]", "");
+        				if(key.equals("EBAY_CATALOG_ID"))
+        					product.setCatalogId(value);
+        				if (key.equals("EPID"))
+        					product.setEpid(value);
+        				
+        				//TEMPORAL
+        				if (key.equals("SITE_ID") && key.length()>1)
+        					value  = "0";
+        				
+        				product.addProperty(key,value);
+        			}
+        			globalVar.mergeCastorAttributes(product.getCatalogId(),product.getPropertyNames());
+        			//System.out.println(product.getPropertyNames().toString());
+        			products.add(product);                                                                                
+        		}
+        } 	
+        catch (Exception  e) 
+        {
+        	e.printStackTrace();
+        }	
+        	return products;
+    }
+    	
+
+}

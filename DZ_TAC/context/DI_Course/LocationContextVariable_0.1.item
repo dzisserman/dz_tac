@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_CsCZYHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_CsCZYXHjEem3OLgmIc9NAg" comment="" name="RepoOutputDir" prompt="RepoOutputDir?" promptNeeded="false" type="id_String" value="&quot;C:/Program Files (x86)/Talend-Studio/Demo/TalendDemoFiles/talend_files_0.1/out/&quot;"/>
+    <contextParameter xmi:id="_CsCZYnHjEem3OLgmIc9NAg" comment="" name="RepoIntputDir" prompt="RepoIntputDir?" promptNeeded="false" type="id_String" value="&quot;C:/Program Files (x86)/Talend-Studio/Demo/TalendDemoFiles/talend_files_0.1/in/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CsCZY3HjEem3OLgmIc9NAg" confirmationNeeded="false" name="Production">
+    <contextParameter xmi:id="_CsCZZHHjEem3OLgmIc9NAg" comment="" name="RepoOutputDir" prompt="RepoOutputDir?" promptNeeded="false" type="id_String" value="&quot;C:/Program Files (x86)/Talend-Studio/Demo/TalendDemoFiles/talend_files_0.1/out/Production&quot;"/>
+    <contextParameter xmi:id="_CsCZZXHjEem3OLgmIc9NAg" comment="" name="RepoIntputDir" prompt="RepoIntputDir?" promptNeeded="false" type="id_String" value="&quot;C:/Program Files (x86)/Talend-Studio/Demo/TalendDemoFiles/talend_files_0.1/in/Production&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

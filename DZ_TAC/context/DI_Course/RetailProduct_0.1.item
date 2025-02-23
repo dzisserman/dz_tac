@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CxVJEHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_CxVJEXHjEem3OLgmIc9NAg" comment="" name="RetailProduct_RowSeparator" prompt="RetailProduct_RowSeparator?" promptNeeded="false" type="id_String" value="&quot;\n&quot;"/>
+  <contextParameter xmi:id="_CxVJEnHjEem3OLgmIc9NAg" comment="" name="RetailProduct_File" prompt="RetailProduct_File?" promptNeeded="false" type="id_File" value="C:/StudentFiles/RetailProducts.csv"/>
+  <contextParameter xmi:id="_CxVJE3HjEem3OLgmIc9NAg" comment="" name="RetailProduct_Encoding" prompt="RetailProduct_Encoding?" promptNeeded="false" type="id_String" value="US-ASCII"/>
+  <contextParameter xmi:id="_CxVJFHHjEem3OLgmIc9NAg" comment="" name="RetailProduct_FieldSeparator" prompt="RetailProduct_FieldSeparator?" promptNeeded="false" type="id_String" value="&quot;;&quot;"/>
+</talendfile:ContextType>

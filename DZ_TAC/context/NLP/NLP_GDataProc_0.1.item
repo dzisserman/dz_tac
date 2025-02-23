@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CtqxEHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_CtqxEXHjEem3OLgmIc9NAg" comment="Talend" name="G_DataProc_ProjectId" prompt="G_DataProc_ProjectId?" promptNeeded="false" type="id_String" value="engineering-152721"/>
+  <contextParameter xmi:id="_CtqxEnHjEem3OLgmIc9NAg" comment="Yours" name="G_DataProc_Jars" prompt="G_DataProc_Jars?" promptNeeded="false" type="id_String" value="gs://***/talend/jars"/>
+  <contextParameter xmi:id="_CtqxE3HjEem3OLgmIc9NAg" comment="Yours" name="G_DataProc_ClusterId" prompt="G_DataProc_ClusterId?" promptNeeded="false" type="id_String" value="***cluster-nlp"/>
+  <contextParameter xmi:id="_CtqxFHHjEem3OLgmIc9NAg" comment="Balk" name="G_DataProc_LocalPathToGoogleCredentials" prompt="G_DataProc_LocalPathToGoogleCredentials?" promptNeeded="false" type="id_String" value="C:/data/keys/google/Engineering-balk.json"/>
+  <contextParameter xmi:id="_CtqxFXHjEem3OLgmIc9NAg" comment="Talend" name="G_DataProc_Region" prompt="G_DataProc_Region?" promptNeeded="false" type="id_String" value="global"/>
+  <contextParameter xmi:id="_CtqxFnHjEem3OLgmIc9NAg" comment="Yours" name="G_DataProc_Temp" prompt="G_DataProc_Temp?" promptNeeded="false" type="id_String" value="gs://***/talend/tmp"/>
+</talendfile:ContextType>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_Cy-H0HHjEem3OLgmIc9NAg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_Cy-H0XHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Password" prompt="SIEBEL_EXT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:+/6efTt4q1GQ5ZPLbGVtjXBFpsl5m4f3IEc0LV5g7doV"/>
+    <contextParameter xmi:id="_Cy-H0nHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Server" prompt="SIEBEL_EXT_Server?" promptNeeded="false" type="id_String" value="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=dmprd01-scan.menora.co.il)(port=1521))(connect_data=(service_name=SIEBQA)))"/>
+    <contextParameter xmi:id="_Cy-H03HjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Schema" prompt="SIEBEL_EXT_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Cy-H1HHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Login" prompt="SIEBEL_EXT_Login?" promptNeeded="false" type="id_String" value="dscrm"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cy-H1XHjEem3OLgmIc9NAg" confirmationNeeded="false" name="NEW_PREPROD">
+    <contextParameter xmi:id="_Cy-H1nHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Password" prompt="SIEBEL_EXT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:iwESkNUifUT48Kk/yG1dlBgzLxvhu7czcFYBNQEfBke+"/>
+    <contextParameter xmi:id="_Cy-H13HjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Server" prompt="SIEBEL_EXT_Server?" promptNeeded="false" type="id_String" value="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=172.22.10.155)(port=1521))(connect_data=(service_name=SPROD)))"/>
+    <contextParameter xmi:id="_Cy-H2HHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Schema" prompt="SIEBEL_EXT_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Cy-H2XHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Login" prompt="SIEBEL_EXT_Login?" promptNeeded="false" type="id_String" value="dscrm"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cy-H2nHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PRE_PROD">
+    <contextParameter xmi:id="_Cy-H23HjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Password" prompt="SIEBEL_EXT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:WCdKYfGZxOv2zmIM2QVI/5HQpNxcY/MBIYHQEvdfZQ5d"/>
+    <contextParameter xmi:id="_Cy-H3HHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Server" prompt="SIEBEL_EXT_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Cy-H3XHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Schema" prompt="SIEBEL_EXT_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Cy-H3nHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Login" prompt="SIEBEL_EXT_Login?" promptNeeded="false" type="id_String" value="dscrm"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cy-H33HjEem3OLgmIc9NAg" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_Cy-H4HHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Password" prompt="SIEBEL_EXT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:NlqTK1zTdji9fI0x/cUBiHTmoL3Es4ABpjmn9FA4msrO"/>
+    <contextParameter xmi:id="_Cy-H4XHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Server" prompt="SIEBEL_EXT_Server?" promptNeeded="false" type="id_String" value="jdbc:oracle:thin:@(description=(address=(protocol=tcp)(host=dmprd01-scan.menora.co.il)(port=1521))(connect_data=(service_name=SPROD)))"/>
+    <contextParameter xmi:id="_Cy-H4nHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Schema" prompt="SIEBEL_EXT_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Cy-H43HjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Login" prompt="SIEBEL_EXT_Login?" promptNeeded="false" type="id_String" value="dscrm"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cy-H5HHjEem3OLgmIc9NAg" confirmationNeeded="false" name="QA">
+    <contextParameter xmi:id="_Cy-H5XHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Password" prompt="SIEBEL_EXT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:S1kV+6EuxrdPVHIx6McDooO4RcXX2mfgCsX5dlOpMAfj"/>
+    <contextParameter xmi:id="_Cy-H5nHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Server" prompt="SIEBEL_EXT_Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Cy-H53HjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Schema" prompt="SIEBEL_EXT_Schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Cy-H6HHjEem3OLgmIc9NAg" comment="" name="SIEBEL_EXT_Login" prompt="SIEBEL_EXT_Login?" promptNeeded="false" type="id_String" value="dscrm"/>
+  </talendfile:ContextType>
+</xmi:XMI>

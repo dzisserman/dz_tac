@@ -1,0 +1,8 @@
+/////Need to add the slf4j-log4j12-1.7.10.jar
+package routines;
+import org.apache.log4j.Logger;
+
+public class log4j {
+	public static final Logger logger = Logger.getLogger(log4j.class); 
+
+}

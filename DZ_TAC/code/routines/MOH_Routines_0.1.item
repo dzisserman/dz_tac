@@ -1,0 +1,32 @@
+package routines;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class MOH_Routines {
+
+	public static String ReverseNum(String s){
+		//if (s.isEmpty()) return s;
+	    String res = "";
+	    int base = 0;
+	    Matcher matcher = Pattern.compile("\\d+").matcher(s);
+	    while (!matcher.hitEnd()) {
+	        if (!matcher.find()) {
+	            return res + s.substring(base);
+	        }
+	        String pre = s.substring(base, matcher.start());
+	        base = matcher.end();
+	        String number = matcher.group();
+	        number = new StringBuilder(number).reverse().toString();
+	        res += pre + number;
+	    }
+	    return res;
+	}
+	
+	public static String ReverseStr(String source){
+			DataStage.ReverseStr(source);
+			return source;
+		}
+
+}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_-SpXIPBGEeqJdfYHbzN46A" confirmationNeeded="false" name="externalServer">
+    <contextParameter xmi:id="_-SpXIfBGEeqJdfYHbzN46A" comment="" name="TDS_Connection_username" prompt="TDS_Connection_username?" promptNeeded="false" repositoryContextId="" type="id_String" value="benif@aqurate.co.il"/>
+    <contextParameter xmi:id="_-SpXIvBGEeqJdfYHbzN46A" comment="" name="TDS_Connection_url" prompt="TDS_Connection_url?" promptNeeded="false" repositoryContextId="" type="id_String" value="http://10.4.0.160:19999/data-stewardship/"/>
+    <contextParameter xmi:id="_-SpXI_BGEeqJdfYHbzN46A" comment="" name="TDS_Connection_password" prompt="TDS_Connection_password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:0admytTpT+dwSuvNwBx7VGpu1Nwvpxz/HZIH1lVjiR6Z8A=="/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_-SpXJPBGEeqJdfYHbzN46A" confirmationNeeded="false" name="internalServer">
+    <contextParameter xmi:id="_-SpXJfBGEeqJdfYHbzN46A" comment="" name="TDS_Connection_username" prompt="TDS_Connection_username?" promptNeeded="false" repositoryContextId="" type="id_String" value="benif@aqurate.co.il"/>
+    <contextParameter xmi:id="_-SpXJvBGEeqJdfYHbzN46A" comment="" name="TDS_Connection_url" prompt="TDS_Connection_url?" promptNeeded="false" repositoryContextId="" type="id_String" value="http://10.4.0.160:19999/data-stewardship/"/>
+    <contextParameter xmi:id="_-SpXJ_BGEeqJdfYHbzN46A" comment="" name="TDS_Connection_password" prompt="TDS_Connection_password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:JdxWe36SycVmF5NRqwPLlapwkCsKTE8zKFNO0jZPt+m7fg=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_7wtTwPKUEeqKdqV-yxpgYQ" confirmationNeeded="false" hide="false" name="externalServer">
+    <contextParameter xmi:id="_7wtTwfKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Port" prompt="connection_mysql_amc_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_7wtTwvKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Password" prompt="connection_mysql_amc_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:VjPgRc2Z7GAV1ZO2OuwvpH1NAAvk8wsbaK6p573mKoZvVFxf7e2j"/>
+    <contextParameter xmi:id="_7wtTw_KUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_AdditionalParams" prompt="connection_mysql_amc_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false"/>
+    <contextParameter xmi:id="_7wtTxPKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Server" prompt="connection_mysql_amc_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51.16.221.35"/>
+    <contextParameter xmi:id="_7wtTxfKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Login" prompt="connection_mysql_amc_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_7wtTxvKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Database" prompt="connection_mysql_amc_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_7wtTx_KUEeqKdqV-yxpgYQ" confirmationNeeded="false" hide="false" name="internalServer">
+    <contextParameter xmi:id="_7wtTyPKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Port" prompt="connection_mysql_amc_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
+    <contextParameter xmi:id="_7wtTyfKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Password" prompt="connection_mysql_amc_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:0x9KJdeUDLOBhAwkWuZPCQcbIk+Q4xmBB5e0Tk3GnMdhQMc5/P7h"/>
+    <contextParameter xmi:id="_7wtTyvKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_AdditionalParams" prompt="connection_mysql_amc_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false"/>
+    <contextParameter xmi:id="_7wtTy_KUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Server" prompt="connection_mysql_amc_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="172.31.12.250"/>
+    <contextParameter xmi:id="_7wtTzPKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Login" prompt="connection_mysql_amc_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_7wtTzfKUEeqKdqV-yxpgYQ" comment="" name="connection_mysql_amc_Database" prompt="connection_mysql_amc_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="amc"/>
+  </talendfile:ContextType>
+</xmi:XMI>

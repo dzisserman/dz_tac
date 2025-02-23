@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="connection_mysql_amc_Login" prompt="connection_mysql_amc_Login?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="talend" internalId="_U1cWYM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Server" prompt="connection_mysql_amc_Server?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="172.31.12.250" internalId="_U1cWYc2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Port" prompt="connection_mysql_amc_Port?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="3306" internalId="_U1cWYs2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Password" prompt="connection_mysql_amc_Password?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_Password" value="enc:system.encryption.key.v1:3pd1pGQ3qkfOr47PAnDMYQMJaP+nGia6ZVtXcnM2NdU8ZEeSJZAn" internalId="_U1cWY82sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Database" prompt="connection_mysql_amc_Database?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="amc" internalId="_U1cWZM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_AdditionalParams" prompt="connection_mysql_amc_AdditionalParams?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false" internalId="_U1cWZc2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Server" prompt="connection_mysql_training_Server?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="172.31.12.250" internalId="_U1cWZs2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Login" prompt="connection_mysql_training_Login?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="talend" internalId="_U1cWZ82sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_AdditionalParams" prompt="connection_mysql_training_AdditionalParams?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false" internalId="_U1cWaM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Database" prompt="connection_mysql_training_Database?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="training" internalId="_U1cWac2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Password" prompt="connection_mysql_training_Password?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_Password" value="enc:system.encryption.key.v1:M1YwcexqPtA8sNSaZxDkOu6dJbTKTeTpGBUOCjCXbuyDHbcCs0z0" internalId="_U1cWas2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Port" prompt="connection_mysql_training_Port?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_Integer" value="3306" internalId="_U1cWa82sEe-1bqRZCNFlbw"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="internalServer">
+    <contextParameter comment="" name="connection_mysql_amc_Port" prompt="connection_mysql_amc_Port?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="3306" internalId="_U1cWbM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Password" prompt="connection_mysql_amc_Password?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_Password" value="enc:system.encryption.key.v1:AiMYyl+R7wYbozR6/MYopPwuECETYGVxV0axaZtcehhl3Q0QjYeD" internalId="_U1cWbc2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_AdditionalParams" prompt="connection_mysql_amc_AdditionalParams?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false" internalId="_U1cWbs2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Server" prompt="connection_mysql_amc_Server?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="172.31.12.250" internalId="_U1cWb82sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Login" prompt="connection_mysql_amc_Login?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="talend" internalId="_U1cWcM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Database" prompt="connection_mysql_amc_Database?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="amc" internalId="_U1cWcc2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Server" prompt="connection_mysql_training_Server?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="172.31.12.250" internalId="_U1cWcs2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Login" prompt="connection_mysql_training_Login?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="talend" internalId="_U1cWc82sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_AdditionalParams" prompt="connection_mysql_training_AdditionalParams?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false" internalId="_U1cWdM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Database" prompt="connection_mysql_training_Database?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="training" internalId="_U1cWdc2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Password" prompt="connection_mysql_training_Password?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_Password" value="enc:system.encryption.key.v1:cCawLoAGOnavK+3qWSlWhlh8QPxge3JTkBI9F7piP+g6I19SreXE" internalId="_U1cWds2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Port" prompt="connection_mysql_training_Port?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_Integer" value="3306" internalId="_U1cWd82sEe-1bqRZCNFlbw"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="externalServer">
+    <contextParameter comment="" name="connection_mysql_amc_Port" prompt="connection_mysql_amc_Port?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="3306" internalId="_U1cWeM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Password" prompt="connection_mysql_amc_Password?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_Password" value="enc:system.encryption.key.v1:nZxbFk+p4xn107z0h9Uu+VLLlr+mg3LQYee8Z2gYV5rt+iAokO2W" internalId="_U1cWec2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_AdditionalParams" prompt="connection_mysql_amc_AdditionalParams?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false" internalId="_U1c9cM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Server" prompt="connection_mysql_amc_Server?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="51.16.221.35" internalId="_U1c9cc2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Login" prompt="connection_mysql_amc_Login?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="talend" internalId="_U1c9cs2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Database" prompt="connection_mysql_amc_Database?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="amc" internalId="_U1c9c82sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Server" prompt="connection_mysql_training_Server?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="51.16.221.35" internalId="_U1c9dM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Login" prompt="connection_mysql_training_Login?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="talend" internalId="_U1c9dc2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_AdditionalParams" prompt="connection_mysql_training_AdditionalParams?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false" internalId="_U1c9ds2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Database" prompt="connection_mysql_training_Database?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_String" value="training" internalId="_U1c9d82sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Password" prompt="connection_mysql_training_Password?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_Password" value="enc:system.encryption.key.v1:P1N4uWeI8B+YQceJbqGowaM8v3kcJJdv14SipjWAtNxxJGvFec6t" internalId="_U1c9eM2sEe-1bqRZCNFlbw"/>
+    <contextParameter comment="" name="connection_mysql_training_Port" prompt="connection_mysql_training_Port?" promptNeeded="false" repositoryContextId="_UdojYC3iEemax5DxajN3Kg" type="id_Integer" value="3306" internalId="_U1c9ec2sEe-1bqRZCNFlbw"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:K5aT65fcBQ3s+apqvQPWI05ElZgdychcc7zY2XZb" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_xd1VwPKUEeqKdqV-yxpgYQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="TEXT" name="URL" value="" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_amc_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_amc_Port"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_amc_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.connection_mysql_amc_Database" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_amc_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_amc_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DtDNTP7EUWO80spnV4KN2LU0MBfOkXmLxoyyworAHWJu9VlAFzUFzEntnFnIS78hN141ylEH00IY7iiXDpwpMr0="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statCatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logCatcher&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowMeterCatcher&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMysqlConnection" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MySQL|ELT/Connections" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMysqlConnection" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\8.0.1\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_fmxdUMIIEeuMcrMwOQVhGw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_training_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_training_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_training_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_training_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_training_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tm4VGQ8twWkEGlHuyFbOLgG7gW8IcvtyXMXikukUpzFfGzC4fPxs+bhIvrTt4bvH3uScKLJqR6WO3lCb/9NIwTZYgNeOXQ=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+  </subjob>
+</talendfile:ProcessType>

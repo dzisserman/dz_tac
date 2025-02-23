@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_EO-CIGtIEemAU5El-kTrug" name="Policies" dataPackage="_EO-pMGtIEemAU5El-kTrug" Server="Localhost 127.0.0.1" FilePath="C:/Temp/Policies.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_EO-pMGtIEemAU5El-kTrug" name="default" dataManager="_EO-CIGtIEemAU5El-kTrug">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_EO-pMWtIEemAU5El-kTrug" id="_3_oXcGtHEemAU5El-kTrug" label="Policies">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EO-pMmtIEemAU5El-kTrug" label="CustomerId" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EO-pM2tIEemAU5El-kTrug" label="PolicyId" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EO-pNGtIEemAU5El-kTrug" label="Amount" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

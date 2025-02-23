@@ -1,0 +1,26 @@
+{
+  "itemId" : "_4yseEC4qEeu47N1OrWMIoA",
+  "contextList" : [ {
+    "contextName" : "internalServer",
+    "repoId" : "_IQELAC4rEeu47N1OrWMIoA",
+    "parameterList" : [ {
+      "id" : "_IQNU8S4rEeu47N1OrWMIoA",
+      "name" : "mysql_cif_Server"
+    }, {
+      "id" : "_IQNU8i4rEeu47N1OrWMIoA",
+      "name" : "mysql_cif_AdditionalParams"
+    }, {
+      "id" : "_IQNU8y4rEeu47N1OrWMIoA",
+      "name" : "mysql_cif_Login"
+    }, {
+      "id" : "_IQNU9C4rEeu47N1OrWMIoA",
+      "name" : "mysql_cif_Database"
+    }, {
+      "id" : "_IQNU9S4rEeu47N1OrWMIoA",
+      "name" : "mysql_cif_Password"
+    }, {
+      "id" : "_IQNU9i4rEeu47N1OrWMIoA",
+      "name" : "mysql_cif_Port"
+    } ]
+  } ]
+}

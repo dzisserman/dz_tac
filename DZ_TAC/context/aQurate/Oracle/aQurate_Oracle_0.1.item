@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_uRExJC10EeuT-qQ1TNOs8A" confirmationNeeded="false" hide="false" name="externalServer">
+    <contextParameter xmi:id="_uRExJS10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_AdditionalParams" prompt="aQurate_Oracle_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_uRExJi10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Server" prompt="aQurate_Oracle_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="172.31.8.31"/>
+    <contextParameter xmi:id="_uRExJy10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Port" prompt="aQurate_Oracle_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_uRExKC10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_ServiceName" prompt="aQurate_Oracle_ServiceName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="XEPDB1"/>
+    <contextParameter xmi:id="_uRExKS10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Login" prompt="aQurate_Oracle_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TALEND"/>
+    <contextParameter xmi:id="_uRExKi10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Password" prompt="aQurate_Oracle_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:qgK0CHn8er7ozG0s8FdpoCOHLio7emTwVHOIakpTld57tOc2Dvbm"/>
+    <contextParameter xmi:id="_uRExKy10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Schema" prompt="aQurate_Oracle_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_uREKEC10EeuT-qQ1TNOs8A" confirmationNeeded="false" hide="false" name="internalServer">
+    <contextParameter xmi:id="_uREKES10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_AdditionalParams" prompt="aQurate_Oracle_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_uREKEi10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Server" prompt="aQurate_Oracle_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="172.31.8.31"/>
+    <contextParameter xmi:id="_uREKEy10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Port" prompt="aQurate_Oracle_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_uRExIC10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_ServiceName" prompt="aQurate_Oracle_ServiceName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="XEPDB1"/>
+    <contextParameter xmi:id="_uRExIS10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Login" prompt="aQurate_Oracle_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TALEND"/>
+    <contextParameter xmi:id="_uRExIi10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Password" prompt="aQurate_Oracle_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:zJNv6y+cAXJwW96g+7XcAf2nlxyeG7ldGU39o1ql1286GFiMRxY5"/>
+    <contextParameter xmi:id="_uRExIy10EeuT-qQ1TNOs8A" comment="" name="aQurate_Oracle_Schema" prompt="aQurate_Oracle_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

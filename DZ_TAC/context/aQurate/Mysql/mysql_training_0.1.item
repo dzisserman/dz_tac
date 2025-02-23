@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_ki7vAG3hEeqolMKugdf3NA" confirmationNeeded="false" hide="false" name="externalServer">
+    <contextParameter xmi:id="_ki7vAW3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Port" prompt="connection_mysql_training_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3306"/>
+    <contextParameter xmi:id="_ki7vAm3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Password" prompt="connection_mysql_training_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:IjshjwauGQq70qNcXx4BMNDIpsUy4IYtLi4ldWGKX5NWfyFpym3u"/>
+    <contextParameter xmi:id="_ki7vA23hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Database" prompt="connection_mysql_training_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="training"/>
+    <contextParameter xmi:id="_ki7vBG3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Login" prompt="connection_mysql_training_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_ki7vBW3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Server" prompt="connection_mysql_training_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="51.16.221.35"/>
+    <contextParameter xmi:id="_ki7vBm3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_AdditionalParams" prompt="connection_mysql_training_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_ki7vB23hEeqolMKugdf3NA" confirmationNeeded="false" hide="false" name="internalServer">
+    <contextParameter xmi:id="_ki7vCG3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Port" prompt="connection_mysql_training_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3306"/>
+    <contextParameter xmi:id="_ki7vCW3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Password" prompt="connection_mysql_training_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:3Hc57zEVJ/cF7awmul+WGbmmneIkI5UFHMolRKpYT3qJUeOD9QRL"/>
+    <contextParameter xmi:id="_ki7vCm3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Database" prompt="connection_mysql_training_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="training"/>
+    <contextParameter xmi:id="_ki7vC23hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Login" prompt="connection_mysql_training_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend"/>
+    <contextParameter xmi:id="_ki7vDG3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_Server" prompt="connection_mysql_training_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="172.31.12.250"/>
+    <contextParameter xmi:id="_ki7vDW3hEeqolMKugdf3NA" comment="" name="connection_mysql_training_AdditionalParams" prompt="connection_mysql_training_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false"/>
+  </talendfile:ContextType>
+</xmi:XMI>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_xgMtQPKUEeqKdqV-yxpgYQ" name="mysql_amc" id="_xd1VwPKUEeqKdqV-yxpgYQ" label="mysql_amc" dataPackage="_8qGaF_KUEeqKdqV-yxpgYQ" ContextMode="true" ContextId="_7wZxwPKUEeqKdqV-yxpgYQ" contextName="internalServer" DatabaseType="MySQL" DriverJarPath="" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://10.4.0.168:3306/amc?noDatetimeStringSync=true&amp; useSSL=false" dbVersionString="MYSQL_8" Port="context.connection_mysql_amc_Port" Username="context.connection_mysql_amc_Login" Password="context.connection_mysql_amc_Password" ServerName="context.connection_mysql_amc_Server" DatasourceName="" FileFieldName="" SID="context.connection_mysql_amc_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" DBRootPath="" AdditionalParams="context.connection_mysql_amc_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_qTKQkV7gEeq7WNMgiA0MHQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_qTwtgF7gEeq7WNMgiA0MHQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_qTwtgV7gEeq7WNMgiA0MHQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_qTwtgl7gEeq7WNMgiA0MHQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_qTwtg17gEeq7WNMgiA0MHQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_qTwthF7gEeq7WNMgiA0MHQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_qTwthV7gEeq7WNMgiA0MHQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_qTwthl7gEeq7WNMgiA0MHQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_qTwth17gEeq7WNMgiA0MHQ" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_qTwtiF7gEeq7WNMgiA0MHQ" tag="DB ProductVersion" value="5.6.43"/>
+    <taggedValue xmi:id="_qTwtiV7gEeq7WNMgiA0MHQ" tag="DB IdentifierQuoteString" value="`"/>
+    <queries xmi:id="_1Syt4GEEEeqTz_xEGHJIcQ"/>
+    <cdcConns xmi:id="_gGB7wGExEeqpC5JUe2Yfyw">
+      <cdcTypes xmi:id="_gGB7wWExEeqpC5JUe2Yfyw" linkDB="_vb_mEDA5EempiuVd3XSszw" cdcConnection="_gGB7wGExEeqpC5JUe2Yfyw">
+        <subscribers xmi:id="_gGB7w2ExEeqpC5JUe2Yfyw" name="TSUBSCRIBERS" id="_gGB7wmExEeqpC5JUe2Yfyw" label="TSUBSCRIBERS" system="true">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gGB7xGExEeqpC5JUe2Yfyw" name="TALEND_CDC_TABLE_TO_WATCH" label="TALEND_CDC_TABLE_TO_WATCH" length="35" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gGB7xWExEeqpC5JUe2Yfyw" name="TALEND_CDC_SUBSCRIBER_NAME" label="TALEND_CDC_SUBSCRIBER_NAME" length="50" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gGB7xmExEeqpC5JUe2Yfyw" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date" nullable="false"/>
+        </subscribers>
+        <subscribers xmi:id="_jPDiMmExEeqpC5JUe2Yfyw" name="TCDC_Customers_Beni" id="_jPDiMGExEeqpC5JUe2Yfyw" label="TCDC_Customers_Beni">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiM2ExEeqpC5JUe2Yfyw" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiNGExEeqpC5JUe2Yfyw" name="TALEND_CDC_STATE" label="TALEND_CDC_STATE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiNWExEeqpC5JUe2Yfyw" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiNmExEeqpC5JUe2Yfyw" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiN2ExEeqpC5JUe2Yfyw" name="Name" label="Name" length="32" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+            <initialValue xmi:id="_jPDiOGExEeqpC5JUe2Yfyw"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiOWExEeqpC5JUe2Yfyw" name="Number" label="Number" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+            <initialValue xmi:id="_jPDiOmExEeqpC5JUe2Yfyw" body="0"/>
+          </feature>
+        </subscribers>
+        <subscribers xmi:id="_jPDiO2ExEeqpC5JUe2Yfyw" name="TCDC_VIEW_Customers_Beni" id="_jPDiMWExEeqpC5JUe2Yfyw" label="TCDC_VIEW_Customers_Beni">
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiPGExEeqpC5JUe2Yfyw" name="TALEND_CDC_SUBSCRIBERS_NAME" label="TALEND_CDC_SUBSCRIBERS_NAME" length="50" sourceType="VARCHAR" talendType="id_String" nullable="false"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiPWExEeqpC5JUe2Yfyw" name="TALEND_CDC_TYPE" label="TALEND_CDC_TYPE" length="1" sourceType="VARCHAR" talendType="id_String"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiPmExEeqpC5JUe2Yfyw" name="TALEND_CDC_CREATION_DATE" label="TALEND_CDC_CREATION_DATE" length="50" sourceType="DATE" talendType="id_Date"/>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiP2ExEeqpC5JUe2Yfyw" name="Name" label="Name" length="32" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+            <initialValue xmi:id="_jPDiQGExEeqpC5JUe2Yfyw"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiQWExEeqpC5JUe2Yfyw" name="Number" label="Number" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+            <initialValue xmi:id="_jPDiQmExEeqpC5JUe2Yfyw" body="0"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiQ2ExEeqpC5JUe2Yfyw" name="Street" label="Street" length="21" sourceType="VARCHAR" talendType="id_String">
+            <initialValue xmi:id="_jPDiRGExEeqpC5JUe2Yfyw"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiRWExEeqpC5JUe2Yfyw" name="City" label="City" length="14" sourceType="VARCHAR" talendType="id_String">
+            <initialValue xmi:id="_jPDiRmExEeqpC5JUe2Yfyw"/>
+          </feature>
+          <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jPDiR2ExEeqpC5JUe2Yfyw" name="State" label="State" length="2" sourceType="VARCHAR" talendType="id_String">
+            <initialValue xmi:id="_jPDiSGExEeqpC5JUe2Yfyw"/>
+          </feature>
+        </subscribers>
+      </cdcTypes>
+    </cdcConns>
+    <parameters xmi:id="_qTKQkl7gEeq7WNMgiA0MHQ" key="CONN_PARA_KEY_USERNAME" value="context.mysql_amc_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_8qGaF_KUEeqKdqV-yxpgYQ" name="amc" dataManager="_xgMtQPKUEeqKdqV-yxpgYQ"/>
+</xmi:XMI>

@@ -1,0 +1,228 @@
+package routines;
+import java.util.*;
+import java.util.regex.Pattern;
+
+
+public class DescriptionScoring {
+	
+	//public static String message;
+	//public static HashMap hm = new HashMap();
+	
+	public static void calculateScore (String RefID,String desc,String merchantName,int dealLang,String scoreFile) {
+		int score=100;
+		String message = "";
+		
+		int highLength = setListParam.GetMaxLength();
+		int lowLength = setListParam.GetMinLength();
+		//System.out.println("original length  : ["+desc.length()+"]");
+		//remove double spaces to one space
+		while (desc.indexOf("  ")>0) {
+			desc=desc.replace("  ", " ");
+		}
+		//System.out.println("post space length: ["+desc.length()+"]");			
+		//Length check; give 0 score for desc below low or above high length, reduce 1 point for every lack of 10% from the high length (scaler).
+		if (desc.length()>highLength) {
+			//score=0;
+			//message+="TOO LONG "+desc.length()+" chars";
+			//}
+		//cut the long description int he last 4000 chars
+			String shortenDesc=desc;
+			do {
+				shortenDesc = shortenDesc.substring(0,shortenDesc.lastIndexOf("."));
+				shortenDesc = shortenDesc.substring(0,shortenDesc.lastIndexOf(".")+1);
+				//System.out.println("post cut length  : ["+shortenDesc.length()+"]");
+			}
+			while (shortenDesc.length()>=highLength);
+			score=score-5;
+			message+="CUT TOO LONG, from "+desc.length()+" to "+shortenDesc.length() +" chars. ";
+			desc=shortenDesc;
+		}
+
+		if	(desc.length()<lowLength) {
+			score=0;
+		  	message+="TOO SHORT "+desc.length()+" chars";
+		}
+		else  {
+		  	int scaler = highLength/5;
+		  	score=score-(5-desc.length()/scaler);
+		}
+		//System.out.println("length:"+desc.length()+" Score[length]:"+score);
+		message+="\t";  
+		
+		String lowDesc = desc.toLowerCase();
+		
+//merchant name check - give 0 score if the merchant name exists in the description
+		if (desc.contains(merchantName)) {
+			score=0;
+		  	//System.out.println("Dscription contains the merchant name: "+merchantName);
+		  	message += merchantName;
+		}		  	
+		message+="\t";
+		  
+//ALL UPPER CHECK - give 0 score if the the entire description is in upper case
+		if (desc.toUpperCase().equals(desc)) {
+		  	score=0;
+		  	//System.out.println("Description written in upper case");
+		  	message += "all upper";
+		}
+		message+="\t";
+
+//check words to reduce 100 points				  
+
+			for (String s:setListParam.words100) {
+				String lowS = s.toLowerCase();
+				String regex = lowS+"[a-zA-Z]|[a-zA-Z]"+lowS;
+				Pattern p = Pattern.compile(regex);
+				if (lowDesc.contains(lowS) && !p.matcher(lowDesc).find()) {
+					score = 0;
+					int startCut = Math.max(0,lowDesc.indexOf(lowS)-20);
+		      	  	int endCut = Math.min(lowDesc.indexOf(lowS)+20,desc.length());
+		      	  	message += s+" ["+desc.substring(startCut,endCut)+"] ";
+		      	  	//System.out.println("found word: "+s);
+		      	  	break;
+				}
+			}
+					  
+		message+="\t";
+		  
+//check chars to reduce 100 points		  
+		for (String s:setListParam.chars100) {
+			if (desc.contains(s)) {
+				score = 0;
+				message += s;
+				//System.out.println("char word: "+s);
+				break;
+			}
+		}
+		message+="\t";
+		  
+//check words to reduce 10 points				  
+		
+			for (String s:setListParam.words10) {
+				String lowS = s.toLowerCase();
+				String Regex = lowS+"[a-zA-Z]|[a-zA-Z]"+lowS;
+				Pattern p = Pattern.compile(Regex);
+				if (lowDesc.contains(lowS) && !p.matcher(lowDesc).find()) {
+					score = score-10;
+					int startCut = Math.max(0,lowDesc.indexOf(s)-20);
+					int endCut = Math.min(lowDesc.indexOf(s)+20,desc.length());
+					message += s+" ["+desc.substring(startCut,endCut)+"]";
+				}
+			}	
+						  
+		message+="\t";		 
+		  
+//check chars to reduce 10 points		  
+		for (String s:setListParam.chars10) {
+			//System.out.print("checking CHARS10 "+s+"....");
+			if (desc.contains(s)) {
+				//System.out.println("true");
+				int counter = 0;
+				String tempDesc=desc;
+				int index = tempDesc.indexOf(s);
+				while (index != -1) {
+					counter++;
+					score = score-10;
+					tempDesc = tempDesc.substring(index + 1);
+					index = tempDesc.indexOf(s);
+				}
+				message += s+" ["+counter+"] ";
+			}
+			//else
+			//System.out.println("false");
+		}
+		message+="\t";
+		
+//check if start with 'product features' and reduce 10 points OR have more than 5 times one of the separators from separators param
+		if (lowDesc.startsWith("product features")) {
+			score=score-10;
+			message+="FEATURES LIST";
+		}
+		else for (String s:setListParam.seperators) {
+			if (desc.contains(s)) {
+				//System.out.println("true");
+				int counter = 0;
+				String tempDesc=desc;
+				int index = tempDesc.indexOf(s);
+				while (index != -1) {
+					counter++;
+					tempDesc = tempDesc.substring(index + 1);
+					index = tempDesc.indexOf(s);
+				}
+				if (counter>5) {
+					score=score-10;
+					message+="FEATURES LIST ["+s+"]";
+				}
+			}
+		}
+		message+="\t";
+		
+//check that the description does not ends with ... or start with ... or does not finished with ./!
+		if (lowDesc.startsWith("...") || lowDesc.startsWith(" ...")) {
+			score=score-30;
+			//System.out.println("start with ...");
+			message+="CUT OFF [beginning]";	
+		}
+		if (lowDesc.endsWith("...") || lowDesc.endsWith("... ")) {
+			do {
+	  			lowDesc = lowDesc.substring(0, lowDesc.length()-1);
+	  			//System.out.println(lowDesc);
+	  		}
+	  		while (lowDesc.endsWith(".") || lowDesc.endsWith(" "));	
+			//score=score-30;
+	  		//System.out.println("end with ...");
+	  		//message+="CUT OFF";	
+		}
+	  				
+	  	if (!lowDesc.endsWith(".") && !lowDesc.endsWith("!")) {
+	  		int a = lowDesc.lastIndexOf(".");
+	  		String cutDesc = desc.substring(0, a+1);
+	  		if	(cutDesc.length()<lowLength) {
+	  			score = score-30;
+	  			message+="CUT OFF [cut description was too short("+cutDesc.length()+" chars)]";
+	  		}
+	  		else {
+	  			score=score-5;	
+	  			message+="CUT OFF [cut to the last dot and OK]";
+	  			desc=cutDesc;
+	  		}
+	  	}
+	  	message+="\t";
+		
+//check foreign language (-100)			  //1=english...7=german....6=french		
+		int actualLang=1;
+		String foreinWord=(dealLang!=1)?"no german/ french wors in this text":"";
+		if (dealLang==7 || dealLang==1) {
+			for (String gc:setListParam.germanChars) {
+				if (lowDesc.contains(gc)) {
+					actualLang=7;
+					foreinWord+="["+gc+"] ";
+				}
+			}
+		}
+		if (dealLang==6 || dealLang==1) {
+			for (String fc:setListParam.frenchChars) {
+				if (lowDesc.contains(fc)) {
+					actualLang=6;
+					foreinWord+="["+fc+"] ";
+				}
+			}
+		}
+		//System.out.println("deal lang: "+dealLang+" Description lang:"+actualLang);
+		if (dealLang!= actualLang) {
+			score=0;
+			message+="Different Language ("+dealLang+"/"+actualLang+") words: "+foreinWord;
+		}
+		
+		if (score<1)
+			score=0;
+		Write_To_File.outwriteUTF8(scoreFile, RefID+"\t"+desc+"\t"+score+"\t"+ message+"\n");
+		// System.out.println("deal id: "+RefID);
+		// System.out.println("description: "+desc);
+		// System.out.println("score: "+score);
+		// System.out.println("error Msg: "+message);
+		// System.out.println("\n\n");
+			  
+		//return score;
+	}
+}

@@ -1,0 +1,30 @@
+package routines;
+
+public class Remove_None_Alpha_Numeric {
+
+	public static boolean removeNonAN(String string) 
+	{
+		char num;	
+	    if (string == null) 
+	    	return false;
+	    else {
+	    	for(num=0;num<48;num++) 
+	    		if (string.contains(String.valueOf(num)))
+				return true;
+	    	for(num=58;num<65;num++) 
+	    		if (string.contains(String.valueOf(num)))
+				return true;
+	    	for(num=91;num<97;num++) 
+	    		if (string.contains(String.valueOf(num)))
+				return true;
+	    	for(num=91;num<97;num++)  
+	    		if (string.contains(String.valueOf(num)))
+				return true;
+	    	for(num=123;num<256;num++)   
+	    		if (string.contains(String.valueOf(num)))
+				return true;
+	    	return false;
+	    	}
+	}
+	
+}

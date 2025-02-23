@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_Cpy9sHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_Cpy9sXHjEem3OLgmIc9NAg" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="&quot;190.1.19.26&quot;"/>
+    <contextParameter xmi:id="_Cpy9snHjEem3OLgmIc9NAg" comment="" name="EMAIL_RCV" prompt="EMAIL_RCV?" promptNeeded="false" type="id_String" value="&quot;EDW מפתחים &lt;edw-developers@menoramivt.net>;talbl@menora.co.il&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cpy9s3HjEem3OLgmIc9NAg" confirmationNeeded="false" name="NEW_PREPROD">
+    <contextParameter xmi:id="_Cpy9tHHjEem3OLgmIc9NAg" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="&quot;190.1.19.26&quot;"/>
+    <contextParameter xmi:id="_Cpy9tXHjEem3OLgmIc9NAg" comment="" name="EMAIL_RCV" prompt="EMAIL_RCV?" promptNeeded="false" type="id_String" value="&quot;EDW מפתחים &lt;edw-developers@menoramivt.net>;talbl@menora.co.il&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cpy9tnHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PRE_PROD">
+    <contextParameter xmi:id="_Cpy9t3HjEem3OLgmIc9NAg" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="&quot;190.1.19.26&quot;"/>
+    <contextParameter xmi:id="_Cpy9uHHjEem3OLgmIc9NAg" comment="" name="EMAIL_RCV" prompt="EMAIL_RCV?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cpy9uXHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_Cpy9unHjEem3OLgmIc9NAg" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="&quot;190.1.19.26&quot;"/>
+    <contextParameter xmi:id="_Cpy9u3HjEem3OLgmIc9NAg" comment="" name="EMAIL_RCV" prompt="EMAIL_RCV?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_Cpy9vHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="QA">
+    <contextParameter xmi:id="_Cpy9vXHjEem3OLgmIc9NAg" comment="" name="IP" prompt="IP?" promptNeeded="false" type="id_String" value="&quot;190.1.19.26&quot;"/>
+    <contextParameter xmi:id="_Cpy9vnHjEem3OLgmIc9NAg" comment="" name="EMAIL_RCV" prompt="EMAIL_RCV?" promptNeeded="false" type="id_String" value="&quot;EDW מפתחים &lt;edw-developers@menoramivt.net>;talbl@menora.co.il&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

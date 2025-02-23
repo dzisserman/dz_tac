@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_CqZaoHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="QA">
+    <contextParameter xmi:id="_CqZaoXHjEem3OLgmIc9NAg" comment="" name="P_SOURCE_SYSTEM_ID" prompt="P_SOURCE_SYSTEM_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZaonHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZao3HjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZapHHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_START_DATE" prompt="P_VALIDITY_START_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZapXHjEem3OLgmIc9NAg" comment="" name="P_SRC_OWNER" prompt="P_SRC_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZapnHjEem3OLgmIc9NAg" comment="" name="P_TRG_OWNER" prompt="P_TRG_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZap3HjEem3OLgmIc9NAg" comment="" name="P_SRC_TABLE" prompt="P_SRC_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaqHHjEem3OLgmIc9NAg" comment="" name="P_TRG_TABLE" prompt="P_TRG_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaqXHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_END_DATE" prompt="P_VALIDITY_END_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaqnHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaq3HjEem3OLgmIc9NAg" comment="" name="P_OWNER" prompt="P_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZarHHjEem3OLgmIc9NAg" comment="" name="P_JOB_NAME" prompt="P_JOB_NAME?" promptNeeded="false" type="id_String" value="jobName"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CqZarXHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_CqZarnHjEem3OLgmIc9NAg" comment="" name="P_SOURCE_SYSTEM_ID" prompt="P_SOURCE_SYSTEM_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZar3HjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZasHHjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZasXHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_START_DATE" prompt="P_VALIDITY_START_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZasnHjEem3OLgmIc9NAg" comment="" name="P_SRC_OWNER" prompt="P_SRC_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZas3HjEem3OLgmIc9NAg" comment="" name="P_TRG_OWNER" prompt="P_TRG_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZatHHjEem3OLgmIc9NAg" comment="" name="P_SRC_TABLE" prompt="P_SRC_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZatXHjEem3OLgmIc9NAg" comment="" name="P_TRG_TABLE" prompt="P_TRG_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZatnHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_END_DATE" prompt="P_VALIDITY_END_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZat3HjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZauHHjEem3OLgmIc9NAg" comment="" name="P_OWNER" prompt="P_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZauXHjEem3OLgmIc9NAg" comment="" name="P_JOB_NAME" prompt="P_JOB_NAME?" promptNeeded="false" type="id_String" value="jobName"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CqZaunHjEem3OLgmIc9NAg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_CqZau3HjEem3OLgmIc9NAg" comment="" name="P_SOURCE_SYSTEM_ID" prompt="P_SOURCE_SYSTEM_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZavHHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZavXHjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZavnHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_START_DATE" prompt="P_VALIDITY_START_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZav3HjEem3OLgmIc9NAg" comment="" name="P_SRC_OWNER" prompt="P_SRC_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZawHHjEem3OLgmIc9NAg" comment="" name="P_TRG_OWNER" prompt="P_TRG_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZawXHjEem3OLgmIc9NAg" comment="" name="P_SRC_TABLE" prompt="P_SRC_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZawnHjEem3OLgmIc9NAg" comment="" name="P_TRG_TABLE" prompt="P_TRG_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaw3HjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_END_DATE" prompt="P_VALIDITY_END_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaxHHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaxXHjEem3OLgmIc9NAg" comment="" name="P_OWNER" prompt="P_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaxnHjEem3OLgmIc9NAg" comment="" name="P_JOB_NAME" prompt="P_JOB_NAME?" promptNeeded="false" type="id_String" value="jobName"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CqZax3HjEem3OLgmIc9NAg" confirmationNeeded="false" name="NEW_PREPROD">
+    <contextParameter xmi:id="_CqZayHHjEem3OLgmIc9NAg" comment="" name="P_SOURCE_SYSTEM_ID" prompt="P_SOURCE_SYSTEM_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZayXHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZaynHjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZay3HjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_START_DATE" prompt="P_VALIDITY_START_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZazHHjEem3OLgmIc9NAg" comment="" name="P_SRC_OWNER" prompt="P_SRC_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZazXHjEem3OLgmIc9NAg" comment="" name="P_TRG_OWNER" prompt="P_TRG_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaznHjEem3OLgmIc9NAg" comment="" name="P_SRC_TABLE" prompt="P_SRC_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZaz3HjEem3OLgmIc9NAg" comment="" name="P_TRG_TABLE" prompt="P_TRG_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa0HHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_END_DATE" prompt="P_VALIDITY_END_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa0XHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa0nHjEem3OLgmIc9NAg" comment="" name="P_OWNER" prompt="P_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa03HjEem3OLgmIc9NAg" comment="" name="P_JOB_NAME" prompt="P_JOB_NAME?" promptNeeded="false" type="id_String" value="jobName"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CqZa1HHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PRE_PROD">
+    <contextParameter xmi:id="_CqZa1XHjEem3OLgmIc9NAg" comment="" name="P_SOURCE_SYSTEM_ID" prompt="P_SOURCE_SYSTEM_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZa1nHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CqZa13HjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa2HHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_START_DATE" prompt="P_VALIDITY_START_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa2XHjEem3OLgmIc9NAg" comment="" name="P_SRC_OWNER" prompt="P_SRC_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa2nHjEem3OLgmIc9NAg" comment="" name="P_TRG_OWNER" prompt="P_TRG_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa23HjEem3OLgmIc9NAg" comment="" name="P_SRC_TABLE" prompt="P_SRC_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa3HHjEem3OLgmIc9NAg" comment="" name="P_TRG_TABLE" prompt="P_TRG_TABLE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa3XHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_END_DATE" prompt="P_VALIDITY_END_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa3nHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa33HjEem3OLgmIc9NAg" comment="" name="P_OWNER" prompt="P_OWNER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CqZa4HHjEem3OLgmIc9NAg" comment="" name="P_JOB_NAME" prompt="P_JOB_NAME?" promptNeeded="false" type="id_String" value="jobName"/>
+  </talendfile:ContextType>
+</xmi:XMI>

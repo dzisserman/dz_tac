@@ -1,0 +1,24 @@
+{
+  "itemId" : "_1E71wBfdEd-9W7ACeG-ezw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_cvkAoBfNEd-JRsMNcNw12A",
+    "parameterList" : [ {
+      "id" : "_CwliMXHjEem3OLgmIc9NAg",
+      "name" : "inputPath"
+    }, {
+      "id" : "_CwliMnHjEem3OLgmIc9NAg",
+      "name" : "outputPath"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_cvkAoBfNEd-JRsMNcNw12A",
+    "parameterList" : [ {
+      "id" : "_CwliNHHjEem3OLgmIc9NAg",
+      "name" : "inputPath"
+    }, {
+      "id" : "_CwliNXHjEem3OLgmIc9NAg",
+      "name" : "outputPath"
+    } ]
+  } ]
+}

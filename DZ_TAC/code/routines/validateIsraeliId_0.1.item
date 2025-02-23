@@ -1,0 +1,67 @@
+package routines;
+
+public class validateIsraeliId {
+
+  public static boolean ValidateTZ(String tz) {
+    while (tz.length() < 9)
+      tz = "0" + tz;
+    //System.out.println(tz);
+    int tmpTZ = Integer.valueOf(tz);
+    int[] digits = new int[9];
+    int[] oneTwo = {
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1
+    };
+    int[] result = new int[9];
+    int i = 8;
+    while (tmpTZ > 0) {
+      digits[i] = tmpTZ % 10;
+      tmpTZ /= 10;
+      i--;
+    }
+    for (int j = 0; j < digits.length; j++) {
+      int tmpResult = (digits[j] * oneTwo[j]);
+      if (tmpResult > 9) {
+        tmpResult -= 9;
+      }
+      result[j] = tmpResult;
+    }
+    int iResult = 0;
+    for (int x = 0; x < result.length; x++) {
+      iResult += result[x];
+    }
+    if ((iResult % 10) == 0)
+      return true;
+    else
+      return false;
+  }
+
+  public static String generateValidTZ() {
+    String tz = "";
+    String result = "";
+      do {
+        tz = Numeric.random(111111111, 999999999).toString();
+      }
+      while (validateIsraeliId.ValidateTZ(tz) == false);
+      result = tz;
+    return result;
+  }
+
+  public static String generateValidITATZ() {
+	    String tz = "";
+	    String result = "";
+	      do {
+	        tz = Numeric.random(222000000, 222222222).toString();
+	      }
+	      while (validateIsraeliId.ValidateTZ(tz) == false);
+	      result = tz;
+	    return result;
+	  }
+}

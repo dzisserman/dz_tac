@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x1833ae4ec0f' V1='4' name='date' incarnation='11'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='date' description='A date or partial date (e.g. just year or year + month). There is no UTC offset. The format is a union of the schema types gYear...'>
+    <structNode t='150' idref='1'/>
+    <longDesc>A date or partial date (e.g. just year or year + month). There is no UTC offset. The format is a union of the schema types gYear, gYearMonth and date. Dates SHALL be valid dates.If the element is present, it must have either a @value, an @id, or extensions</longDesc>
+    <child t='167' id='3' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='3' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Attributes'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='31' elemType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='value'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='5' V167='21' inheritsFromIncarnation='27' inheritsFromTimestamp='0x1833ae4eba2' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' inheritsFromCopyRule='20' groupType='1' repHandlerStruct='' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='Element'>
+      <structNode t='150' idref='1'/>
+      <longDesc>Base definition for all elements in a resource.If the element is present, it must have a value for at least one of the defined elements, an @id referenced from the Narrative, or extensions</longDesc>
+      <savedDerivedCopy t='167' id='6' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' inheritsFromCopyRule='20' dataType='2' repHandlerStruct='' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='Element'>
+      </savedDerivedCopy>
+      <savedOrigCopyAtInheritsFrom t='167' id='7' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='Element' description='Base definition for all elements in a resource.If the element is present, it must have a value for at least one of the defined e...'>
+        <longDesc>Base definition for all elements in a resource.If the element is present, it must have a value for at least one of the defined elements, an @id referenced from the Narrative, or extensions</longDesc>
+      </savedOrigCopyAtInheritsFrom>
+    </child>
+  </rootElem>
+  <defaultRep t='172' id='8' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' unnamedElemsNamespace='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+  </defaultRep>
+  <namespaceList t='161' id='9' V161='1' namespaceUri='___osdtDummy___' V1='4'>
+  </namespaceList>
+  <namespaceList t='161' id='10' V161='1' namespaceUri='http://hl7.org/fhir' namespacePrefix='default' V1='4'>
+  </namespaceList>
+  <child t='162' id='11' V1='4' name='Representations'>
+    <child t='172' idref='8'/>
+  </child>
+  <child t='165' id='12' V1='4' name='Document Bindings'>
+    <child t='166' id='13' V166='5' docType='1' V1='4' name='/date'>
+      <elemNode t='167' idref='2'/>
+    </child>
+  </child>
+</root>

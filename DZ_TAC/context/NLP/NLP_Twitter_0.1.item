@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CuROAHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_CuROAXHjEem3OLgmIc9NAg" comment="Yours" name="TW_ACCESS_TOKEN" prompt="TW_ACCESS_TOKEN?" promptNeeded="false" type="id_String" value="*****"/>
+  <contextParameter xmi:id="_CuROAnHjEem3OLgmIc9NAg" comment="Yours" name="TW_ACCESS_TOKEN_SECRET" prompt="TW_ACCESS_TOKEN_SECRET?" promptNeeded="false" type="id_String" value="*******"/>
+  <contextParameter xmi:id="_CuROA3HjEem3OLgmIc9NAg" comment="Yours" name="TW_OWNER_ID" prompt="TW_OWNER_ID?" promptNeeded="false" type="id_String" value="******"/>
+  <contextParameter xmi:id="_CuROBHHjEem3OLgmIc9NAg" comment="Yours" name="TW_CONSUMER_KEY" prompt="TW_CONSUMER_KEY?" promptNeeded="false" type="id_String" value="******"/>
+  <contextParameter xmi:id="_CuROBXHjEem3OLgmIc9NAg" comment="Yours" name="TW_CONSUMER_SECRET" prompt="TW_CONSUMER_SECRET?" promptNeeded="false" type="id_String" value="******"/>
+  <contextParameter xmi:id="_CuROBnHjEem3OLgmIc9NAg" comment="" name="TW_SEARCH_KEY" prompt="TW_SEARCH_KEY?" promptNeeded="false" type="id_String" value="#craftbeeranddata"/>
+</talendfile:ContextType>

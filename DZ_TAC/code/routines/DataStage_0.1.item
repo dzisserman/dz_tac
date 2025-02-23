@@ -1,0 +1,1180 @@
+package routines;
+
+import java.lang.*;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.text.CharacterIterator;
+import java.text.Bidi;
+import routines.system.TypeConvert;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
+import java.io.*;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class DataStage {
+
+	public static boolean Alpha(String a) {
+		// Alpha (string)
+		// Desc:Checks if a string is alphabetic. If NLS is enabled, the result
+		// of this function is dependent on the currentlocale setting of the
+		// Ctype convention.
+		throw new NotImplementedException();
+	}
+
+	public static char Ascii(String a) {
+		// Ascii (string)
+		// Desc:Converts the values of characters in a string from EBCDIC to
+		// ASCII format.
+		throw new NotImplementedException();
+	}
+
+	public static byte Byte(double d) {
+		// Byte (expression)
+		// Desc:Returns a byte from an input numerical value.
+		throw new NotImplementedException();
+	}
+
+	public static int ByteLen(String d) {
+		// ByteLen (expression)
+		// Desc:Returns the length of an internal string in bytes, rather than
+		// characters.
+		throw new NotImplementedException();
+	}
+
+	public static int ByteType(byte value) {
+		// ByteType (value)
+		// Desc:Returns the function of a particular byte within an internal
+		// character code.
+		throw new NotImplementedException();
+	}
+
+	public static int ByteVal(String s) {
+		// ByteVal ( string [, byte_number ])
+		// Desc:Returns the internal value for a specified byte in a
+		// string.ByteVal
+		return ByteVal(s, 1);
+	}
+
+	public static int ByteVal(String s, int byte_number) {
+		// ByteVal ( string [, byte_number ])
+		// Desc:Returns the internal value for a specified byte in a
+		// string.ByteVal
+		throw new NotImplementedException();
+	}
+
+	public static void Change(String string, String substring,
+			String replacement) {
+		// Change (string, substring, replacement [,number [,start]])
+		// Desc:Replaces one or more instances of a substring.
+		Change(string, substring, replacement, 1, 1);
+	}
+
+	public static void Change(String string, String substring,
+			String replacement, int number) {
+		// Change (string, substring, replacement [,number [,start]])
+		// Desc:Replaces one or more instances of a substring.
+		Change(string, substring, replacement, number, 1);
+	}
+
+	public static void Change(String string, String substring,
+			String replacement, int number, int start) {
+		// Change (string, substring, replacement [,number [,start]])
+		// Desc:Replaces one or more instances of a substring.
+		throw new NotImplementedException();
+	}
+
+	public static char Char(int code) {
+		// Char (code)
+		// Desc:Generates an ASCII character from its numeric code value.
+		throw new NotImplementedException();
+	}
+
+	public static int Checksum(String string) {
+		// Checksum (string)
+		// Desc:Returns a checksum value for a string.
+		throw new NotImplementedException();
+	}
+
+	public static int Col1() {
+		// Col1 ()
+		// Desc:Returns the character position preceding the substring specified
+		// in the most recently executed Fieldfunction.
+		throw new NotImplementedException();
+	}
+
+	public static int Col2() {
+		// Col2 ()
+		// Desc:Returns the character position following the substring specified
+		// in the most recently executed Fieldfunction.
+		throw new NotImplementedException();
+	}
+
+	public static int Compare(String string1, String string2) {
+		// Compare (string1, string2 [, justification ])
+		// Desc:Compares two strings. If NLS is enabled, the result of this
+		// function depends on the current locale settingof the Collate
+		// convention.
+		return Compare(string1, string2, "L");
+	}
+
+	public static int Compare(String string1, String string2,
+			String justification) {
+		// Compare (string1, string2 [, justification ])
+		// Desc:Compares two strings. If NLS is enabled, the result of this
+		// function depends on the current locale settingof the Collate
+		// convention.
+		throw new NotImplementedException();
+	}
+
+	public static void Convert(char list[], char newlist[], String string) {
+		// Convert (list, new.list, string)
+		// Desc:Replaces every instance of specified characters in a string with
+		// substitute characters.170 Server Job Developer's Guide
+		throw new NotImplementedException();
+	}
+
+	public static int Count(String string, String substring) {
+		// Count (string, substring)
+		// Desc:Counts the number of times a substring occurs in a string.
+		throw new NotImplementedException();
+	}
+
+	public static int CRC32(String string) {
+		// CRC32 (string)
+		// Desc:Returns a 32-bit cyclic redundancy check value for a string.
+		throw new NotImplementedException();
+	}
+
+	public static String Date() {
+		// Date ()
+		// Desc:Returns a date in its internal system format.172 Server Job
+		// Developer's Guide
+		throw new NotImplementedException();
+	}
+	
+	public static Date DateConvert(String string) {
+		// DateConvert (string)
+		// Desc:Returns a date in "yyyy-MM-dd" format
+		
+		if (string == null || string.equals("0") || string.equals("") || TypeConvert.String2Integer(string)<3000){
+			/*return date.parseDate("yyyy-MM-dd", "1900-01-01");*/
+			return null;
+    	} else {
+    		java.util.Date finaDate;
+			finaDate = TypeConvert.String2Date(string.substring(0, 4)  + "-" 
+                                             + string.substring(4, 6)  + "-" 
+                                             + string.substring(6, 8), "yyyy-MM-dd");
+			return finaDate;		
+			}
+	}
+	
+	public static Date DateConvertEqual0(String string) {
+		// DateConvert (string)
+		// Desc:Returns a date in "yyyy-MM-dd" format
+		
+		if (string == null || string.equals("") || TypeConvert.String2Integer(string)<3000){
+			return date.parseDate("yyyy-MM-dd", "1800-01-01");
+			/*return null;*/
+    	} else {
+    		java.util.Date finaDate;
+			finaDate = TypeConvert.String2Date(string.substring(0, 4)  + "-" 
+                                             + string.substring(4, 6)  + "-" 
+                                             + string.substring(6, 8), "yyyy-MM-dd");
+			return finaDate;		
+			}
+	}
+
+	public static Date DateConvert_19000000(String string) {
+		// DateConvert (string)
+		// Desc:Returns a date in "yyyy-MM-dd" format
+		
+		if (string == null || string.equals("0") || string.equals("") || TypeConvert.String2Integer(string)<3000){
+    		/*return date.parseDate("yyyy-MM-dd", "1900-01-01");*/
+			return null;
+    	} else {
+    		int allDate = TypeConvert.String2Integer(string) + 19000000;
+    		java.util.Date finaDate;
+			finaDate = TypeConvert.String2Date(TypeConvert.int2String(allDate).substring(0, 4)  + "-" 
+                                             + TypeConvert.int2String(allDate).substring(4, 6)  + "-" 
+                                             + TypeConvert.int2String(allDate).substring(6, 8), "yyyy-MM-dd");
+			return finaDate;		
+			}
+	}
+	
+	public static int DCount(String string, char delimiter) {
+		// DCount (string, delimiter)
+		// Desc:Counts delimited fields in a string.
+		throw new NotImplementedException();
+	}
+
+	public static int Div(int dividend, int divisor) {
+		// Div (dividend, divisor)
+		// Desc:Divides one number by another.
+		throw new NotImplementedException();
+	}
+
+	public static String DownCase(String string) {
+		// DownCase (string)
+		// Desc:Converts uppercase letters in a string to lowercase. If NLS is
+		// enabled, the result of this function dependson the current locale
+		// setting of the Ctype convention.
+		 return string == null ? null : string.toLowerCase();
+	}
+
+	public static String DQuote(String string) {
+		// DQuote (string)
+		// Desc:Encloses a string in double quotation marks.
+		throw new NotImplementedException();
+	}
+
+	public static int Dtx(int number, int size) {
+		// Dtx (number [,size])
+		// Desc:Converts a decimal integer to hexadecimal.
+		throw new NotImplementedException();
+	}
+
+	public static String Ebcdic(String string) {
+		// Ebcdic (string)
+		// Desc:Converts the values of characters in a string from ASCII to
+		// EBCDIC format.
+		throw new NotImplementedException();
+	}
+
+	public static String Ereplace(String string, String substring,
+			String replacement) {
+		// Ereplace (string, substring, replacement [,number [,start]])
+		// Desc:Replaces one or more instances of a substring.
+		return Ereplace(string, substring, replacement, -1, -1);
+	}
+
+	public static String Ereplace(String string, String substring,
+			String replacement, int number) {
+		// Ereplace (string, substring, replacement [,number [,start]])
+		// Desc:Replaces one or more instances of a substring.
+		return Ereplace(string, substring, replacement, number, -1);
+	}
+
+	public static String Ereplace(String string, String substring,
+			String replacement, int number, int start) {
+		// Ereplace (string, substring, replacement [,number [,start]])
+		// Desc:Replaces one or more instances of a substring.
+		throw new NotImplementedException();
+	}
+
+	public static String Exchange(String string, char find_character,
+			char replace_character) {
+		// Exchange (string, find.character, replace.character)
+		// Desc:Replaces a character in a string.204 Server Job Developer's
+		// Guide
+		throw new NotImplementedException();
+	}
+
+	public static double Exp(double power) {
+		// Exp (power)
+		// Desc:Returns the value of "e" raised to the specified power.
+		throw new NotImplementedException();
+	}
+
+	public static String Field(String string, char delimiter, int instance) {
+		// Field (string, delimiter, instance [,number] )
+		// Desc:Returns delimited substrings in a string.
+		return Field(string, delimiter, instance, 1);
+	}
+
+	public static String Field(String string, char delimiter, int instance,	int number) {
+		// Field (string, delimiter, instance [,number] )
+		// Desc:Returns delimited substrings in a string.
+		throw new NotImplementedException();
+	}
+
+	public static String FieldStore(String string, char delimiter, int start,
+			int number, String new_fields) {
+		// FieldStore (string, delimiter, start, number, new.fields)
+		// Desc:Modifies character strings by inserting, deleting, or replacing
+		// fields separated by specified delimiters.
+		throw new NotImplementedException();
+	}
+
+	public static double FIX(int number) {
+		// FIX (number [,precision [,mode ]])
+		// Desc:Use the FIX function to convert a numeric value to a
+		// floating-point number with a specified precision.FIX lets you control
+		// the accuracy of computation by eliminating excess or unreliable data
+		// from numericresults. For example, a bank application that computes
+		// the interest accrual for customer accounts does notneed to deal with
+		// credits expressed in fractions of cents. An engineering application
+		// needs to throw awaydigits that are beyond the accepted reliability of
+		// computations.
+		return FIX(number, 4, 0);
+	}
+
+	public static double FIX(int number, int precision) {
+		// FIX (number [,precision [,mode ]])
+		// Desc:Use the FIX function to convert a numeric value to a
+		// floating-point number with a specified precision.FIX lets you control
+		// the accuracy of computation by eliminating excess or unreliable data
+		// from numericresults. For example, a bank application that computes
+		// the interest accrual for customer accounts does notneed to deal with
+		// credits expressed in fractions of cents. An engineering application
+		// needs to throw awaydigits that are beyond the accepted reliability of
+		// computations.
+		return FIX(number, precision, 0);
+	}
+
+	public static double FIX(int number, int precision, int mode) {
+		// FIX (number [,precision [,mode ]])
+		// Desc:Use the FIX function to convert a numeric value to a
+		// floating-point number with a specified precision.FIX lets you control
+		// the accuracy of computation by eliminating excess or unreliable data
+		// from numericresults. For example, a bank application that computes
+		// the interest accrual for customer accounts does notneed to deal with
+		// credits expressed in fractions of cents. An engineering application
+		// needs to throw awaydigits that are beyond the accepted reliability of
+		// computations.
+		throw new NotImplementedException();
+	}
+
+	public static String Fmt(String str, int leng, String chr, String side) {
+		if (side == "R")
+		{
+			for (int i =(str.length()+1); i<= leng; i++)
+				str += chr ;
+			return str;
+		}
+		else if (side == "L")
+		{
+			for (int i =(str.length()+1); i<= leng; i++)
+				str = chr + str ;
+			return str;
+		}
+		else return str;		
+	}
+	
+
+	public static String FmtDP(String string, String format) {
+		// FmtDP (string, format [, mapname])
+		// Desc:In NLS mode, formats data in display positions rather than by
+		// character length.
+		return FmtDP(string, format, null);
+	}
+
+	public static String FmtDP(String string, String format, String mapname) {
+		// FmtDP (string, format [, mapname])
+		// Desc:In NLS mode, formats data in display positions rather than by
+		// character length.
+		throw new NotImplementedException();
+	}
+
+	public static String Fold(String string, int length) {
+		// Fold (string, length)
+		// Desc:Folds strings to create substrings.
+		throw new NotImplementedException();
+	}
+
+	public static String FoldDP(String string, int length) {
+		// FoldDP (string, length [, mapname ])
+		// Desc:In NLS mode, folds strings to create substrings using character
+		// display positions.
+		return FoldDP(string, length, null);
+	}
+
+	public static String FoldDP(String string, int length, String mapname) {
+		// FoldDP (string, length [, mapname ])
+		// Desc:In NLS mode, folds strings to create substrings using character
+		// display positions.
+		throw new NotImplementedException();
+	}
+
+	public static String Iconv(String string, String code) {
+		// Iconv (string, code [ @VM code ] ... )
+		// Desc:Converts a string to an internal storage format.
+		throw new NotImplementedException();
+	}
+
+	public static int Index(String string, String substring, int instance) {
+		// Index (string, substring, instance)
+		// Desc:Returns the starting position of a substring.
+		throw new NotImplementedException();
+	}
+
+	public static int InMat() {
+		// InMat [(array)]
+		// Desc:Retrieves the dimensions of an array, or determines if a
+		// Dimension statement failed due to insufficientmemory. Not available
+		// in expressions.
+		throw new NotImplementedException();
+	}
+
+	public static int Int(double expression) {
+		// Int (expression)
+		// Desc:Returns the integer portion of a numeric expression.
+		throw new NotImplementedException();
+	}
+	
+	public static int Int(String expression) {
+		// Int (expression)
+		// Desc:Returns the integer portion of a numeric expression.
+		throw new NotImplementedException();
+	}
+
+	public static boolean IsNull(Object var) {
+		// IsNull (variable)
+		// Desc:Tests if a variable contains a null value.
+		throw new NotImplementedException();
+	}
+
+	public static String Left(String string, int index) {
+		// Left (string, n)
+		// Desc:Extracts a substring from the start of a string.
+		return string == null ? null : string.substring(0, Math.min(string.length(), index));
+	}
+
+	public static int Len(String string) {
+		// Len (string)
+		// Desc:Returns the number of characters in a string.
+		return string == null ? -1 : string.length();
+	}
+
+	public static int LenDP(String string) {
+		// LenDP (string [, mapname ])
+		// Desc:In NLS mode, returns the length of a string in display
+		// positions.
+		return LenDP(string, null);
+	}
+
+	public static int LenDP(String string, String mapname) {
+		// LenDP (string [, mapname ])
+		// Desc:In NLS mode, returns the length of a string in display
+		// positions.
+		throw new NotImplementedException();
+	}
+
+	public static double Ln(double expression) {
+		// Ln (expression)
+		// Desc:Calculates the natural logarithm of the value of an expression,
+		// using base "e".
+		throw new NotImplementedException();
+	}
+
+	public static int MatchField(String string, String pattern, int element) {
+		// MatchField (string, pattern, element)
+		// Desc:Searches a string and returns the part of it that matches a
+		// pattern element.
+		throw new NotImplementedException();
+	}
+
+	public static int Mod(int dividend, int divisor) {
+		// Mod (dividend, divisor)
+		// Desc:Returns the remainder after a division operation.
+		throw new NotImplementedException();
+	}
+
+	public static double Neg(double number) {
+		// Neg (number)
+		// Desc:Returns the inverse of a number.
+		throw new NotImplementedException();
+	}
+
+	public static boolean Not(boolean expression) {
+		// Not (expression)
+		// Desc:Inverts the logical result of an expression.
+		throw new NotImplementedException();
+	}
+
+	public static boolean Num(String expression) {
+		// Num (expression)
+		// Desc:Determines whether a string is numeric. If NLS is enabled, the
+		// result of this function depends on thecurrent locale setting of the
+		// Numeric convention.
+		throw new NotImplementedException();
+	}
+
+	public static String Oconv(String expression, String conversion) {
+		// Oconv (expression, conversion [@VM conversion] ...)
+		// Desc:Converts an expression to an output format.
+		throw new NotImplementedException();
+	}
+
+	public static double Pwr(double number, int power) {
+		// Pwr (number, power)
+		// Desc:Raises the value of a number to the specified power.
+		throw new NotImplementedException();
+	}
+
+	public static double REAL(double number) {
+		// REAL (number)
+		// Desc:Use the REAL function to convert number into a floating-point
+		// number without loss of accuracy. If numberevaluates to the null
+		// value, null is returned.
+		throw new NotImplementedException();
+	}
+
+	 // Start of 'Helper code' snippet.
+    public static String Reverse_String(String String_IN)
+    {
+     if(String_IN == null) 
+        return String_IN;
+    
+     int Input_Len = String_IN.length();
+    
+     Bidi allEnglish = new Bidi(String_IN,Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
+     if(allEnglish.isLeftToRight() || String_IN.length() < 2)
+        return String_IN;
+    
+     Bidi bidi = new Bidi(String_IN,Bidi.DIRECTION_RIGHT_TO_LEFT);
+     int start;
+     int end;
+    
+     StringBuilder result = new StringBuilder(Input_Len + 1);
+     int j = 0;
+     int countRun = bidi.getRunCount();
+     for ( int i = 0 ; i < countRun ; i++)
+     {
+        start = bidi.getRunStart(i);
+        end = bidi.getRunLimit(i);
+        for ( ; j < end ; j++)
+        {
+         char A = String_IN.charAt(j);
+         if (bidi.getLevelAt(j) % 2 == 1)
+         {
+            result.insert(0, A);
+         }
+         else
+         {
+            if (A == '-' && j > 0)
+            {
+            
+             if ( (int) String_IN.charAt(j - 1) >= 1488  && (int) String_IN.charAt(j - 1) <= 1514 )
+             {
+                result.insert(0,'-');
+             }
+            }else
+            {
+             if ( String_IN.charAt(end - 1) == '-')
+             {
+                if ( j < end - 1)
+                {
+                    result.insert(0,String_IN.substring(j,end -1 ));
+                    result.insert(0,String_IN.charAt(end - 1));
+                    j = end - 1;
+                }else
+                    result.insert(0,A);
+             }else{
+                 result.insert(0,String_IN.substring(j,end));
+                j = end - 1;
+    }}    }       }}
+    
+    
+        int index1 = result.indexOf("(");
+        int index2 = result.indexOf(")");
+    
+          while (index1 != -1 || index2 != -1)
+          {
+            if((index1 < index2 && index1 != -1) || index2 == -1)
+            {    
+                     result.replace(index1, index1 + 1, ")" );
+                       index1 = result.indexOf("(", index1 + 1);
+            }
+            else
+            {
+                     result.replace(index2, index2 + 1, "(" );
+                       index2 = result.indexOf(")", index2 + 1);
+            }
+          }
+    
+    return result.toString();
+    }
+	
+	public static String ReverseHeb(String String_IN)
+    {
+	     if(String_IN == null) 
+	        return String_IN;
+	    
+	     int Input_Len = String_IN.length();
+	    
+	     Bidi allEnglish = new Bidi(String_IN,Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
+	     if(allEnglish.isLeftToRight() || String_IN.length() < 2)
+	        return String_IN;
+	    
+	     Bidi bidi = new Bidi(String_IN,Bidi.DIRECTION_RIGHT_TO_LEFT);
+	     int start;
+	     int end;
+	    
+	     StringBuilder result = new StringBuilder(Input_Len + 1);
+	     int j = 0;
+	     int countRun = bidi.getRunCount();
+	     for ( int i = 0 ; i < countRun ; i++)
+	     {
+	        start = bidi.getRunStart(i);
+	        end = bidi.getRunLimit(i);
+	        for ( ; j < end ; j++)
+	        {
+	         char A = String_IN.charAt(j);
+	         if (bidi.getLevelAt(j) % 2 == 1)
+	         {
+	            result.insert(0, A);
+	         }
+	         else
+	         {
+	            if (A == '-' && j > 0)
+	            {
+	            
+	             if ( (int) String_IN.charAt(j - 1) >= 1488  && (int) String_IN.charAt(j - 1) <= 1514 )
+	             {
+	                result.insert(0,'-');
+	             }
+	            }else
+	            {
+	             if ( String_IN.charAt(end - 1) == '-')
+	             {
+	                if ( j < end - 1)
+	                {
+	                    result.insert(0,String_IN.substring(j,end -1 ));
+	                    result.insert(0,String_IN.charAt(end - 1));
+	                    j = end - 1;
+	                }else
+	                    result.insert(0,A);
+	             }else{
+	                 result.insert(0,String_IN.substring(j,end));
+	                j = end - 1;
+	    }}    }       }}
+	    
+	    
+	        int index1 = result.indexOf("(");
+	        int index2 = result.indexOf(")");
+	    
+	          while (index1 != -1 || index2 != -1)
+	          {
+	            if((index1 < index2 && index1 != -1) || index2 == -1)
+	            {    
+	                     result.replace(index1, index1 + 1, ")" );
+	                       index1 = result.indexOf("(", index1 + 1);
+	            }
+	            else
+	            {
+	                     result.replace(index2, index2 + 1, "(" );
+	                       index2 = result.indexOf(")", index2 + 1);
+	            }
+	          }
+	    
+	    return result.toString();
+	    }
+	
+	
+	public static String ReverseStr(String String_IN)
+    {
+	     if(String_IN == null) 
+	        return String_IN;
+	    
+	     int Input_Len = String_IN.length();
+	    
+	     Bidi allEnglish = new Bidi(String_IN,Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
+	     if(allEnglish.isLeftToRight() || String_IN.length() < 2)
+	        return String_IN;
+	    
+	     Bidi bidi = new Bidi(String_IN,Bidi.DIRECTION_RIGHT_TO_LEFT);
+	     int start;
+	     int end;
+	    
+	     StringBuilder result = new StringBuilder(Input_Len + 1);
+	     int j = 0;
+	     int countRun = bidi.getRunCount();
+	     for ( int i = 0 ; i < countRun ; i++)
+	     {
+	        start = bidi.getRunStart(i);
+	        end = bidi.getRunLimit(i);
+	        for ( ; j < end ; j++)
+	        {
+	         char A = String_IN.charAt(j);
+	         if (bidi.getLevelAt(j) % 2 == 1)
+	         {
+	            result.insert(0, A);
+	         }
+	         else
+	         {
+	            if (A == '-' && j > 0)
+	            {
+	            
+	             if ( (int) String_IN.charAt(j - 1) >= 1488  && (int) String_IN.charAt(j - 1) <= 1514 )
+	             {
+	                result.insert(0,'-');
+	             }
+	            }else
+	            {
+	             if ( String_IN.charAt(end - 1) == '-')
+	             {
+	                if ( j < end - 1)
+	                {
+	                    result.insert(0,String_IN.substring(j,end -1 ));
+	                    result.insert(0,String_IN.charAt(end - 1));
+	                    j = end - 1;
+	                }else
+	                    result.insert(0,A);
+	             }else{
+	                 result.insert(0,String_IN.substring(j,end));
+	                j = end - 1;
+	    }}    }       }}
+	    
+	    
+	        int index1 = result.indexOf("(");
+	        int index2 = result.indexOf(")");
+	    
+	          while (index1 != -1 || index2 != -1)
+	          {
+	            if((index1 < index2 && index1 != -1) || index2 == -1)
+	            {    
+	                     result.replace(index1, index1 + 1, ")" );
+	                       index1 = result.indexOf("(", index1 + 1);
+	            }
+	            else
+	            {
+	                     result.replace(index2, index2 + 1, "(" );
+	                       index2 = result.indexOf(")", index2 + 1);
+	            }
+	          }
+	    
+	    return result.toString();
+	    }
+		
+	public static String ReverseNum(String String_IN)
+    {
+	     if(String_IN == null) 
+	        return String_IN;
+	    
+	     int Input_Len = String_IN.length();
+	    
+	     Bidi allEnglish = new Bidi(String_IN,Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
+	     if(allEnglish.isLeftToRight() || String_IN.length() < 2)
+	        return String_IN;
+	    
+	     Bidi bidi = new Bidi(String_IN,Bidi.DIRECTION_RIGHT_TO_LEFT);
+	     int start;
+	     int end;
+	    
+	     StringBuilder result = new StringBuilder(Input_Len + 1);
+	     int j = 0;
+	     int countRun = bidi.getRunCount();
+	     for ( int i = 0 ; i < countRun ; i++)
+	     {
+	        start = bidi.getRunStart(i);
+	        end = bidi.getRunLimit(i);
+	        for ( ; j < end ; j++)
+	        {
+	         char A = String_IN.charAt(j);
+	         if (bidi.getLevelAt(j) % 2 == 1)
+	         {
+	            result.insert(0, A);
+	         }
+	         else
+	         {
+	            if (A == '-' && j > 0)
+	            {
+	            
+	             if ( (int) String_IN.charAt(j - 1) >= 1488  && (int) String_IN.charAt(j - 1) <= 1514 )
+	             {
+	                result.insert(0,'-');
+	             }
+	            }else
+	            {
+	             if ( String_IN.charAt(end - 1) == '-')
+	             {
+	                if ( j < end - 1)
+	                {
+	                    result.insert(0,String_IN.substring(j,end -1 ));
+	                    result.insert(0,String_IN.charAt(end - 1));
+	                    j = end - 1;
+	                }else
+	                    result.insert(0,A);
+	             }else{
+	                 result.insert(0,String_IN.substring(j,end));
+	                j = end - 1;
+	    }}    }       }}
+	    
+	    
+	        int index1 = result.indexOf("(");
+	        int index2 = result.indexOf(")");
+	    
+	          while (index1 != -1 || index2 != -1)
+	          {
+	            if((index1 < index2 && index1 != -1) || index2 == -1)
+	            {    
+	                     result.replace(index1, index1 + 1, ")" );
+	                       index1 = result.indexOf("(", index1 + 1);
+	            }
+	            else
+	            {
+	                     result.replace(index2, index2 + 1, "(" );
+	                       index2 = result.indexOf(")", index2 + 1);
+	            }
+	          }
+	    
+	    return result.toString();
+	    }
+	
+	public static String Right(String string, int index) {
+		// Right (string, n)
+		// Desc:Extracts a substring from the end of a string.
+		return string == null ? null : string.substring(string.length() - Math.min(string.length(), index));
+	}
+
+	public static int Rnd(int expression) {
+		// Rnd (expression)
+		// Desc:Generates a random number. Not available in expressions.
+		throw new NotImplementedException();
+	}
+
+	public static int Seq(char character) {
+		// Seq (character)
+		// Desc:Converts an ASCII character to its numeric code value.
+		throw new NotImplementedException();
+	}
+
+	public static String Soundex(String string) {
+		// Soundex (string)
+		// Desc:Generates codes that can be used to compare character strings
+		// based on how they sound.
+		throw new NotImplementedException();
+	}
+
+	public static String Space(int spaces) {
+		// Space (spaces)
+		// Desc:Returns a string containing the specified number of blank
+		// spaces.
+		throw new NotImplementedException();
+	}
+
+	public static double Sqrt(double number) {
+		// Sqrt (number)
+		// Desc:Returns the square root of a number.
+		throw new NotImplementedException();
+	}
+
+	public static String SQuote(String string) {
+		// SQuote (string)
+		// Desc:Encloses a string in single quotation marks.
+		throw new NotImplementedException();
+	}
+
+	public static int Status() {
+		// Status ( )
+		// Desc:Returns a code that provides information about how a preceding
+		// function was executed.
+		throw new NotImplementedException();
+	}
+
+	public static String Str(String string, int repeat) {
+		// Str (string, repeat)
+		// Desc:Composes a string by repeating the input string the specified
+		// number of times.
+		throw new NotImplementedException();
+	}
+
+	public static java.util.Date Time() {
+		// Time ( )
+		// Desc:Returns the internal system time.252 Server Job Developer's
+		// Guide
+		throw new NotImplementedException();
+	}
+
+	public static java.util.Date TimeDate() {
+		// TimeDate ( )
+		// Desc:Returns the system time and date. If NLS is enabled, the result
+		// of this function depends on the currentlocale setting of the Time
+		// convention.
+		throw new NotImplementedException();
+	}
+
+	public static String Trim(String string) {
+		// Trim (string)
+		// Desc:Trims unwanted characters from a string.
+		throw new NotImplementedException();
+	}
+
+	public static String TrimB(String string) {
+		// TrimB (string)
+		// Desc:Trims trailing spaces from a string.
+		throw new NotImplementedException();
+	}
+
+	public static String TrimF(String string) {
+		// TrimF (string)
+		// Desc:Trims leading spaces and tabs from a string.
+		throw new NotImplementedException();
+	}
+
+	public static String UniChar(int expression) {
+		// UniChar (expression)
+		// Desc:In NLS mode, generates a single character in Unicode format.
+		throw new NotImplementedException();
+	}
+
+	public static int UniSeq(String expression) {
+		// UniSeq (expression)
+		// Desc:In NLS mode, converts a Unicode character to its equivalent
+		// decimal value.256 Server Job Developer's Guide
+		throw new NotImplementedException();
+	}
+
+	public static String UpCase(String string) {
+		// UpCase (string)
+		// Desc:Changes lowercase letters in a string to uppercase. If NLS is
+		// enabled, the result of this function dependson the current locale
+		// setting of the Ctype convention.
+		return string == null ? null : string.toUpperCase();
+	}
+
+	public static void WEOFSeq(Object file) {
+		// WEOFSeq file.variable [On Error
+												// statements]
+		// Desc:Writes an end-of-file mark in an open sequential file.
+		throw new NotImplementedException();
+	}
+
+	public static void WriteSeq(String val) {
+		// WriteSeq line To file.variable
+		// Desc:Writes a new line to a file that is open for sequential
+		// processing and advances a pointer to the nextposition in the file.
+		throw new NotImplementedException();
+	}
+
+	public static void WriteSeqF(String val) {
+		// WriteSeqF line To file.variable
+		// Desc:Writes a new line to a file that is open for sequential
+		// processing, advances a pointer to the next positionin the file, and
+		// saves the file to disk.258 Server Job Developer's Guide
+		throw new NotImplementedException();
+	}
+
+	public static String Xtd(String string) {
+		// Xtd (string)
+		// Desc:Converts a hexadecimal string to decimal.
+		throw new NotImplementedException();
+	}
+	
+	//----------------------------------------------------------------
+	public static Object DSAttachJob (String JobName, int ErrorMode){
+		//JobHandle = DSAttachJob (JobName, ErrorMode)Desc:Use the DSAttachJob function to run a job in job control sequence. 
+		//When you attach this function to a job,a handle is returned that is used for addressing the job. There can only 
+		//be one handle open for aparticular job at any one time.
+			throw new NotImplementedException();
+		}
+		public static boolean DSCheckRoutine(String RoutineName){
+			//Found = DSCheckRoutine(RoutineName)Desc:Use the DSCheckRoutine function to see if a BASIC routine is catalogued, 
+			//either in the VOC as a callableitem, or in the catalog space.
+			throw new NotImplementedException();
+		}
+		static  int SDetachJob (Object JobHandle){
+			//ErrCode = DSDetachJob (JobHandle)Desc:Use the DSDetachJob function to get back a JobHandle parameter acquired by 
+			//the DSAttachJob function ifno further control of a job is required (allowing another job to become its controller). 
+			//It is not necessary tocall this function because attached jobs always detach automatically when the controlling job finishes.
+			throw new NotImplementedException();
+		}
+		static  void DSExecute (String ShellType, String Command, String Output, int SystemReturnCode){
+			//Call DSExecute (ShellType, Command, Output, SystemReturnCode)Desc:Use the DSExecute function to run a 
+			//DOS, UNIX, or engine command from a before-stage subroutine oran after-stage subroutine.
+			throw new NotImplementedException();
+		}
+		static  int DSGetCustInfo (Object JobHandle,String StageName,String CustInfoName, int InfoType){
+			//int DSGetCustInfo (JobHandle, StageName, CustInfoName, InfoType)Desc:Use the DSGetCustInfo 
+			//function to obtain information reported at the end of the execution of certainparallel stages. 
+			//At design time, specify the information collected and available to be interrogated. Forexample, 
+			//you can specify transformer stage information in the Triggers tab of the Transformer stageProperties dialog box.
+			throw new NotImplementedException();	
+		}
+		static  int DSGetJobInfo (Object JobHandle, int InfoType){
+			//int DSGetJobInfo (JobHandle, InfoType)Desc:Use the DSGetJobInfo function to obtain information about a job. 
+			//You can use this information generallyas well as for job control. The DSGetJobInfo function can refer to the 
+			//current job or a controlled job,depending on the value of the JobHandle variable.
+			throw new NotImplementedException();	
+		}
+		static  int DSGetLinkInfo (Object JobHandle, String StageName, String LinkName, int InfoType){
+			//int DSGetLinkInfo (JobHandle, StageName, LinkName, InfoType)Desc:Use the DSGetLinkInfo function to obtain 
+			//information about a link on an active stage. You can use thisinformation generally as well as for job control. 
+			//The DSGetLinkInfo function might reference either acontrolled job or the current job, depending on the value of the JobHandle variable.
+			throw new NotImplementedException();
+		}
+
+		static String DSGetLogEntry (Object JobHandle, int EventId){
+			//EventDetail = DSGetLogEntry (JobHandle, EventId)Desc:Use the DSGetLogEntry function to read the full 
+			//event details of a specific log event with the nameEventId.
+			throw new NotImplementedException();
+		}
+
+		static int DSGetLogEventIds (Object JobHandle,int RunNumber, String EventTypeFilter){
+			//IdList = DSGetLogEventIds (JobHandle, RunNumber, EventTypeFilter)Desc:Use the DSGetLogEventIds 
+			//function to return a list of log event IDs for a run of a job invocation.
+			throw new NotImplementedException();
+		}
+
+		static Object[] DSGetLogSummary (Object JobHandle,int EventType, String StartTime, String EndTime, int MaxNumber){
+			//SummaryArray = DSGetLogSummary (JobHandle, EventType, StartTime, EndTime, MaxNumber)Desc:Use the DSGetLogSummary 
+			//function to return a list of short log event details. The details that arereturned are determined by the settings 
+			//of certain filters. Use care with the settings of the filters,otherwise a large amount of information can be returned.
+			throw new NotImplementedException();
+		}
+		static  int DSGetNewestLogId (Object JobHandle,String EventType){
+			//EventId = DSGetNewestLogId (JobHandle, EventType)Desc:Use the DSGetNewestLogId function to get the ID of the most 
+			//recent log event in a category.
+			throw new NotImplementedException();
+		}
+		static  int DSGetParamInfo (Object JobHandle,String ParamName, String InfoType){
+			//int DSGetParamInfo (JobHandle, ParamName, InfoType)Desc:Use the DSGetParamInfo function to obtain information about 
+			//a parameter. You can use this informationfor job control. The DSGetParamInfo function might reference either a controlled 
+			//job or the current job,depending on the value of the JobHandle variable.
+			throw new NotImplementedException();
+		}
+		static  int DSGetProjectInfo (String InfoType){
+			//int DSGetProjectInfo (InfoType)Desc:Use the DSGetProjectInfo function to obtain information 
+			//about the current project.
+			throw new NotImplementedException();
+		}
+		static  int DSGetStageInfo (Object JobHandle,String StageName, int InfoType){
+			//int DSGetStageInfo (JobHandle, StageName, InfoType)Desc:Use the DSGetStageInfo function to 
+			//obtain information about a stage. You can use this information for jobcontrol. The DSGetStageInfo 
+			//function can refer to either the current job or a controlled job, depending onthe value of the JobHandle variable.
+			throw new NotImplementedException();
+		}
+		static  int DSGetVarInfo (Object JobHandle,String StageName, String VarName,int InfoType){
+			//int DSGetVarInfo (JobHandle, StageName, VarName, InfoType)Desc:Use the DSGetVarInfo function 
+			//to obtain information about variables that are used in transformer stages.
+			throw new NotImplementedException();
+		}
+		static int DSLogEvent (Object JobHandle, int EventType, String EventMsg){
+			//ErrCode = DSLogEvent (JobHandle, EventType, EventMsg)Desc:Use the DSLogEvent function to log 
+			//an event message to a job other than the current one. (Use theDSLogInfo, DSLogFatal, or DSLogWarn 
+			//function to log an event message to the current job.)
+			throw new NotImplementedException();
+		}
+		static void DSLogFatal (String Message, String CallingProgName){
+			//Call DSLogFatal (Message, CallingProgName)Desc:Use the DSLogFatal function to log a fatal error
+			//message in a job's log file and terminate the job.
+			throw new NotImplementedException();
+		}
+		static void DSLogInfo (String Message, String CallingProgName){
+			//Call DSLogInfo (Message, CallingProgName)Desc:Use the DSLogInfo function to log an information 
+			//message in a job's log file.
+			throw new NotImplementedException();
+		}
+		static void DSLogToController(String MsgString){
+			//Call DSLogToController(MsgString)Desc:Use the DSLogToController function to put an informational 
+			//message in the log file of the job controllinganother job.
+			throw new NotImplementedException();
+		}
+		static void DSLogWarn (String Message, String CallingProgName){
+			//Call DSLogWarn (Message, CallingProgName)Desc:Use the DSLogWarn function to log a warning 
+			//message in a job's log file.
+			throw new NotImplementedException();
+		}
+		static  String DSMakeJobReport(Object JobHandle, int  ReportLevel, String LineSeparator){
+			//ReportText = DSMakeJobReport(JobHandle, ReportLevel, LineSeparator)Desc:Use the DSMakeJobReport 
+			//function to generate a report describing the complete status of a valid attachedjob.
+			throw new NotImplementedException();
+		}
+		static  String DSMakeMsg(String Template, Object ArgList){
+			//FullText = DSMakeMsg(Template, ArgList)Desc:Use the DSMakeMsg function to insert arguments into 
+			//a message template. Optionally, you can use thefunction to look up a template ID in the standard 
+			//InfoSphere DataStage message file, and use anyreturned message template instead of that given to the routine.
+			throw new NotImplementedException();
+		}
+		static Object DSPrepareJob(Object JobHandle){
+			//JobHandle = DSPrepareJob(JobHandle)Desc:Use the DSPrepareJob function to ensure that a compiled 
+			//job is in the correct state to be run or validated.
+			throw new NotImplementedException();	
+		}
+		static int DSRunJob(Object JobHandle, int RunMode) {
+			//Use the DSRunJob function to start running a job. This call is asynchronous; the request is passed to the
+			//runtime engine, but you are not informed of its progress.
+			throw new NotImplementedException();	
+		}
+		static int DSSendMail(String Parameters){
+			//Reply = DSSendMail(Parameters)Desc:Use the DSSendMail function as an interface to a sendmail 
+			//program that is assumed to exist somewherein the search path of the current user (on the engine tier host).
+			//The function hides the different callinterfaces to various sendmail programs, and provides a simple interface for sending text.
+			throw new NotImplementedException();	
+		}
+		static int DSSetDisableJobHandler (Object JobHandle, boolean value){
+			//ErrCode = DSSetDisableJobHandler (JobHandle, value)Desc:Use the DSSetDisableJobHandler 
+			//function to enable or disable job-level message handling.
+			throw new NotImplementedException();	
+		}
+		static int DSSetDisableProjectHandler (Object ProjectHandle,boolean value){
+			//ErrCode = DSSetDisableProjectHandler (ProjectHandle, value)Desc:Use the DSSetDisableProjectHandler 
+			//function to enable or disable project-level message handling.
+			throw new NotImplementedException();	
+		}
+		static int DSSetGenerateOpMetaData (Object JobHandle,boolean value){
+			//ErrCode = DSSetGenerateOpMetaData (JobHandle, value)Desc:Use the DSSetGenerateOpMetaData function 
+			//to specify whether the job generates operational metadata ornot. This function overrides the default setting for the project.
+			throw new NotImplementedException();	
+		}
+		static int DSSetJobLimit (Object JobHandle,int LimitType,int LimitValue){
+			//ErrCode = DSSetJobLimit (JobHandle, LimitType, LimitValue)Desc:Use the DSSetJobLimit 
+			//function to override the row or warning limits from the controlling job. By defaulta 
+			//controlled job inherits any row or warning limits from the controlling job.
+			throw new NotImplementedException();	
+		}
+		static void DSSetJobQueue (int ErrCode, Object JobHandle, String QueueName){
+			//DSSetJobQueue (ErrCode, JobHandle, QueueName)Desc:Sets the workload management queue before running a job.
+			throw new NotImplementedException();	
+		}
+		static int DSSetParam (Object JobHandle, String ParamName,String ParamValue){
+			//ErrCode = DSSetParam (JobHandle, ParamName, ParamValue)Desc:Use the DSSetParam 
+			//function to specify job parameter values before you run a job. Any parameter that isnot set is defaulted.
+			throw new NotImplementedException();	
+		}
+		static void DSSetUserStatus (String UserStatus){
+			//Call DSSetUserStatus (UserStatus)Desc:Use the DSSetUserStatus routine to set a termination 
+			//code for interrogation by another job. This routineapplies only to the current job, and does 
+			//not take a JobHandle parameter.This routine can be used by any job in either a JobControl or After routine to set a termination code forinterrogation by another job. In fact, the code might be set at any point in the job, and the last setting isthe one that will be picked up at any time. So to be certain of getting the actual termination code for ajob the caller should use DSWaitForJob and DSGetJobInfo first, checking for a successful finishing status.This routine is defined as a subroutine not a function because there are no possible errors.
+			throw new NotImplementedException();	
+		}
+		static int DSStopJob (Object JobHandle){
+			//ErrCode = DSStopJob (JobHandle)Desc:Use the DSStopJob
+			//function to immediately send a stop request to the runtime engine. Use this functiononly 
+			//after a DSRunJob is issued.The call is asynchronous. If you need to know that the job has 
+			//actually stopped, you must callDSWaitForJob or use the Sleep statement and poll for DSGetJobStatus. The stop request is sent regardlessof the job's current status.
+			throw new NotImplementedException();	
+		}
+		static void DSTransformError (String Message, String TransformName){
+			//Call DSTransformError (Message, TransformName)Desc:Use the DSTransformerError 
+			//function to log a warning message to a job log file. This function is calledfrom transforms only.
+			throw new NotImplementedException();	
+		}
+		static String DSTranslateCode(int Code){
+			//Ans = DSTranslateCode(Code)Desc:Use the DSTranslateCode 
+			//function to convert a job control status or error code into an explanatory textmessage.
+			throw new NotImplementedException();	
+		}
+		static int DSWaitForFile(String Parameters){
+			//Reply = DSWaitForFile(Parameters)Desc:Use the DSWaitForFile function 
+			//to suspend a job until a named file either exists or does not exist.
+			throw new NotImplementedException();	
+		}
+		static int DSWaitForJob (Object JobHandle){
+			//ErrCode = DSWaitForJob (JobHandle)Desc:Use the DSWaitForJob function to 
+			//have a job or jobs wait before processing continues on the next BASICstatement.This function 
+			//is only valid if the current job has issued a DSRunJob on the given JobHandle(s). If one ofthe 
+			//jobs whose handles are in the list has finished, the DSWaitForJob function returns immediately. 
+			//Ifnone of the jobs has finished, the DSWaitForJob function returns as soon as one of the jobs finishes.
+			throw new NotImplementedException();	
+		}
+
+}

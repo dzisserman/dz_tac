@@ -1,0 +1,158 @@
+package routines;
+import java.util.List;
+import java.util.ArrayList;
+
+public class setListParam {
+	public static ArrayList<String> words100 = new ArrayList<String>();
+	public static ArrayList<String> words10 = new ArrayList<String>();
+	public static ArrayList<String> chars100 = new ArrayList<String>();
+	public static ArrayList<String> chars10 = new ArrayList<String>();
+	public static ArrayList<String> seperators = new ArrayList<String>();
+	public static ArrayList<String> stealthCatalogs = new ArrayList<String>();
+	
+	private static int liveProd;
+	private static int activeProd;
+	private static int liveWithDesc;
+	private static int activeWithDesc;
+	
+	private static int MinLength;
+	private static int MaxLength;
+	
+	private static int highThreshold;
+	private static int lowThreshold;
+	
+	public static ArrayList<String> germanChars = new ArrayList<String>();
+	public static ArrayList<String> frenchChars = new ArrayList<String>();
+	
+	private static String mailsSuccess;
+	private static String mailsFailure;
+	
+	public static void AddValueToList(ArrayList ListName,String value) {
+     	ListName.add(value);  
+     	
+    }
+    
+    public static void SetLenght(int Min,int Max) {
+    	MinLength=Min;
+    	MaxLength=Max;
+    }
+    
+    public static int GetMinLength () {
+//    	System.out.println("retrning min length "+MinLength);
+    	return MinLength;	
+    }
+    public static int GetMaxLength () {
+    	return MaxLength;	
+    }
+    
+    	
+    public static void SetThresholds(int high,int low) {
+    	highThreshold=high;
+    	lowThreshold=low;
+    }
+    public static int GetHighThreshold () {
+    	return highThreshold;
+    }
+    public static int GetLowThreshold () {
+    	return lowThreshold;
+    }
+    public static Object Getwords100() {
+    	return words100;
+    }
+    public static Object Getchars10() {
+    	return chars10;
+    }
+    public static void initiateForeinChars() {
+    	
+    	germanChars.add("ö");
+    	germanChars.add("ä");
+    	germanChars.add("Ä");
+    	germanChars.add("Ö");
+    	germanChars.add("ü");
+    	germanChars.add("Ü");
+    	germanChars.add("ß");
+    	germanChars.add(" von ");
+    	germanChars.add(" und ");
+    	germanChars.add(" dass ");
+    	germanChars.add(" aber ");
+    	germanChars.add(" denn ");
+    	germanChars.add(" doch ");
+    	germanChars.add(" entweder ");
+    	germanChars.add(" sonden ");
+    	germanChars.add(" dagengen ");
+    	germanChars.add(" seit ");
+    	germanChars.add(" sodass ");
+    	germanChars.add(" wenn ");
+    	
+    	frenchChars.add("à");
+    	frenchChars.add("è");
+    	frenchChars.add("é");
+    	frenchChars.add("É");
+//    	frenchChars.add(" de ");
+//    	frenchChars.add(" le ");
+//    	frenchChars.add(" la ");
+    	frenchChars.add(" pour ");
+    	frenchChars.add(" est ");
+    	frenchChars.add(" et ");
+    	frenchChars.add(" les ");
+    	frenchChars.add(" que ");
+    	frenchChars.add(" comme ");
+    	frenchChars.add(" ou ");
+    	frenchChars.add(" ni ");
+    	frenchChars.add(" donc ");
+    	frenchChars.add(" alors ");
+    	frenchChars.add(" aussi ");
+    	
+    }
+    
+    public static void initiateSeperators() {
+    	seperators.add(":");
+    	seperators.add(";");
+    	seperators.add("/");
+    	seperators.add("-");
+    }
+    
+    public static void setTotalProductsAmount(int live,int active) {
+    	liveProd = live;
+    	activeProd=active;
+    }
+    public static int getLiveProd() {
+    	return liveProd;
+    }
+    public static int getActiveProd() {
+    	return activeProd;
+    }
+    
+    public static void setProductsWithDescAmount(int live,int active) {
+    	liveWithDesc = live;
+    	activeWithDesc=active;
+    }
+    public static int getLiveWithDesc() {
+    	return liveWithDesc;
+    }
+    public static int getActiveWithDesc() {
+    	return activeWithDesc;
+    }
+    public static void setMailsSuccess (String mails) {
+    	mailsSuccess=mails;
+    }
+    public static String getMailsSuccess() {
+    	return mailsSuccess;
+    }
+    public static void setMailsFaliure (String mails) {
+    	mailsFailure=mails;
+    }
+    public static String getMailsFailure() {
+    	return mailsFailure;
+    }
+    
+    public static Boolean isStealthCatalg (String catId) {
+    	//Boolean isStealth=false;
+    	for (String s:stealthCatalogs) {
+			if (catId.equals(s)) {
+				return true;
+			}
+    	}
+    	return false;
+    }
+}

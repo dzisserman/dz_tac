@@ -1,0 +1,209 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+import routines.system.TypeConvert;
+
+public class replaceDefaultNullValues {
+	
+	public static String LeadingZero(String input){
+		if (input != null || !input.equals(null) || input.length() > 0 || !input.isEmpty() ){
+			while (input.length()>0 && input.charAt(0)=='0')
+			{
+				input = input.substring(1);
+			}
+		}
+		return input;
+	}
+	
+	public static String String2Minus(String input){
+		if (input == null || input.equals(null) || input.length() == 0 || input.isEmpty() ){
+			input = "-";
+				}
+		return input;
+	}
+	
+	public static String String2Minus1(String input){
+		if (input == null || input.equals(null) || input.length() == 0 || input.isEmpty() ){
+			input = "-1";
+				}
+		return input;
+	}
+	
+	public static Integer Numeric2Numeric(Integer input, Integer value){
+		if (input == null || input.equals(null)){
+			input = value;
+				}
+		return input;
+	}
+	
+	public static Long Numeric2Numeric(Long input, Integer value){
+		if (input == null || input.equals(null)){
+			input = TypeConvert.Integer2Long(value);
+				}
+		return input;
+	}
+	
+	public static BigDecimal Numeric2Numeric(BigDecimal input, Integer value){
+		if (input == null || input.equals(null)){
+			input = TypeConvert.Integer2BigDecimal(value);
+				}
+		return input;
+	}
+	
+	public static Float Numeric2Numeric(Float input, Integer value){
+		if (input == null || input.equals(null)){
+			input = TypeConvert.Integer2Float(value);
+				}
+		return input;
+	}
+	
+	public static Double Numeric2Numeric(Double input, Integer value){
+		if (input == null || input.equals(null)){
+			input = TypeConvert.Integer2Double(value);
+				}
+		return input;
+	}
+	
+	public static Integer Numeric2Numeric(Integer input){
+		if (input == null || input.equals(null)){
+			input = -1;
+				}
+		return input;
+	}
+	
+	public static Long Numeric2Minus1(Long input){
+		if (input == null || input.equals(null)){
+			input = -1L;
+				}
+		return input;
+	}
+	
+	public static BigDecimal Numeric2Minus1(BigDecimal input){
+		if (input == null || input.equals(null)){
+			input = new BigDecimal("-1");
+				}
+		return input;
+	}
+	
+	public static Float Numeric2Minus1(Float input){
+		if (input == null || input.equals(null)){
+			input = -1f;
+				}
+		return input;
+	}
+	
+	public static Double Numeric2Minus1(Double input){
+		if (input == null || input.equals(null)){
+			input = -1d;
+				}
+		return input;
+	}
+	
+	public static String String2Minus2(String input){
+		if (input == null || input.equals(null) || input.length() == 0 || input.isEmpty() ){
+			input = "-2";
+				}
+		return input;
+	}
+	
+	public static Integer Numeric2Minus2(Integer input){
+		if (input == null || input.equals(null)){
+			input = -2;
+				}
+		return input;
+	}
+	
+	public static Long Numeric2Minus2(Long input){
+		if (input == null || input.equals(null)){
+			input = -2L;
+				}
+		return input;
+	}
+	
+	public static BigDecimal Numeric2Minus2(BigDecimal input){
+		if (input == null || input.equals(null)){
+			input = new BigDecimal("-2");
+				}
+		return input;
+	}
+	
+	public static Float Numeric2Minus2(Float input){
+		if (input == null || input.equals(null)){
+			input = -2f;
+				}
+		return input;
+	}
+	
+	public static Double Numeric2Minus2(Double input){
+		if (input == null || input.equals(null)){
+			input = -2d;
+				}
+		return input;
+	}
+	
+	public static String String2String(String input, String value){
+		if (input == null || input.equals(null) || input.length() == 0 || input.isEmpty() ){
+			input = value;
+				}
+		return input;
+	}
+	
+	public static Integer Numeric2Zero(Integer input){
+		if (input == null || input.equals(null)){
+			input = 0;
+				}
+		return input;
+	}
+	
+	public static Long Numeric2Zero(Long input){
+		if (input == null || input.equals(null)){
+			input = 0L;
+				}
+		return input;
+	}
+	
+	public static BigDecimal Numeric2Zero(BigDecimal input){
+		if (input == null || input.equals(null)){
+			input = new BigDecimal("0");
+				}
+		return input;
+	}
+	
+	public static Float Numeric2Zero(Float input){
+		if (input == null || input.equals(null)){
+			input = 0f;
+				}
+		return input;
+	}
+	
+	public static Double Numeric2Zero(Double input){
+		if (input == null || input.equals(null)){
+			input = 0d;
+				}
+		return input;
+	}
+	
+	public static Date StartDate (Date input){
+		if (input == null || input.equals(null)){
+			input = date.parseDate("yyyy-MM-dd","1800-01-01");
+				}
+		return input;
+	}
+	
+	public static Date EndDate (Date input){
+		if (input == null || input.equals(null)){
+			input = date.parseDate("yyyy-MM-dd","2999-12-31");
+				}
+		return input;
+	}
+	
+	public static String String2Empty(String input){
+		if (input == null || input.equals(null) || input.length() == 0 || input.isEmpty() ){
+			input = "";
+				}
+		return input;
+	}
+
+}

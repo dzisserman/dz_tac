@@ -1,0 +1,44 @@
+package routines;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class PrintAndLog {
+
+    public static void PrintAndLog(String path,String text)
+    {
+       
+        System.out.println(text);
+        try{
+    	    // Create file 
+    	    FileWriter fstream = new FileWriter(path,true);
+    	    BufferedWriter out = new BufferedWriter(fstream);
+    	    out.write(text+"\n");
+    	    //Close the output stream
+    	    out.close();
+    	    }catch (Exception e){//Catch exception if any
+    	    System.err.println("Error: " + e.getMessage());
+    	    }
+    }
+    public static void PrintAndLog(String path,String text,boolean newLine)
+    {
+       
+        if (newLine)
+        	System.out.println(text);
+        else
+        	System.out.print(text);
+        try{
+    	    // Create file 
+    	    FileWriter fstream = new FileWriter(path,true);
+    	    BufferedWriter out = new BufferedWriter(fstream);
+    	    out.write(text);
+    	    if (newLine)
+    	    	out.write("\n");
+    	        	    	
+    	    //Close the output stream
+    	    out.close();
+    	    }catch (Exception e){//Catch exception if any
+    	    System.err.println("Error: " + e.getMessage());
+    	    }
+    }
+}

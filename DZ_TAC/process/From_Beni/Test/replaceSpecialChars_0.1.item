@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="mysql_Server" prompt="mysql_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.4.0.80" internalId="_wx1jUOE5EeqnIo3a5i3TDQ"/>
+    <contextParameter comment="" name="mysql_Login" prompt="mysql_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend" internalId="_wx1jUeE5EeqnIo3a5i3TDQ"/>
+    <contextParameter comment="" name="mysql_Database" prompt="mysql_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="training" internalId="_wx1jUuE5EeqnIo3a5i3TDQ"/>
+    <contextParameter comment="" name="mysql_Password" prompt="mysql_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ZekUM7WRtRZwfodiSOeQuycoRdj7eLl6uDQW8doR28TxKQ==" internalId="_wx1jU-E5EeqnIo3a5i3TDQ"/>
+    <contextParameter comment="" name="mysql_AdditionalParams" prompt="mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true" internalId="_wx1jVOE5EeqnIo3a5i3TDQ"/>
+    <contextParameter comment="" name="mysql_Port" prompt="mysql_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306" internalId="_wx1jVeE5EeqnIo3a5i3TDQ"/>
+    <contextParameter comment="" name="connection_mysql_amc_AdditionalParams" prompt="connection_mysql_amc_AdditionalParams?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="noDatetimeStringSync=true&amp; useSSL=false" internalId="_VyAjIPM9EeqG5YnypzQ_iw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Port" prompt="connection_mysql_amc_Port?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="3306" internalId="_VyAjIfM9EeqG5YnypzQ_iw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Server" prompt="connection_mysql_amc_Server?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="172.31.12.250" internalId="_VyAjIvM9EeqG5YnypzQ_iw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Database" prompt="connection_mysql_amc_Database?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="amc" internalId="_VyAjI_M9EeqG5YnypzQ_iw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Password" prompt="connection_mysql_amc_Password?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_Password" value="enc:system.encryption.key.v1:/Eryim7qYs6q6G+3qNHzXOrLvgT6Sa3eqvNSCa5LzHVk8n764LHW" internalId="_VyAjJPM9EeqG5YnypzQ_iw"/>
+    <contextParameter comment="" name="connection_mysql_amc_Login" prompt="connection_mysql_amc_Login?" promptNeeded="false" repositoryContextId="_7wZxwPKUEeqKdqV-yxpgYQ" type="id_String" value="talend" internalId="_VyAjJfM9EeqG5YnypzQ_iw"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:K5aT65fcBQ3s+apqvQPWI05ElZgdychcc7zY2XZb" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="true"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/8.0.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.connection_mysql_amc_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.connection_mysql_amc_Port" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.connection_mysql_amc_Database" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="context.connection_mysql_amc_Database" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.connection_mysql_amc_AdditionalParams" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.connection_mysql_amc_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DtDNTP7EUWO80spnV4KN2LU0MBfOkXmLxoyyworAHWJu9VlAFzUFzEntnFnIS78hN141ylEH00IY7iiXDpwpMr0=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statCatcher&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logCatcher&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;flowMeterCatcher&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_xd1VwPKUEeqKdqV-yxpgYQ"/>
+    <routinesParameter id="_jrmf8Nx9EeSjqYUxcSCzLg" name="MITI"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;¡&#x9;¦&#x9;¨&#x9;¯&#x9;´&#x9;¸&#x9;¿&#x9;ǃ&#x9;¢&#x9;£&#x9;¤&#x9;¥&#x9;±&#x9;«&#x9;»&#x9;×&#x9;÷&#x9;ǀ&#x9;ǁ&#x9;ǂ&#x9;§&#x9;©&#x9;¬&#x9;®&#x9;°&#x9;µ&#x9;¶&#x9;·&#x9;¼&#x9;½&#x9;¾&#x9;¹&#x9;ƻ&#x9;²&#x9;³&#x9;Ƽ&#x9;ƽ&#x9;ª&#x9;Á&#x9;á&#x9;À&#x9;à&#x9;Ȧ&#x9;ȧ&#x9;Â&#x9;â&#x9;Ä&#x9;ä&#x9;Ǎ&#x9;ǎ&#x9;Ă&#x9;ă&#x9;Ā&#x9;ā&#x9;Ã&#x9;ã&#x9;Å&#x9;å&#x9;Ą&#x9;ą&#x9;Ⱥ&#x9;Ǡ&#x9;ǡ&#x9;Ǻ&#x9;ǻ&#x9;Ǟ&#x9;ǟ&#x9;Ȁ&#x9;ȁ&#x9;Ȃ&#x9;ȃ&#x9;Æ&#x9;æ&#x9;Ǽ&#x9;ǽ&#x9;Ǣ&#x9;ǣ&#x9;Ḃ&#x9;ḃ&#x9;ƀ&#x9;Ƀ&#x9;Ɓ&#x9;Ƃ&#x9;ƃ&#x9;Ƅ&#x9;ƅ&#x9;Ć&#x9;ć&#x9;Ċ&#x9;ċ&#x9;Ĉ&#x9;ĉ&#x9;Č&#x9;č&#x9;Ç&#x9;ç&#x9;Ȼ&#x9;ȼ&#x9;Ƈ&#x9;ƈ&#x9;Ɔ&#x9;Ḋ&#x9;ḋ&#x9;Ď&#x9;ď&#x9;Đ&#x9;đ&#x9;Ƌ&#x9;ƌ&#x9;Ɗ&#x9;Ð&#x9;ð&#x9;ƍ&#x9;ȸ&#x9;Ǳ&#x9;ǲ&#x9;ǳ&#x9;Ǆ&#x9;ǅ&#x9;ǆ&#x9;Ɖ&#x9;ȡ&#x9;É&#x9;é&#x9;È&#x9;è&#x9;Ė&#x9;ė&#x9;Ê&#x9;ê&#x9;Ë&#x9;ë&#x9;Ě&#x9;ě&#x9;Ĕ&#x9;ĕ&#x9;Ē&#x9;ē&#x9;Ę&#x9;ę&#x9;Ȩ&#x9;ȩ&#x9;Ɇ&#x9;ɇ&#x9;Ȅ&#x9;ȅ&#x9;Ȇ&#x9;ȇ&#x9;Ǝ&#x9;ǝ&#x9;Ə&#x9;Ɛ&#x9;Ȝ&#x9;ȝ&#x9;Ḟ&#x9;ḟ&#x9;Ƒ&#x9;ƒ&#x9;Ǵ&#x9;ǵ&#x9;Ġ&#x9;ġ&#x9;Ĝ&#x9;ĝ&#x9;Ǧ&#x9;ǧ&#x9;Ğ&#x9;ğ&#x9;Ģ&#x9;ģ&#x9;Ǥ&#x9;ǥ&#x9;Ɠ&#x9;Ɣ&#x9;Ĥ&#x9;ĥ&#x9;Ȟ&#x9;ȟ&#x9;Ħ&#x9;ħ&#x9;ƕ&#x9;Ƕ&#x9;ı&#x9;Í&#x9;í&#x9;Ì&#x9;ì&#x9;İ&#x9;Î&#x9;î&#x9;Ï&#x9;ï&#x9;Ǐ&#x9;ǐ&#x9;Ĭ&#x9;ĭ&#x9;Ī&#x9;ī&#x9;Ĩ&#x9;ĩ&#x9;Į&#x9;į&#x9;Ɨ&#x9;Ȉ&#x9;ȉ&#x9;Ȋ&#x9;ȋ&#x9;Ɩ&#x9;Ĳ&#x9;ĳ&#x9;ȷ&#x9;Ĵ&#x9;ĵ&#x9;ǰ&#x9;Ɉ&#x9;ɉ&#x9;ĸ&#x9;Ǩ&#x9;ǩ&#x9;Ķ&#x9;ķ&#x9;Ƙ&#x9;ƙ&#x9;Ĺ&#x9;ĺ&#x9;Ŀ&#x9;ŀ&#x9;Ľ&#x9;ľ&#x9;Ļ&#x9;ļ&#x9;ƚ&#x9;Ƚ&#x9;Ł&#x9;ł&#x9;ƛ&#x9;Ǉ&#x9;ǈ&#x9;ǉ&#x9;ȴ&#x9;Ṁ&#x9;ṁ&#x9;Ɯ&#x9;Ń&#x9;ń&#x9;Ǹ&#x9;ǹ&#x9;Ň&#x9;ň&#x9;Ñ&#x9;ñ&#x9;Ņ&#x9;ņ&#x9;Ɲ&#x9;ŉ&#x9;ƞ&#x9;Ƞ&#x9;Ǌ&#x9;ǋ&#x9;ǌ&#x9;ȵ&#x9;Ŋ&#x9;ŋ&#x9;º&#x9;Ó&#x9;ó&#x9;Ò&#x9;ò&#x9;Ȯ&#x9;ȯ&#x9;Ô&#x9;ô&#x9;Ö&#x9;ö&#x9;Ǒ&#x9;ǒ&#x9;Ŏ&#x9;ŏ&#x9;Ō&#x9;ō&#x9;Õ&#x9;õ&#x9;Ǫ&#x9;ǫ&#x9;Ő&#x9;ő&#x9;Ɵ&#x9;Ø&#x9;ø&#x9;Ȱ&#x9;ȱ&#x9;Ȫ&#x9;ȫ&#x9;Ǿ&#x9;ǿ&#x9;Ȭ&#x9;ȭ&#x9;Ǭ&#x9;ǭ&#x9;Ȍ&#x9;ȍ&#x9;Ȏ&#x9;ȏ&#x9;Ơ&#x9;ơ&#x9;Ƣ&#x9;ƣ&#x9;Œ&#x9;œ&#x9;Ȣ&#x9;ȣ&#x9;Ṗ&#x9;ṗ&#x9;Ƥ&#x9;ƥ&#x9;Ɋ&#x9;ɋ&#x9;ȹ&#x9;Ʀ&#x9;Ŕ&#x9;ŕ&#x9;Ř&#x9;ř&#x9;Ŗ&#x9;ŗ&#x9;Ɍ&#x9;ɍ&#x9;Ȑ&#x9;ȑ&#x9;Ȓ&#x9;ȓ&#x9;Ś&#x9;ś&#x9;Ṡ&#x9;ṡ&#x9;Ŝ&#x9;ŝ&#x9;Š&#x9;š&#x9;Ş&#x9;ş&#x9;Ș&#x9;ș&#x9;ȿ&#x9;Ʃ&#x9;Ƨ&#x9;ƨ&#x9;ƪ&#x9;ß&#x9;ſ&#x9;ẛ&#x9;Ṫ&#x9;ṫ&#x9;Ť&#x9;ť&#x9;Ţ&#x9;ţ&#x9;Ƭ&#x9;ƭ&#x9;ƫ&#x9;Ʈ&#x9;Ț&#x9;ț&#x9;Ⱦ&#x9;ȶ&#x9;Þ&#x9;þ&#x9;Ŧ&#x9;ŧ&#x9;Ú&#x9;ú&#x9;Ù&#x9;ù&#x9;Û&#x9;û&#x9;Ü&#x9;ü&#x9;Ǔ&#x9;ǔ&#x9;Ŭ&#x9;ŭ&#x9;Ū&#x9;ū&#x9;Ũ&#x9;ũ&#x9;Ů&#x9;ů&#x9;Ų&#x9;ų&#x9;Ű&#x9;ű&#x9;Ʉ&#x9;Ǘ&#x9;ǘ&#x9;Ǜ&#x9;ǜ&#x9;Ǚ&#x9;ǚ&#x9;Ǖ&#x9;ǖ&#x9;Ȕ&#x9;ȕ&#x9;Ȗ&#x9;ȗ&#x9;Ư&#x9;ư&#x9;Ʊ&#x9;Ʋ&#x9;Ʌ&#x9;Ẃ&#x9;ẃ&#x9;Ẁ&#x9;ẁ&#x9;Ŵ&#x9;ŵ&#x9;Ẅ&#x9;ẅ&#x9;ƿ&#x9;Ƿ&#x9;Ý&#x9;ý&#x9;Ỳ&#x9;ỳ&#x9;Ŷ&#x9;ŷ&#x9;ÿ&#x9;Ÿ&#x9;Ȳ&#x9;ȳ&#x9;Ɏ&#x9;ɏ&#x9;Ƴ&#x9;ƴ&#x9;Ź&#x9;ź&#x9;Ż&#x9;ż&#x9;Ž&#x9;ž&#x9;Ƶ&#x9;ƶ&#x9;Ȥ&#x9;ȥ&#x9;ɀ&#x9;Ʒ&#x9;Ǯ&#x9;ǯ&#x9;Ƹ&#x9;ƹ&#x9;ƺ&#x9;ƾ&#x9;Ɂ&#x9;ɂ Ø   Ł&quot;;&#xA;&#xA;&#xA;String foo2 = Normalizer.normalize(foo, Normalizer.Form.NFD);&#xA;String foo3 = foo2.replaceAll(&quot;[^\\p{ASCII}]&quot;, &quot;&quot;);&#xA;&#xA;System.out.println(foo3);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.text.Normalizer;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo =&quot;לת ביבא 54 tel aviv&quot;;&#xA;&#xA;System.out.println(MITI.ReverseStr(foo));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.text.Normalizer;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

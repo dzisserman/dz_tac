@@ -1,0 +1,726 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.text.Bidi;
+import java.util.Date;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import routines.system.TypeConvert;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class MITI {
+
+	/*INFORMATICA*/
+	
+	/** 
+	 * When you configure the PowerCenter Integration Service to run in ASCII mode, the ASCII function returns the
+	 * numeric ASCII value of the first character of the string passed to the function.
+	 * @param ch
+	 * @return
+	 */
+	public static int ASCII(String ch){ throw new NotImplementedException();}
+
+	/**
+	 * Returns the smallest integer greater than or equal to the numeric value passed to this function. For example, if you
+	 * pass 3.14 to CEIL, the function returns 4. If you pass 3.98 to CEIL, the function returns 4. Likewise, if you pass
+ 	 * -3.17 to CEIL, the function returns -3.
+	 * @param n
+	 * @return
+	 */
+	public static double CEIL(Numeric n){ throw new NotImplementedException();}
+	
+	/**
+	 * When you configure the PowerCenter Integration Service to run in ASCII mode, CHRCODE returns the numeric
+	 * ASCII value of the first character of the string passed to the function. ASCII values fall in the range 0 to 255.
+	 * @param ch
+	 * @return
+	 */
+	public static Integer CHRCODE(String ch){ throw new NotImplementedException();}
+	
+	/**
+	 * Returns the largest integer less than or equal to the numeric value you pass to this function. For example, if you
+	 * pass 3.14 to FLOOR, the function returns 3. If you pass 3.98 to FLOOR, the function returns 3. Likewise, if you
+	 * pass -3.17 to FLOOR, the function returns -4.
+	 * @param n
+	 * @return
+	 */
+	public static boolean equals(Object a, Object b) {
+		
+		if(a!=null && b!=null) {
+			if(a instanceof String && b instanceof String) {				
+				return a.equals(b);
+			}
+			return a==b;
+		}
+		return a==b;
+	}
+	
+	public static boolean equals(Number a, Number b) {
+		
+		if(a!=null && b!=null) {
+			return a.doubleValue() == b.doubleValue();
+		}
+		return a==b;
+	}
+	
+	public static boolean equals(boolean a, boolean b) {		
+		
+		return a==b;
+	}
+	
+	public static Numeric FLOOR(Numeric n){ throw new NotImplementedException();}
+	
+	/**
+	 * Returns whether a string is a valid number.
+	 * @param s
+	 * @return TRUE (1) if the row is a valid number.
+	 * FALSE (0) if the row is not a valid number.
+	 * NULL if a value in the expression is NULL
+	 */
+	public static String Fmt(String str, int leng, String chr, String side) {
+		
+		if (side == "R")
+		{
+			if (str == null || str.equals(null) || str.length() == 0 || str.isEmpty() )
+				{
+				str = "";
+					}
+			for (int i =(str.length()+1); i<= leng; i++)
+				str = chr + str ;
+			return str;
+		}
+		else if (side == "L")
+		{
+			if (str == null || str.equals(null) || str.length() == 0 || str.isEmpty() )
+			{
+			str = "";
+				}
+			for (int i =(str.length()+1); i<= leng; i++)
+				str += chr ;
+			return str;
+		}
+		else return str;		
+	}
+	
+	//DataStage' fmt function 
+		//http://www.ibm.com/support/knowledgecenter/SSZJPZ_9.1.0/com.ibm.swg.im.iis.ds.basic.doc/topics/r_dsbasic_FMT_function.html
+	public static String fmt(String string, String format) {
+		throw new NotImplementedException();
+	}	
+	
+	public static String fmt(Numeric numeric, String format) {
+		throw new NotImplementedException();
+	}
+
+	public static String IIF(boolean condition, String ifpos, String ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static byte IIF(boolean condition, byte ifpos, byte ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static short IIF(boolean condition, short ifpos, short ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static int IIF(boolean condition, int ifpos, int ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static long IIF(boolean condition, long ifpos, long ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static float IIF(boolean condition, float ifpos, float ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static double IIF(boolean condition, double ifpos, double ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static boolean IIF(boolean condition, boolean ifpos, boolean ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static char IIF(boolean condition, char ifpos, char ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+
+	public static BigDecimal IIF(boolean condition, BigDecimal ifpos, BigDecimal ifneg) {
+		return condition ? ifpos : ifneg;
+	}
+	
+	public static Boolean IS_NUMBER(String str){ 
+		for (char c : str.toCharArray())
+	    {
+	        if (!Character.isDigit(c)) return false;
+	    }
+	    return true;
+	}
+	
+	/**
+	 * Returns the logarithm of a numeric value. Most often, you use this function to analyze scientific data rather than
+	 * business data.
+	 * @param base
+	 * @param exp
+	 * @return
+	 */
+	public static Double LOG(Double base ,Double  exp){ return Math.log(exp) / Math.log(base);}
+	
+	/**
+	 * Removes blanks or characters from the beginning of a string. 
+	 * @param str 
+	 * @param trim_set Any string value. Passes the characters you want to remove from the beginning of the first
+	 * string. You can enter any valid transformation expression. You can also enter a character
+	 * string. However, you must enclose the characters you want to remove from the beginning
+	 * of the string within single quotation marks, for example, 'abc'. If you omit the second string,
+	 * the function removes any blanks from the beginning of the string.
+	 * LTRIM is case sensitive. For example, if you want to remove the 'A' character from the
+	 * string 'Alfredo', you would enter 'A', not 'a'.
+	 * @return
+	 */
+	public static String LTRIM(String string) {
+    	if (string == null){
+    		return null;
+    	} else {
+	        char[] val = string.toCharArray();
+	        int st = 0;
+	        int len = val.length;
+	        while ((st < len) && (val[st] <= ' ')) {
+	            st++;
+	        }
+	        return string.substring(st);
+    	}
+	}
+	
+	public static String LTRIM(String str ,String trim_set ){
+		throw new NotImplementedException();}
+	
+	public static Double NullToZero(Double o ){ throw new NotImplementedException();}
+	
+	public static String replaceNullDefaultString(String input){
+		if (input == null || input.equals(null) || input.length() == 0 || input.isEmpty() ){
+			input = "-";
+				}
+		return input;
+	}
+	
+	public static Integer replaceNullDefaultID(Integer input){
+		if (input == null || input.equals(null)){
+			input = -2;
+				}
+		return input;
+	}
+	
+	public static Integer replaceNullDefaultZero(Integer input){
+		if (input == null || input.equals(null)){
+			input = 0;
+				}
+		return input;
+	}
+	
+	public static double replaceNullDefaultDouble(Double input){
+		if (input == null || input.equals(null) || input.isNaN()){
+			input = 0.0d;
+				}
+		return input;
+	}
+	
+	public static Date replaceNullStartDate (Date input){
+		if (input == null || input.equals(null)){
+			input = date.parseDate("yyyy-MM-dd","1800-01-01");
+				}
+		return input;
+	}
+	
+	public static Date replaceNullEndDate (Date input){
+		if (input == null || input.equals(null)){
+			input = date.parseDate("yyyy-MM-dd","2999-12-31");
+				}
+		return input;
+	}
+	
+	public static String replaceNull(String input){
+		if (input == null || input.equals(null) || input.length() == 0 || input.isEmpty() ){
+			input = "";
+				}
+		return input;
+	}
+	
+	public static Date replaceNullDate (Date input){
+		if (input == null || input.equals(null)){
+			input = date.parseDate("dd-MM-yyyy","01-01-1900");
+				}
+		return input;
+	}
+	
+	public static String ReverseDigits(String String_IN)
+    {
+	     if(String_IN == null) 
+	        return String_IN;
+	    
+	     String res = "";
+	     int base = 0;
+	     Matcher matcher = Pattern.compile("\\d+").matcher(String_IN);
+	     while (!matcher.hitEnd())
+	     {
+	    	 if (!matcher.find())
+	    	 {
+	    		 return res + String_IN.substring(base);
+	    	 }
+	    	 String pre = String_IN.substring(base, matcher.start());
+	    	 base = matcher.end();
+	    	 String number = matcher.group();
+	    	 number = new StringBuilder(number).reverse().toString();
+	    	 res += pre + number;
+	     }
+	     return res;
+	    }
+	
+	public static String ReverseHeb(String String_IN)
+    {
+	     if(String_IN == null) 
+	        return String_IN;
+	    
+	     int Input_Len = String_IN.length();
+	    
+	     Bidi allEnglish = new Bidi(String_IN,Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
+	     if(allEnglish.isLeftToRight() || String_IN.length() < 2)
+	        return String_IN;
+	    
+	     Bidi bidi = new Bidi(String_IN,Bidi.DIRECTION_RIGHT_TO_LEFT);
+	     int start;
+	     int end;
+	    
+	     StringBuilder result = new StringBuilder(Input_Len + 1);
+	     int j = 0;
+	     int countRun = bidi.getRunCount();
+	     for ( int i = 0 ; i < countRun ; i++)
+	     {
+	        start = bidi.getRunStart(i);
+	        end = bidi.getRunLimit(i);
+	        for ( ; j < end ; j++)
+	        {
+	         char A = String_IN.charAt(j);
+	         if (bidi.getLevelAt(j) % 2 == 1)
+	         {
+	            result.insert(0, A);
+	         }
+	         else
+	         {
+	            if (A == '-' && j > 0)
+	            {
+	            
+	             if ( (int) String_IN.charAt(j - 1) >= 1488  && (int) String_IN.charAt(j - 1) <= 1514 )
+	             {
+	                result.insert(0,'-');
+	             }
+	            }else
+	            {
+	             if ( String_IN.charAt(end - 1) == '-')
+	             {
+	                if ( j < end - 1)
+	                {
+	                    result.insert(0,String_IN.substring(j,end -1 ));
+	                    result.insert(0,String_IN.charAt(end - 1));
+	                    j = end - 1;
+	                }else
+	                    result.insert(0,A);
+	             }else{
+	                 result.insert(0,String_IN.substring(j,end));
+	                j = end - 1;
+	    }}    }       }}
+	    
+	    
+	        int index1 = result.indexOf("(");
+	        int index2 = result.indexOf(")");
+	    
+	          while (index1 != -1 || index2 != -1)
+	          {
+	            if((index1 < index2 && index1 != -1) || index2 == -1)
+	            {    
+	                     result.replace(index1, index1 + 1, ")" );
+	                       index1 = result.indexOf("(", index1 + 1);
+	            }
+	            else
+	            {
+	                     result.replace(index2, index2 + 1, "(" );
+	                       index2 = result.indexOf(")", index2 + 1);
+	            }
+	          }
+	    
+	    return result.toString();
+	    }
+	
+	
+	public static String ReverseStr(String String_IN)
+    {
+	     if(String_IN == null) 
+	        return String_IN;
+	    
+	     int Input_Len = String_IN.length();
+	    
+	     Bidi allEnglish = new Bidi(String_IN,Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
+	     if(allEnglish.isLeftToRight() || String_IN.length() < 2)
+	        return String_IN;
+	    
+	     Bidi bidi = new Bidi(String_IN,Bidi.DIRECTION_RIGHT_TO_LEFT);
+	     int start;
+	     int end;
+	    
+	     StringBuilder result = new StringBuilder(Input_Len + 1);
+	     int j = 0;
+	     int countRun = bidi.getRunCount();
+	     for ( int i = 0 ; i < countRun ; i++)
+	     {
+	        start = bidi.getRunStart(i);
+	        end = bidi.getRunLimit(i);
+	        for ( ; j < end ; j++)
+	        {
+	         char A = String_IN.charAt(j);
+	         if (bidi.getLevelAt(j) % 2 == 1)
+	         {
+	            result.insert(0, A);
+	         }
+	         else
+	         {
+	            if (A == '-' && j > 0)
+	            {
+	            
+	             if ( (int) String_IN.charAt(j - 1) >= 1488  && (int) String_IN.charAt(j - 1) <= 1514 )
+	             {
+	                result.insert(0,'-');
+	             }
+	            }else
+	            {
+	             if ( String_IN.charAt(end - 1) == '-')
+	             {
+	                if ( j < end - 1)
+	                {
+	                    result.insert(0,String_IN.substring(j,end -1 ));
+	                    result.insert(0,String_IN.charAt(end - 1));
+	                    j = end - 1;
+	                }else
+	                    result.insert(0,A);
+	             }else{
+	                 result.insert(0,String_IN.substring(j,end));
+	                j = end - 1;
+	    }}    }       }}
+	    
+	    
+	        int index1 = result.indexOf("(");
+	        int index2 = result.indexOf(")");
+	    
+	          while (index1 != -1 || index2 != -1)
+	          {
+	            if((index1 < index2 && index1 != -1) || index2 == -1)
+	            {    
+	                     result.replace(index1, index1 + 1, ")" );
+	                       index1 = result.indexOf("(", index1 + 1);
+	            }
+	            else
+	            {
+	                     result.replace(index2, index2 + 1, "(" );
+	                       index2 = result.indexOf(")", index2 + 1);
+	            }
+	          }
+	    
+	    return result.toString();
+	    }
+		
+	public static String ReverseNum(String String_IN)
+    {
+	     if(String_IN == null) 
+	        return String_IN;
+	    
+	     int Input_Len = String_IN.length();
+	    
+	     Bidi allEnglish = new Bidi(String_IN,Bidi.DIRECTION_DEFAULT_LEFT_TO_RIGHT);
+	     if(allEnglish.isLeftToRight() || String_IN.length() < 2)
+	        return String_IN;
+	    
+	     Bidi bidi = new Bidi(String_IN,Bidi.DIRECTION_RIGHT_TO_LEFT);
+	     int start;
+	     int end;
+	    
+	     StringBuilder result = new StringBuilder(Input_Len + 1);
+	     int j = 0;
+	     int countRun = bidi.getRunCount();
+	     for ( int i = 0 ; i < countRun ; i++)
+	     {
+	        start = bidi.getRunStart(i);
+	        end = bidi.getRunLimit(i);
+	        for ( ; j < end ; j++)
+	        {
+	         char A = String_IN.charAt(j);
+	         if (bidi.getLevelAt(j) % 2 == 1)
+	         {
+	            result.insert(0, A);
+	         }
+	         else
+	         {
+	            if (A == '-' && j > 0)
+	            {
+	            
+	             if ( (int) String_IN.charAt(j - 1) >= 1488  && (int) String_IN.charAt(j - 1) <= 1514 )
+	             {
+	                result.insert(0,'-');
+	             }
+	            }else
+	            {
+	             if ( String_IN.charAt(end - 1) == '-')
+	             {
+	                if ( j < end - 1)
+	                {
+	                    result.insert(0,String_IN.substring(j,end -1 ));
+	                    result.insert(0,String_IN.charAt(end - 1));
+	                    j = end - 1;
+	                }else
+	                    result.insert(0,A);
+	             }else{
+	                 result.insert(0,String_IN.substring(j,end));
+	                j = end - 1;
+	    }}    }       }}
+	    
+	    
+	        int index1 = result.indexOf("(");
+	        int index2 = result.indexOf(")");
+	    
+	          while (index1 != -1 || index2 != -1)
+	          {
+	            if((index1 < index2 && index1 != -1) || index2 == -1)
+	            {    
+	                     result.replace(index1, index1 + 1, ")" );
+	                       index1 = result.indexOf("(", index1 + 1);
+	            }
+	            else
+	            {
+	                     result.replace(index2, index2 + 1, "(" );
+	                       index2 = result.indexOf(")", index2 + 1);
+	            }
+	          }
+	    
+	    return result.toString();
+	    }
+	
+	public static String RTRIM(String string){ 
+		if (string == null){
+	    		return null;
+	    	} else {
+	    		char[] val = string.toCharArray();
+		        int len = val.length;
+		        while (len > 0 && val[len - 1] <= ' ') {
+		            len--;
+		        }
+		        return string.substring(0, len);
+	    	}
+	}
+	
+	public static String RTRIM(String str ,String trim_set ){ throw new NotImplementedException();}
+	
+	/**
+	 * 
+	 * @param date
+	 * @return
+	 */
+	public static Date ROUND(Date date  ){ throw new NotImplementedException();}
+	public static Date ROUND(Date date ,String ch){ throw new NotImplementedException();}
+	
+	/**
+	 * 
+	 * @param num
+	 * @return
+	 */
+	public static Numeric ROUND(Numeric num  ){ throw new NotImplementedException();}
+	public static Numeric ROUND(Numeric num ,Numeric numeric ){ throw new NotImplementedException();}
+
+	/**
+	 * Returns whether a numeric value is positive, negative, or 0.
+	 * @param numeric
+	 * @return -1 for negative values. 0 for 0. 1 for positive values. NULL if NULL.
+	 */
+	public static Integer SIGN(Numeric numeric ){ throw new NotImplementedException();}
+
+	/**
+	 * Encodes a string value into a four-character string.
+	 * SOUNDEX works for characters in the English alphabet (A-Z). It uses the first character of the input string as the
+	 * first character in the return value and encodes the remaining three unique consonants as numbers.
+	 * @param ch
+	 * @return
+	 */
+	public static String SOUNDEX(String ch ){ throw new NotImplementedException();}
+	
+	/**
+	 * returns the current date and time of the node hosting the PowerCenter Integration Service with precision to the
+	 * nanosecond. The precision to which you display the date and time depends on the platform
+	 * @param format Precision to which you want to retrieve the timestamp. You can specify precision up to
+	 * seconds (SS), milliseconds (MS), microseconds (US), or nanoseconds (NS). Enclose the
+	 * format string within single quotation marks. The format string is not case sensitive. For
+	 * example, to display the date and time to the precision of milliseconds use the following
+	 * syntax: SYSTIMESTAMP(‘MS’). Default precision is microseconds (US)
+	 * @return
+	 */
+	public static Date SYSTIMESTAMP(){ throw new NotImplementedException();}
+	public static Date SYSTIMESTAMP(String format){ throw new NotImplementedException();}
+	
+	/**
+	 * Converts dates to character strings. TO_CHAR also converts numeric values to strings. You can convert the date
+	 * into any format using the TO_CHAR format strings.
+	 * @param date
+	 * @param format TO_CHAR( DATE_PROMISED, ' MON DD YYYY' 
+	 * @return NULL if a value passed to the function is NULL.
+	 */
+	
+	public static String TO_CHAR( Boolean numeric ){ return TypeConvert.Boolean2String(numeric);}
+	public static String TO_CHAR( Byte numeric ){ return TypeConvert.Byte2String(numeric);}
+	public static String TO_CHAR( byte[] numeric ){ return TypeConvert.byteArray2String(numeric);}
+	public static String TO_CHAR( Character numeric ){ return TypeConvert.Character2String(numeric);}
+	public static String TO_CHAR( Date numeric, String format ){ return TypeConvert.Date2String(numeric, format);}	
+	public static String TO_CHAR( Double numeric ){ return TypeConvert.Double2String(numeric);}
+	public static String TO_CHAR( Float numeric ){ return TypeConvert.Float2String(numeric);}
+	public static String TO_CHAR( BigDecimal numeric ){ return TypeConvert.BigDecimal2String(numeric);}
+	public static String TO_CHAR( Integer numeric ){ return TypeConvert.Integer2String(numeric);}
+	public static String TO_CHAR( Long numeric ){ return TypeConvert.Long2String(numeric);}
+	public static String TO_CHAR( Object numeric ){ return TypeConvert.Object2String(numeric);}
+	public static String TO_CHAR( Short numeric ){ return TypeConvert.Short2String(numeric);}
+	public static String TO_CHAR( String numeric ){ return numeric;}
+	public static String TO_CHAR( List<?> numeric ){ return TypeConvert.List2String(numeric);}
+	
+	
+	
+	/**
+	 * 
+	 * @param dateString
+	 * @param format
+	 * @return
+	 */
+	public static Date TO_DATE(String dateString ,String format ){ return TypeConvert.String2Date(dateString, format);}
+	public static Date TO_DATE(String dateString ){ return TypeConvert.String2Date(dateString);}
+	
+	/**
+	 * Converts a string or numeric value to a decimal value. TO_DECIMAL ignores leading blanks.
+	 * @param value Must be a string or numeric datatype. Passes the values you want to convert to decimals.
+	 * You can enter any valid transformation expression.
+	 * @param scale
+	 * @return
+	 */
+	public static Float TO_DECIMAL( Boolean value , int scale ){ return TypeConvert.Boolean2Float(value);}
+	public static Float TO_DECIMAL( Boolean value ){ return TypeConvert.Boolean2Float(value);}
+	
+	public static Float TO_DECIMAL( Byte value , int scale ){ return TypeConvert.Byte2Float(value);}
+	public static Float TO_DECIMAL( Byte value ){ return TypeConvert.Byte2Float(value);}
+	
+	public static Float TO_DECIMAL( byte[] value , int scale ){ return TypeConvert.byteArray2Float(value);}
+	public static Float TO_DECIMAL( byte[] value ){ return TypeConvert.byteArray2Float(value);}
+	
+	public static Float TO_DECIMAL( Character value , int scale ){ return TypeConvert.Character2Float(value);}
+	public static Float TO_DECIMAL( Character value ){ return TypeConvert.Character2Float(value);}
+	
+	public static Float TO_DECIMAL( Date value , int scale ){ return TypeConvert.Date2Float(value);}
+	public static Float TO_DECIMAL( Date value ){ return TypeConvert.Date2Float(value);}
+	
+	public static Float TO_DECIMAL( Double value , int scale ){ return TypeConvert.Double2Float(value);}
+	public static Float TO_DECIMAL( Double value ){ return TypeConvert.Double2Float(value);}
+	
+	public static Float TO_DECIMAL( Float value , int scale ){ return (value);}
+	public static Float TO_DECIMAL( Float value ){ return (value);}
+	
+	public static Float TO_DECIMAL( BigDecimal value , int scale ){ return TypeConvert.BigDecimal2Float(value);}
+	public static Float TO_DECIMAL( BigDecimal value ){ return TypeConvert.BigDecimal2Float(value);}
+	
+	public static Float TO_DECIMAL( Integer value , int scale ){ return TypeConvert.Integer2Float(value);}
+	public static Float TO_DECIMAL( Integer value ){ return TypeConvert.Integer2Float(value);}
+	
+	public static Float TO_DECIMAL( Long value , int scale ){ return TypeConvert.Long2Float(value);}
+	public static Float TO_DECIMAL( Long value ){ return TypeConvert.Long2Float(value);}
+	
+	public static Float TO_DECIMAL( Short value , int scale ){ return TypeConvert.Short2Float(value);}
+	public static Float TO_DECIMAL( Short value ){ return TypeConvert.Short2Float(value);}	
+	
+	/**
+	 * Converts a string or numeric value to a double-precision floating point number (the Double datatype). TO_FLOAT
+	 * ignores leading blanks.
+	 * @param value Must be a string or numeric datatype. Passes the values you want to convert to double
+	 * values. You can enter any valid transformation expression
+	 * @return
+	 */
+	public static Double TO_FLOAT( Boolean numeric ){ return TypeConvert.Boolean2Double(numeric);}
+	public static Double TO_FLOAT( Byte numeric ){ return TypeConvert.Byte2Double(numeric);}
+	public static Double TO_FLOAT( byte[] numeric ){ return TypeConvert.byteArray2Double(numeric);}
+	public static Double TO_FLOAT( Character numeric ){ return TypeConvert.Character2Double(numeric);}
+	public static Double TO_FLOAT( Date numeric){ return TypeConvert.Date2Double(numeric);}	
+	public static Double TO_FLOAT( Double numeric ){ return TypeConvert.Double2Double(numeric);}
+	public static Double TO_FLOAT( Float numeric ){ return TypeConvert.Float2Double(numeric);}
+	public static Double TO_FLOAT( BigDecimal numeric ){ return TypeConvert.BigDecimal2Double(numeric);}
+	public static Double TO_FLOAT( Integer numeric ){ return TypeConvert.Integer2Double(numeric);}
+	public static Double TO_FLOAT( Long numeric ){ return TypeConvert.Long2Double(numeric);}
+	public static Double TO_FLOAT( Object numeric ){ return TypeConvert.Object2Double(numeric);}
+	public static Double TO_FLOAT( Short numeric ){ return TypeConvert.Short2Double(numeric);}
+	public static Double TO_FLOAT( String numeric ){ return TypeConvert.String2Double(numeric);}
+	public static Double TO_FLOAT( List<?> numeric ){ return TypeConvert.List2Double(numeric);}
+	
+
+	/**
+	 * Converts a string or numeric value to an integer. TO_INTEGER syntax contains an optional argument that you can
+	 * choose to round the number to the nearest integer or truncate the decimal portion. TO_INTEGER ignores leading
+	 * blanks
+	 * @param value
+	 * @param flag
+	 * @return
+	 */
+	public static Integer TO_INTEGER( Boolean numeric ){ return TypeConvert.Boolean2Integer(numeric);}
+	public static Integer TO_INTEGER( Byte numeric ){ return TypeConvert.Byte2Integer(numeric);}
+	public static Integer TO_INTEGER( byte[] numeric ){ return TypeConvert.byteArray2Integer(numeric);}
+	public static Integer TO_INTEGER( Character numeric ){ return TypeConvert.Character2Integer(numeric);}
+	public static Integer TO_INTEGER( Date numeric){ return TypeConvert.Date2Integer(numeric);}	
+	public static Integer TO_INTEGER( Double numeric ){ return TypeConvert.Double2Integer(numeric);}
+	public static Integer TO_INTEGER( Float numeric ){ return TypeConvert.Float2Integer(numeric);}
+	public static Integer TO_INTEGER( BigDecimal numeric ){ return TypeConvert.BigDecimal2Integer(numeric);}
+	public static Integer TO_INTEGER( Integer numeric ){ return TypeConvert.Integer2Integer(numeric);}
+	public static Integer TO_INTEGER( Long numeric ){ return TypeConvert.Long2Integer(numeric);}
+	public static Integer TO_INTEGER( Object numeric ){ return TypeConvert.Object2Integer(numeric);}
+	public static Integer TO_INTEGER( Short numeric ){ return TypeConvert.Short2Integer(numeric);}
+	public static Integer TO_INTEGER( String numeric ){ return TypeConvert.String2Integer(numeric);}
+	public static Integer TO_INTEGER( List<?> numeric ){ return TypeConvert.List2Integer(numeric);}
+	
+	/**
+	 * Truncates dates to a specific year, month, day, hour, minute, second, millisecond, or microsecond. You can also
+	 * use TRUNC to truncate numbers
+	 * @param date
+	 * @param format
+	 * @return
+	 */
+	public static Date TRUNC(Date date , String format ){ throw new NotImplementedException();}
+	public static Date TRUNC(Date date){ throw new NotImplementedException();}
+	
+	/**
+	 * Truncates numbers to a specific digit. 
+	 * @param numeric
+	 * @param precision
+	 * @return
+	 */
+	public static Numeric TRUNC(Numeric numeric , int precision ){ throw new NotImplementedException();}
+	public static Numeric TRUNC(Numeric numeric  ){ throw new NotImplementedException();}
+}

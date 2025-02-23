@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_CkSLkHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="QA">
+    <contextParameter xmi:id="_CkSLkXHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLknHjEem3OLgmIc9NAg" comment="" name="P_OWNER_TABLE_NAME" prompt="P_OWNER_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLk3HjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLlHHjEem3OLgmIc9NAg" comment="" name="P_CK_TABLE_NAME" prompt="P_CK_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLlXHjEem3OLgmIc9NAg" comment="" name="P_GENERAL_PARTITION_NAME" prompt="P_GENERAL_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLlnHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLl3HjEem3OLgmIc9NAg" comment="" name="P_GK_COLUMN" prompt="P_GK_COLUMN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLmHHjEem3OLgmIc9NAg" comment="" name="P_CHECK_IS_EXISTS" prompt="P_CHECK_IS_EXISTS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLmXHjEem3OLgmIc9NAg" comment="" name="P_ROW_COUNT" prompt="P_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLmnHjEem3OLgmIc9NAg" comment="" name="P_CK" prompt="P_CK?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLm3HjEem3OLgmIc9NAg" comment="" name="P_STATUS" prompt="P_STATUS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLnHHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_DATE" prompt="P_VALIDITY_DATE?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CkSLnXHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_CkSLnnHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLn3HjEem3OLgmIc9NAg" comment="" name="P_OWNER_TABLE_NAME" prompt="P_OWNER_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLoHHjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLoXHjEem3OLgmIc9NAg" comment="" name="P_CK_TABLE_NAME" prompt="P_CK_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLonHjEem3OLgmIc9NAg" comment="" name="P_GENERAL_PARTITION_NAME" prompt="P_GENERAL_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLo3HjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLpHHjEem3OLgmIc9NAg" comment="" name="P_GK_COLUMN" prompt="P_GK_COLUMN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLpXHjEem3OLgmIc9NAg" comment="" name="P_CHECK_IS_EXISTS" prompt="P_CHECK_IS_EXISTS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLpnHjEem3OLgmIc9NAg" comment="" name="P_ROW_COUNT" prompt="P_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLp3HjEem3OLgmIc9NAg" comment="" name="P_CK" prompt="P_CK?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLqHHjEem3OLgmIc9NAg" comment="" name="P_STATUS" prompt="P_STATUS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLqXHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_DATE" prompt="P_VALIDITY_DATE?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CkSLqnHjEem3OLgmIc9NAg" confirmationNeeded="false" name="DEV">
+    <contextParameter xmi:id="_CkSLq3HjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLrHHjEem3OLgmIc9NAg" comment="" name="P_OWNER_TABLE_NAME" prompt="P_TABLE_NAME" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLrXHjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLrnHjEem3OLgmIc9NAg" comment="" name="P_CK_TABLE_NAME" prompt="P_CK_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLr3HjEem3OLgmIc9NAg" comment="" name="P_GENERAL_PARTITION_NAME" prompt="P_GENERAL_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLsHHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLsXHjEem3OLgmIc9NAg" comment="" name="P_GK_COLUMN" prompt="P_GK_COLUMN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLsnHjEem3OLgmIc9NAg" comment="" name="P_CHECK_IS_EXISTS" prompt="P_CHECK_IS_EXISTS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLs3HjEem3OLgmIc9NAg" comment="" name="P_ROW_COUNT" prompt="P_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLtHHjEem3OLgmIc9NAg" comment="" name="P_CK" prompt="P_CK?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLtXHjEem3OLgmIc9NAg" comment="" name="P_STATUS" prompt="P_STATUS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLtnHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_DATE" prompt="P_VALIDITY_DATE?" promptNeeded="false" type="id_String" value="&quot;2017-03-08&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CkSLt3HjEem3OLgmIc9NAg" confirmationNeeded="false" name="NEW_PREPROD">
+    <contextParameter xmi:id="_CkSLuHHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLuXHjEem3OLgmIc9NAg" comment="" name="P_OWNER_TABLE_NAME" prompt="P_OWNER_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLunHjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLu3HjEem3OLgmIc9NAg" comment="" name="P_CK_TABLE_NAME" prompt="P_CK_TABLE_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLvHHjEem3OLgmIc9NAg" comment="" name="P_GENERAL_PARTITION_NAME" prompt="P_GENERAL_PARTITION_NAME?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLvXHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLvnHjEem3OLgmIc9NAg" comment="" name="P_GK_COLUMN" prompt="P_GK_COLUMN?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLv3HjEem3OLgmIc9NAg" comment="" name="P_CHECK_IS_EXISTS" prompt="P_CHECK_IS_EXISTS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLwHHjEem3OLgmIc9NAg" comment="" name="P_ROW_COUNT" prompt="P_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLwXHjEem3OLgmIc9NAg" comment="" name="P_CK" prompt="P_CK?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLwnHjEem3OLgmIc9NAg" comment="" name="P_STATUS" prompt="P_STATUS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLw3HjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_DATE" prompt="P_VALIDITY_DATE?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_CkSLxHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="PRE_PROD">
+    <contextParameter xmi:id="_CkSLxXHjEem3OLgmIc9NAg" comment="" name="P_PARTITION_NAME" prompt="P_PARTITION_NAME?" promptNeeded="false" type="id_String" value="&quot;DSR_PN&quot;"/>
+    <contextParameter xmi:id="_CkSLxnHjEem3OLgmIc9NAg" comment="" name="P_OWNER_TABLE_NAME" prompt="P_OWNER_TABLE_NAME?" promptNeeded="false" type="id_String" value="&quot;AGREEMENT&quot;"/>
+    <contextParameter xmi:id="_CkSLx3HjEem3OLgmIc9NAg" comment="" name="P_SCHEMA" prompt="P_SCHEMA?" promptNeeded="false" type="id_String" value="&quot;PRE&quot;"/>
+    <contextParameter xmi:id="_CkSLyHHjEem3OLgmIc9NAg" comment="" name="P_CK_TABLE_NAME" prompt="P_CK_TABLE_NAME?" promptNeeded="false" type="id_String" value="&quot;AGG&quot;"/>
+    <contextParameter xmi:id="_CkSLyXHjEem3OLgmIc9NAg" comment="" name="P_GENERAL_PARTITION_NAME" prompt="P_GENERAL_PARTITION_NAME?" promptNeeded="false" type="id_String" value="&quot;PN&quot;"/>
+    <contextParameter xmi:id="_CkSLynHjEem3OLgmIc9NAg" comment="" name="P_PROCESS_ID" prompt="P_PROCESS_ID?" promptNeeded="false" type="id_Integer" value="160"/>
+    <contextParameter xmi:id="_CkSLy3HjEem3OLgmIc9NAg" comment="" name="P_GK_COLUMN" prompt="P_GK_COLUMN?" promptNeeded="false" type="id_String" value="&quot;AGREEMENT_ID&quot;"/>
+    <contextParameter xmi:id="_CkSLzHHjEem3OLgmIc9NAg" comment="" name="P_CHECK_IS_EXISTS" prompt="P_CHECK_IS_EXISTS?" promptNeeded="false" type="id_Integer" value="1"/>
+    <contextParameter xmi:id="_CkSLzXHjEem3OLgmIc9NAg" comment="" name="P_ROW_COUNT" prompt="P_ROW_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSLznHjEem3OLgmIc9NAg" comment="" name="P_CK" prompt="P_CK?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_CkSLz3HjEem3OLgmIc9NAg" comment="" name="P_STATUS" prompt="P_STATUS?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_CkSL0HHjEem3OLgmIc9NAg" comment="" name="P_VALIDITY_DATE" prompt="P_VALIDITY_DATE?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

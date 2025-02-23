@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Ct0iEHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Ct0iEXHjEem3OLgmIc9NAg" comment="Talend" name="G_ProjectID" prompt="G_ProjectID?" promptNeeded="false" type="id_String" value="engineering-152721"/>
+  <contextParameter xmi:id="_Ct0iEnHjEem3OLgmIc9NAg" comment="Yours" name="G_Bucket" prompt="G_Bucket?" promptNeeded="false" type="id_String" value="***"/>
+  <contextParameter xmi:id="_Ct0iE3HjEem3OLgmIc9NAg" comment="Yours" name="G_Accesskey" prompt="G_Accesskey?" promptNeeded="false" type="id_String" value="************"/>
+  <contextParameter xmi:id="_Ct0iFHHjEem3OLgmIc9NAg" comment="Yours" name="C_secertkey" prompt="C_secertkey?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:f0Vok+6LAkIFO19SOuDxeXrqxMewmjw2Ot0c0W+JIjNwy6bJ/A=="/>
+  <contextParameter xmi:id="_Ct0iFXHjEem3OLgmIc9NAg" comment="" name="GS_Tweets" prompt="GS_Tweets?" promptNeeded="false" type="id_String" value="NLP/Tweets"/>
+  <contextParameter xmi:id="_Ct0iFnHjEem3OLgmIc9NAg" comment="" name="GS_Results" prompt="GS_Results?" promptNeeded="false" type="id_String" value="NLP/Results"/>
+</talendfile:ContextType>

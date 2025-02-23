@@ -1,0 +1,245 @@
+package routines;
+
+import java.io.*;
+import java.nio.*;
+import java.util.*;
+import java.io.File;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import org.apache.commons.io.*;
+//import sun.misc.IOUtils;
+
+public  class Write_To_File {
+	
+	public static void addBOM(String path) { 
+		try{ 
+		FileOutputStream out = new FileOutputStream(path, false); 
+		out.write(new byte[] { (byte) 0xEF, (byte) 0xBB, (byte) 0xBF }); 
+		out.close(); 
+		}catch (Exception e){ 
+		System.err.println("Error: " + e.getMessage()); 
+		} 
+		} 	
+	
+	public static String readFile( String file ) throws IOException {
+	    //  FileWriter fstream = new FileWriter(file);
+	      BufferedReader reader = new BufferedReader( new FileReader (file));
+	      String line  = null;
+	      StringBuilder stringBuilder = new StringBuilder();
+	      String ls = System.getProperty("line.separator");
+	      while( ( line = reader.readLine() ) != null ) {
+	          stringBuilder.append( line );
+	         // stringBuilder.append( ls );
+	      }
+	      return stringBuilder.toString();
+	  }
+	public static String readLastLineInFile( String file ) throws IOException {
+	    //  FileWriter fstream = new FileWriter(file);
+	      BufferedReader reader = new BufferedReader( new FileReader (file));
+	      String line  = null;
+	      String lastLine = null;
+	      StringBuilder stringBuilder = new StringBuilder();
+	      String ls = System.getProperty("line.separator");
+	      while( ( line = reader.readLine() ) != null ) {
+	          lastLine=line;
+	      }
+	      return lastLine;
+	  }
+	  public static void outwrite(String path,String str)
+	    {
+		    try{
+		    // Create file 
+		    FileWriter fstream = new FileWriter(path,true);
+		    BufferedWriter out = new BufferedWriter(fstream);
+		    out.write(str);
+		    //Close the output stream
+		    out.close();
+		    }catch (Exception e){//Catch exception if any
+		    System.err.println("Error: " + e.getMessage());
+		    }
+	    }
+	  public static void outwriteUTF8(String path,String str)
+	    /*{
+		    try{
+		    // Create file 		    
+		    BufferedWriter out = new BufferedWriter
+		    (new OutputStreamWriter(new FileOutputStream(path,true),"UTF-8"));
+		    
+		    out.write(str);
+		    //Close the output stream
+		    out.close();
+		    }catch (Exception e){//Catch exception if any
+		    System.err.println("Error: " + e.getMessage());
+		    }
+	    }*/
+	  	{
+		    try{
+		    Path path2 = Paths.get(path);
+			Files.createDirectories(path2.getParent());
+		    BufferedWriter out = new BufferedWriter
+		        (new OutputStreamWriter(new FileOutputStream(path,true),"UTF-8"));
+		    out.write(str);
+		    //Close the output stream
+		    out.close();
+		    }catch (Exception e){//Catch exception if any
+		    System.err.println("Error: " + e.getMessage());
+		    }
+	    }
+	  public static void outwriteNew(String path,String str)
+	    {
+		    try{
+		    // Create file 
+		    FileWriter fstream = new FileWriter(path,false);
+		    BufferedWriter out = new BufferedWriter(fstream);
+		    out.write(str);
+		    //Close the output stream
+		    out.close();
+		    }catch (Exception e){//Catch exception if any
+		    System.err.println("Error: " + e.getMessage());
+		    }
+	    }
+	  public static void outwriteappend(String path,String str,boolean append)
+	    {
+		    try{
+		    // Create file 
+		    FileWriter fstream = new FileWriter(path,append);
+		    BufferedWriter out = new BufferedWriter(fstream);
+		    out.write(str);
+		    //Close the output stream
+		    out.close();
+		    }catch (Exception e){//Catch exception if any
+		    System.err.println("Error: " + e.getMessage());
+		    }
+	    }
+	  
+	  public static int countRows(String file) throws IOException {
+		  
+		  BufferedReader reader = new BufferedReader(new FileReader(file));
+		  int lines = 0;
+		  try {
+			while (reader.readLine() != null) lines++;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return lines;
+		}
+		  reader.close();
+		  
+		  return lines;
+	  }
+      public static int countFilesInDirectory(String directory) {
+          File f = new File(directory);
+          int count = 0;
+          for (File file : f.listFiles()) {
+                  if (file.isFile()) {
+                          count++;
+                  }
+          }
+          return count;
+  }
+
+	  public static boolean fileExist (String filename) {
+		  
+		  File f= new File(filename);
+		  return f.exists();
+	  }
+	  public static boolean fileRename(String fileName,String newName) {
+		  boolean succeed=false;
+		  try{      
+		         // create new File objects
+		         File f = new File(fileName);
+		         File f1 = new File(newName);
+		         
+		         // rename file
+		         succeed = f.renameTo(f1);
+		         
+		         // print
+		         //System.out.print("File renamed? "+bool);
+		         
+		      }catch(Exception e){
+		         // if any error occurs
+		         e.printStackTrace();
+		      }
+
+		  return succeed;
+	  }
+	  public static void outwriteNew2(String path,String str)
+	    {
+		    try{
+		    // create Directories if not exist
+	//	    Path path2 = Paths.get(path);
+	//	    Files.createDirectories(path2.getParent());
+		    // Create file 
+		    FileWriter fstream = new FileWriter(path,false);
+		    BufferedWriter out = new BufferedWriter(fstream);
+		    //Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path), "UTF-8"));
+		    out.write(str);
+		    //Close the output stream
+		    out.close();
+		    }catch (Exception e){//Catch exception if any
+		    System.err.println("Error: " + e.getMessage());
+		    }
+	    }
+	  public static void DeleteFile (String filePath)
+	  {
+		  try {
+			  File f = new File(filePath);
+			  f.delete();
+			  		  
+		  }
+		  catch (Exception e){//Catch exception if any
+			    System.err.println("Error: " + e.getMessage());
+		    }
+	    }
+	  
+	  public static String FileListToStringSeperated (String FilePath, String seperator) {
+		  
+	  
+	  if (Write_To_File.fileExist(FilePath)) {
+			System.out.println("READ Exclude catalog file: "+FilePath);
+			BufferedReader reader = null;
+			try {
+				reader = new BufferedReader( new FileReader (FilePath));
+			} catch (FileNotFoundException e1) {
+				e1.printStackTrace();
+			}
+			String line  = null;
+			Boolean firstLine=true;
+			String str = "";
+			try {
+				while( ( line = reader.readLine() ) != null ) {
+				//System.out.println("line"+line);
+					if (firstLine) {
+						firstLine=false;
+					}
+					else {
+					str+=line+seperator;
+				// stringBuilder.append( ls );
+					}
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			return str.substring(0,str.length()-seperator.length());
+			}
+		else {
+			System.out.println("exclude catalog file ["+FilePath+"] does not exist");
+			return null;
+		}
+	  }
+	  
+	  public static void replaceFileString(String inputPath, String outputPath, String strOld, String strNew) throws IOException{
+		  try{
+			  String content = FileUtils.readFileToString(new File(inputPath), "ISO-8859-8");
+			  content = content.replaceAll(strOld, strNew);
+			  File tempFile = new File(outputPath);
+			  FileUtils.writeStringToFile(tempFile, content, "ISO-8859-8");    
+		  } catch (IOException e){
+			  throw new RuntimeException("Generating file failed", e);
+		  }
+		   
+	  }
+}
+
+

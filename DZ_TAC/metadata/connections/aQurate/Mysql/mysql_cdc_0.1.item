@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_PDys0MIAEeuMcrMwOQVhGw" name="mysql_cdc" id="_D6CKIMIAEeuMcrMwOQVhGw" label="mysql_cdc" dataPackage="_PQx_8MIAEeuMcrMwOQVhGw" DatabaseType="MySQL" DriverClass="com.mysql.cj.jdbc.Driver" URL="jdbc:mysql://172.31.12.250:3306/training_cdc?noDatetimeStringSync=true" dbVersionString="MYSQL_8" Port="3306" Username="talend" Password="enc:system.encryption.key.v1:q3QLyZNOxzV0S9S9BEAXq7QCVHPkhZOdo/7Ke26uKPrJRJcYcZNk" ServerName="172.31.12.250" DatasourceName="" FileFieldName="" SID="training_cdc" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_PDys0cIAEeuMcrMwOQVhGw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_POF4UMIAEeuMcrMwOQVhGw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_POF4UcIAEeuMcrMwOQVhGw" tag="Status" value=""/>
+    <taggedValue xmi:id="_POF4UsIAEeuMcrMwOQVhGw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_POF4U8IAEeuMcrMwOQVhGw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_POF4VMIAEeuMcrMwOQVhGw" tag="Description" value=""/>
+    <taggedValue xmi:id="_POF4VcIAEeuMcrMwOQVhGw" tag="Author" value=""/>
+    <taggedValue xmi:id="_POF4VsIAEeuMcrMwOQVhGw" tag="otherParameter"/>
+    <taggedValue xmi:id="_PP4oEMIAEeuMcrMwOQVhGw" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_PP4oEcIAEeuMcrMwOQVhGw" tag="DB ProductVersion" value="8.0.23"/>
+    <taggedValue xmi:id="_PP4oEsIAEeuMcrMwOQVhGw" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_PDys0sIAEeuMcrMwOQVhGw" key="CONN_PARA_KEY_USERNAME" value="talend"/>
+    <parameters xmi:id="_ICZtYG9UEe--3LyOMcthJA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_PQx_8MIAEeuMcrMwOQVhGw" name="training_cdc" dataManager="_PDys0MIAEeuMcrMwOQVhGw"/>
+</xmi:XMI>

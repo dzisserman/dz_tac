@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_XYCX8USTEei9R71MH6V3FA" name="CDR" dataPackage="_XYCX8kSTEei9R71MH6V3FA" Server="Localhost 127.0.0.1" FilePath="C:/DATA/Trifacta/TelcoChurn_Customer360/datasets/cdr.txt" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_XYCX8kSTEei9R71MH6V3FA" name="default" dataManager="_XYCX8USTEei9R71MH6V3FA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XYCX80STEei9R71MH6V3FA" id="_OA5CYESTEei9R71MH6V3FA" label="CDR">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XYCX9ESTEei9R71MH6V3FA" label="_IMSI_MSIDN_IMEI__DATETTIME_TIMEZONE_OFFSET_DURATION_MSWICENT_BASCENTCONT_BASTRASTA_CALL_TYPE_CORRESP_IDN_DISCONNECT_REASON" length="116" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

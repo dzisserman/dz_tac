@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_CsVUUHHjEem3OLgmIc9NAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_CsVUUXHjEem3OLgmIc9NAg" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_CsVUUnHjEem3OLgmIc9NAg" comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="8180"/>
+  <contextParameter xmi:id="_CsVUU3HjEem3OLgmIc9NAg" comment="" name="user" prompt="user?" promptNeeded="false" type="id_String" value="costin@aqurate.co.il"/>
+  <contextParameter xmi:id="_CsVUVHHjEem3OLgmIc9NAg" comment="" name="password" prompt="password?" promptNeeded="false" type="id_String" value="admin"/>
+  <contextParameter xmi:id="_CsVUVXHjEem3OLgmIc9NAg" comment="" name="tacHost" prompt="tacHost?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_CsVUVnHjEem3OLgmIc9NAg" comment="" name="tacPort" prompt="tacPort?" promptNeeded="false" type="id_String" value="8080"/>
+  <contextParameter xmi:id="_CsVUV3HjEem3OLgmIc9NAg" comment="" name="tacUser" prompt="tacUser?" promptNeeded="false" type="id_String" value="admin@aqurate.co.il"/>
+  <contextParameter xmi:id="_CsVUWHHjEem3OLgmIc9NAg" comment="" name="tacPassword" prompt="tacPassword?" promptNeeded="false" type="id_String" value="admin"/>
+</talendfile:ContextType>
