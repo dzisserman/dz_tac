@@ -5422,26 +5422,4 @@
     "version" : "Latest",
     "type" : "schema"
   } ]
-}, {
-  "baseItem" : {
-    "id" : "_X4nKUMJjEe2wRYfQzPmq_g",
-    "version" : "0.1",
-    "type" : "test_case"
-  },
-  "relatedItems" : [ {
-    "id" : "_OdSMsEZbEemGlvxo221GCA",
-    "version" : "0.1",
-    "type" : "test_case"
-  } ]
-}, {
-  "baseItem" : {
-    "id" : "__siQINl2Ee-N-IaiGNKrCA",
-    "version" : "0.1",
-    "type" : "test_case"
-  },
-  "relatedItems" : [ {
-    "id" : "_PytSQNiiEe-Cfcrw28zvHw",
-    "version" : "0.1",
-    "type" : "test_case"
-  } ]
 } ]
